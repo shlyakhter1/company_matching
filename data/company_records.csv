@@ -1,0 +1,380 @@
+record_id,cluster_id,canonical_name,name_variant,country,variation_type
+r0001,apple,Apple Inc.,Apple Inc.,US,base
+r0002,apple,Apple Inc.,"Apple Computer, Inc.",US,former_name
+r0003,apple,Apple Inc.,Apple,US,suffix
+r0004,apple,Apple Inc.,AAPL,US,ticker
+r0005,apple,Apple Inc.,Aple Inc,US,typo
+r0006,microsoft,Microsoft Corporation,Microsoft Corporation,US,base
+r0007,microsoft,Microsoft Corporation,Microsoft Corp.,US,abbrev
+r0008,microsoft,Microsoft Corporation,MSFT,US,ticker
+r0009,microsoft,Microsoft Corporation,Microsft,US,typo
+r0010,google,Google LLC,Google LLC,US,base
+r0011,google,Google LLC,Google Inc.,US,former_name
+r0012,google,Google LLC,Google,US,suffix
+r0013,alphabet,Alphabet Inc.,Alphabet Inc.,US,base
+r0014,alphabet,Alphabet Inc.,Alphabet,US,suffix
+r0015,alphabet,Alphabet Inc.,GOOGL,US,ticker
+r0016,meta,"Meta Platforms, Inc.","Meta Platforms, Inc.",US,base
+r0017,meta,"Meta Platforms, Inc.","Facebook, Inc.",US,former_name
+r0018,meta,"Meta Platforms, Inc.",Meta,US,suffix
+r0019,meta,"Meta Platforms, Inc.",META,US,ticker
+r0020,amazon,"Amazon.com, Inc.","Amazon.com, Inc.",US,base
+r0021,amazon,"Amazon.com, Inc.",Amazon,US,suffix
+r0022,amazon,"Amazon.com, Inc.",Amazon.com,US,spacing_punct
+r0023,amazon,"Amazon.com, Inc.",AMZN,US,ticker
+r0024,ibm,International Business Machines Corporation,International Business Machines Corporation,US,base
+r0025,ibm,International Business Machines Corporation,IBM,US,acronym
+r0026,ibm,International Business Machines Corporation,I.B.M.,US,acronym
+r0027,ibm,International Business Machines Corporation,IBM Corp.,US,abbrev
+r0028,ibm,International Business Machines Corporation,Internationl Business Machines,US,typo
+r0029,oracle,Oracle Corporation,Oracle Corporation,US,base
+r0030,oracle,Oracle Corporation,Oracle Corp.,US,abbrev
+r0031,oracle,Oracle Corporation,Oracle,US,suffix
+r0032,sap,SAP SE,SAP SE,DE,base
+r0033,sap,SAP SE,SAP AG,DE,former_name
+r0034,sap,SAP SE,SAP,DE,suffix
+r0035,salesforce,"Salesforce, Inc.","Salesforce, Inc.",US,base
+r0036,salesforce,"Salesforce, Inc.","Salesforce.com, Inc.",US,former_name
+r0037,salesforce,"Salesforce, Inc.",Salesforce,US,suffix
+r0038,salesforce,"Salesforce, Inc.",CRM,US,ticker
+r0039,netflix,"Netflix, Inc.","Netflix, Inc.",US,base
+r0040,netflix,"Netflix, Inc.",Netflix,US,suffix
+r0041,netflix,"Netflix, Inc.",NFLX,US,ticker
+r0042,nvidia,NVIDIA Corporation,NVIDIA Corporation,US,base
+r0043,nvidia,NVIDIA Corporation,Nvidia,US,casing
+r0044,nvidia,NVIDIA Corporation,NVDA,US,ticker
+r0045,nvidia,NVIDIA Corporation,Nvidia Corp,US,abbrev
+r0046,amd,"Advanced Micro Devices, Inc.","Advanced Micro Devices, Inc.",US,base
+r0047,amd,"Advanced Micro Devices, Inc.",AMD,US,acronym
+r0048,amd,"Advanced Micro Devices, Inc.",Advanced Micro Devices,US,suffix
+r0049,intel,Intel Corporation,Intel Corporation,US,base
+r0050,intel,Intel Corporation,Intel Corp,US,abbrev
+r0051,intel,Intel Corporation,INTC,US,ticker
+r0052,tsmc,Taiwan Semiconductor Manufacturing Company Limited,Taiwan Semiconductor Manufacturing Company Limited,TW,base
+r0053,tsmc,Taiwan Semiconductor Manufacturing Company Limited,TSMC,TW,acronym
+r0054,tsmc,Taiwan Semiconductor Manufacturing Company Limited,Taiwan Semiconductor,TW,abbrev
+r0055,tsmc,Taiwan Semiconductor Manufacturing Company Limited,TSM,TW,ticker
+r0056,asml,ASML Holding N.V.,ASML Holding N.V.,NL,base
+r0057,asml,ASML Holding N.V.,ASML,NL,acronym
+r0058,asml,ASML Holding N.V.,ASML Holding,NL,suffix
+r0059,merck_us,"Merck & Co., Inc.","Merck & Co., Inc.",US,base
+r0060,merck_us,"Merck & Co., Inc.",Merck and Co,US,ampersand
+r0061,merck_us,"Merck & Co., Inc.",Merck Sharp & Dohme,US,former_name
+r0062,merck_us,"Merck & Co., Inc.",MSD,US,acronym
+r0063,merck_de,Merck KGaA,Merck KGaA,DE,base
+r0064,merck_de,Merck KGaA,Merck Group,DE,suffix
+r0065,merck_de,Merck KGaA,E. Merck,DE,former_name
+r0066,pfizer,Pfizer Inc.,Pfizer Inc.,US,base
+r0067,pfizer,Pfizer Inc.,Pfizer,US,suffix
+r0068,pfizer,Pfizer Inc.,PFE,US,ticker
+r0069,novartis,Novartis AG,Novartis AG,CH,base
+r0070,novartis,Novartis AG,Novartis,CH,suffix
+r0071,novartis,Novartis AG,Novartis International AG,CH,abbrev
+r0072,roche,Roche Holding AG,Roche Holding AG,CH,base
+r0073,roche,Roche Holding AG,F. Hoffmann-La Roche,CH,former_name
+r0074,roche,Roche Holding AG,Roche,CH,suffix
+r0075,astrazeneca,AstraZeneca PLC,AstraZeneca PLC,GB,base
+r0076,astrazeneca,AstraZeneca PLC,AstraZeneca,GB,suffix
+r0077,astrazeneca,AstraZeneca PLC,Astra Zeneca,GB,spacing_punct
+r0078,astrazeneca,AstraZeneca PLC,AZN,GB,ticker
+r0079,gsk,GSK plc,GSK plc,GB,base
+r0080,gsk,GSK plc,GlaxoSmithKline plc,GB,former_name
+r0081,gsk,GSK plc,GlaxoSmithKline,GB,suffix
+r0082,gsk,GSK plc,GSK,GB,acronym
+r0083,jnj,Johnson & Johnson,Johnson & Johnson,US,base
+r0084,jnj,Johnson & Johnson,Johnson and Johnson,US,ampersand
+r0085,jnj,Johnson & Johnson,J&J,US,acronym
+r0086,toyota,Toyota Motor Corporation,Toyota Motor Corporation,JP,base
+r0087,toyota,Toyota Motor Corporation,Toyota Motor Corp,JP,abbrev
+r0088,toyota,Toyota Motor Corporation,Toyota,JP,suffix
+r0089,toyota,Toyota Motor Corporation,トヨタ自動車,JP,translit
+r0090,vw,Volkswagen AG,Volkswagen AG,DE,base
+r0091,vw,Volkswagen AG,Volkswagen Aktiengesellschaft,DE,suffix
+r0092,vw,Volkswagen AG,VW,DE,acronym
+r0093,vw,Volkswagen AG,Volkswagon,DE,typo
+r0094,bmw,Bayerische Motoren Werke AG,Bayerische Motoren Werke AG,DE,base
+r0095,bmw,Bayerische Motoren Werke AG,BMW AG,DE,acronym
+r0096,bmw,Bayerische Motoren Werke AG,BMW,DE,acronym
+r0097,mercedes,Mercedes-Benz Group AG,Mercedes-Benz Group AG,DE,base
+r0098,mercedes,Mercedes-Benz Group AG,Daimler AG,DE,former_name
+r0099,mercedes,Mercedes-Benz Group AG,Mercedes Benz,DE,spacing_punct
+r0100,mercedes,Mercedes-Benz Group AG,Mercedes-Benz,DE,suffix
+r0101,ford,Ford Motor Company,Ford Motor Company,US,base
+r0102,ford,Ford Motor Company,Ford Motor Co.,US,abbrev
+r0103,ford,Ford Motor Company,Ford,US,suffix
+r0104,gm,General Motors Company,General Motors Company,US,base
+r0105,gm,General Motors Company,General Motors,US,suffix
+r0106,gm,General Motors Company,GM,US,acronym
+r0107,gm,General Motors Company,Genral Motors,US,typo
+r0108,honda,"Honda Motor Co., Ltd.","Honda Motor Co., Ltd.",JP,base
+r0109,honda,"Honda Motor Co., Ltd.",Honda,JP,suffix
+r0110,honda,"Honda Motor Co., Ltd.",Honda Motor,JP,abbrev
+r0111,honda,"Honda Motor Co., Ltd.",本田技研工業,JP,translit
+r0112,stellantis,Stellantis N.V.,Stellantis N.V.,NL,base
+r0113,stellantis,Stellantis N.V.,Fiat Chrysler Automobiles,NL,former_name
+r0114,stellantis,Stellantis N.V.,Stellantis,NL,suffix
+r0115,tesla,"Tesla, Inc.","Tesla, Inc.",US,base
+r0116,tesla,"Tesla, Inc.","Tesla Motors, Inc.",US,former_name
+r0117,tesla,"Tesla, Inc.",Tesla,US,suffix
+r0118,tesla,"Tesla, Inc.",TSLA,US,ticker
+r0119,exxon,Exxon Mobil Corporation,Exxon Mobil Corporation,US,base
+r0120,exxon,Exxon Mobil Corporation,ExxonMobil,US,spacing_punct
+r0121,exxon,Exxon Mobil Corporation,Exxon,US,suffix
+r0122,exxon,Exxon Mobil Corporation,XOM,US,ticker
+r0123,shell,Shell plc,Shell plc,GB,base
+r0124,shell,Shell plc,Royal Dutch Shell,GB,former_name
+r0125,shell,Shell plc,Shell,GB,suffix
+r0126,chevron,Chevron Corporation,Chevron Corporation,US,base
+r0127,chevron,Chevron Corporation,Chevron,US,suffix
+r0128,chevron,Chevron Corporation,CVX,US,ticker
+r0129,bp,BP p.l.c.,BP p.l.c.,GB,base
+r0130,bp,BP p.l.c.,British Petroleum,GB,former_name
+r0131,bp,BP p.l.c.,BP,GB,acronym
+r0132,total,TotalEnergies SE,TotalEnergies SE,FR,base
+r0133,total,TotalEnergies SE,Total S.A.,FR,former_name
+r0134,total,TotalEnergies SE,TotalEnergies,FR,suffix
+r0135,total,TotalEnergies SE,Total,FR,abbrev
+r0136,aramco,Saudi Arabian Oil Company,Saudi Arabian Oil Company,SA,base
+r0137,aramco,Saudi Arabian Oil Company,Saudi Aramco,SA,suffix
+r0138,aramco,Saudi Arabian Oil Company,Aramco,SA,abbrev
+r0139,gazprom,PJSC Gazprom,PJSC Gazprom,RU,base
+r0140,gazprom,PJSC Gazprom,Gazprom,RU,suffix
+r0141,gazprom,PJSC Gazprom,Газпром,RU,translit
+r0142,gazprom,PJSC Gazprom,OAO Gazprom,RU,former_name
+r0143,jpmorgan,JPMorgan Chase & Co.,JPMorgan Chase & Co.,US,base
+r0144,jpmorgan,JPMorgan Chase & Co.,JP Morgan,US,abbrev
+r0145,jpmorgan,JPMorgan Chase & Co.,J.P. Morgan,US,spacing_punct
+r0146,jpmorgan,JPMorgan Chase & Co.,JPMorgan Chase,US,suffix
+r0147,goldman,"The Goldman Sachs Group, Inc.","The Goldman Sachs Group, Inc.",US,base
+r0148,goldman,"The Goldman Sachs Group, Inc.",Goldman Sachs,US,suffix
+r0149,goldman,"The Goldman Sachs Group, Inc.",GS,US,ticker
+r0150,morganstanley,Morgan Stanley,Morgan Stanley,US,base
+r0151,morganstanley,Morgan Stanley,Morgan Stanley & Co.,US,suffix
+r0152,morganstanley,Morgan Stanley,MS,US,ticker
+r0153,bofa,Bank of America Corporation,Bank of America Corporation,US,base
+r0154,bofa,Bank of America Corporation,Bank of America,US,suffix
+r0155,bofa,Bank of America Corporation,BofA,US,abbrev
+r0156,bofa,Bank of America Corporation,BAC,US,ticker
+r0157,citi,Citigroup Inc.,Citigroup Inc.,US,base
+r0158,citi,Citigroup Inc.,Citigroup,US,suffix
+r0159,citi,Citigroup Inc.,Citi,US,abbrev
+r0160,citi,Citigroup Inc.,C,US,ticker
+r0161,hsbc,HSBC Holdings plc,HSBC Holdings plc,GB,base
+r0162,hsbc,HSBC Holdings plc,HSBC,GB,acronym
+r0163,hsbc,HSBC Holdings plc,Hongkong and Shanghai Banking Corporation,GB,former_name
+r0164,deutschebank,Deutsche Bank AG,Deutsche Bank AG,DE,base
+r0165,deutschebank,Deutsche Bank AG,Deutsche Bank,DE,suffix
+r0166,deutschebank,Deutsche Bank AG,DB,DE,acronym
+r0167,santander,"Banco Santander, S.A.","Banco Santander, S.A.",ES,base
+r0168,santander,"Banco Santander, S.A.",Santander,ES,abbrev
+r0169,santander,"Banco Santander, S.A.",Banco Santander,ES,suffix
+r0170,ubs,UBS Group AG,UBS Group AG,CH,base
+r0171,ubs,UBS Group AG,UBS,CH,acronym
+r0172,ubs,UBS Group AG,Union Bank of Switzerland,CH,former_name
+r0173,visa,Visa Inc.,Visa Inc.,US,base
+r0174,visa,Visa Inc.,Visa,US,suffix
+r0175,visa,Visa Inc.,V,US,ticker
+r0176,mastercard,Mastercard Incorporated,Mastercard Incorporated,US,base
+r0177,mastercard,Mastercard Incorporated,MasterCard,US,casing
+r0178,mastercard,Mastercard Incorporated,Mastercard,US,suffix
+r0179,mastercard,Mastercard Incorporated,MA,US,ticker
+r0180,amex,American Express Company,American Express Company,US,base
+r0181,amex,American Express Company,American Express,US,suffix
+r0182,amex,American Express Company,Amex,US,abbrev
+r0183,amex,American Express Company,AXP,US,ticker
+r0184,berkshire,Berkshire Hathaway Inc.,Berkshire Hathaway Inc.,US,base
+r0185,berkshire,Berkshire Hathaway Inc.,Berkshire Hathaway,US,suffix
+r0186,berkshire,Berkshire Hathaway Inc.,Berkshire,US,abbrev
+r0187,berkshire,Berkshire Hathaway Inc.,BRK.A,US,ticker
+r0188,walmart,Walmart Inc.,Walmart Inc.,US,base
+r0189,walmart,Walmart Inc.,"Wal-Mart Stores, Inc.",US,former_name
+r0190,walmart,Walmart Inc.,Wal Mart,US,spacing_punct
+r0191,walmart,Walmart Inc.,WMT,US,ticker
+r0192,costco,Costco Wholesale Corporation,Costco Wholesale Corporation,US,base
+r0193,costco,Costco Wholesale Corporation,Costco,US,suffix
+r0194,costco,Costco Wholesale Corporation,COST,US,ticker
+r0195,homedepot,"The Home Depot, Inc.","The Home Depot, Inc.",US,base
+r0196,homedepot,"The Home Depot, Inc.",Home Depot,US,the_prefix
+r0197,homedepot,"The Home Depot, Inc.",The Home Depot,US,suffix
+r0198,alibaba,Alibaba Group Holding Limited,Alibaba Group Holding Limited,CN,base
+r0199,alibaba,Alibaba Group Holding Limited,Alibaba Group,CN,suffix
+r0200,alibaba,Alibaba Group Holding Limited,Alibaba,CN,abbrev
+r0201,alibaba,Alibaba Group Holding Limited,BABA,CN,ticker
+r0202,nike,"NIKE, Inc.","NIKE, Inc.",US,base
+r0203,nike,"NIKE, Inc.",Nike,US,casing
+r0204,nike,"NIKE, Inc.",Nike Inc,US,suffix
+r0205,nike,"NIKE, Inc.",NKE,US,ticker
+r0206,mcdonalds,McDonald's Corporation,McDonald's Corporation,US,base
+r0207,mcdonalds,McDonald's Corporation,McDonalds,US,spacing_punct
+r0208,mcdonalds,McDonald's Corporation,McDonald's,US,suffix
+r0209,mcdonalds,McDonald's Corporation,MCD,US,ticker
+r0210,cocacola,The Coca-Cola Company,The Coca-Cola Company,US,base
+r0211,cocacola,The Coca-Cola Company,Coca-Cola Co,US,suffix
+r0212,cocacola,The Coca-Cola Company,Coca Cola,US,spacing_punct
+r0213,cocacola,The Coca-Cola Company,KO,US,ticker
+r0214,pepsico,"PepsiCo, Inc.","PepsiCo, Inc.",US,base
+r0215,pepsico,"PepsiCo, Inc.",PepsiCo,US,suffix
+r0216,pepsico,"PepsiCo, Inc.",Pepsi,US,abbrev
+r0217,pepsico,"PepsiCo, Inc.",PEP,US,ticker
+r0218,unilever,Unilever PLC,Unilever PLC,GB,base
+r0219,unilever,Unilever PLC,Unilever,GB,suffix
+r0220,unilever,Unilever PLC,Unilever N.V.,GB,former_name
+r0221,nestle,Nestlé S.A.,Nestlé S.A.,CH,base
+r0222,nestle,Nestlé S.A.,Nestle SA,CH,translit
+r0223,nestle,Nestlé S.A.,Nestle,CH,suffix
+r0224,nestle,Nestlé S.A.,Société des Produits Nestlé,CH,former_name
+r0225,pg,The Procter & Gamble Company,The Procter & Gamble Company,US,base
+r0226,pg,The Procter & Gamble Company,Procter & Gamble Co.,US,suffix
+r0227,pg,The Procter & Gamble Company,Procter and Gamble,US,ampersand
+r0228,pg,The Procter & Gamble Company,P&G,US,acronym
+r0229,pg,The Procter & Gamble Company,Proctor & Gamble,US,typo
+r0230,loreal,L'Oréal S.A.,L'Oréal S.A.,FR,base
+r0231,loreal,L'Oréal S.A.,L'Oreal,FR,translit
+r0232,loreal,L'Oréal S.A.,LOreal,FR,spacing_punct
+r0233,loreal,L'Oréal S.A.,L'Oréal,FR,suffix
+r0234,ge,General Electric Company,General Electric Company,US,base
+r0235,ge,General Electric Company,General Electric Co.,US,abbrev
+r0236,ge,General Electric Company,GE,US,acronym
+r0237,ge,General Electric Company,Genral Electric,US,typo
+r0238,mmm,3M Company,3M Company,US,base
+r0239,mmm,3M Company,Minnesota Mining and Manufacturing,US,former_name
+r0240,mmm,3M Company,3M,US,suffix
+r0241,mmm,3M Company,MMM,US,ticker
+r0242,siemens,Siemens AG,Siemens AG,DE,base
+r0243,siemens,Siemens AG,Siemens Aktiengesellschaft,DE,suffix
+r0244,siemens,Siemens AG,Siemens,DE,suffix
+r0245,boeing,The Boeing Company,The Boeing Company,US,base
+r0246,boeing,The Boeing Company,Boeing Co,US,suffix
+r0247,boeing,The Boeing Company,Boeing,US,the_prefix
+r0248,boeing,The Boeing Company,BA,US,ticker
+r0249,airbus,Airbus SE,Airbus SE,NL,base
+r0250,airbus,Airbus SE,Airbus Group,NL,former_name
+r0251,airbus,Airbus SE,Airbus,NL,suffix
+r0252,airbus,Airbus SE,EADS,NL,former_name
+r0253,rtx,RTX Corporation,RTX Corporation,US,base
+r0254,rtx,RTX Corporation,Raytheon Technologies,US,former_name
+r0255,rtx,RTX Corporation,Raytheon,US,abbrev
+r0256,att,AT&T Inc.,AT&T Inc.,US,base
+r0257,att,AT&T Inc.,AT&T,US,suffix
+r0258,att,AT&T Inc.,A T & T,US,spacing_punct
+r0259,att,AT&T Inc.,American Telephone & Telegraph,US,former_name
+r0260,verizon,Verizon Communications Inc.,Verizon Communications Inc.,US,base
+r0261,verizon,Verizon Communications Inc.,Verizon,US,suffix
+r0262,verizon,Verizon Communications Inc.,VZ,US,ticker
+r0263,cisco,"Cisco Systems, Inc.","Cisco Systems, Inc.",US,base
+r0264,cisco,"Cisco Systems, Inc.",Cisco Systems,US,suffix
+r0265,cisco,"Cisco Systems, Inc.",Cisco,US,abbrev
+r0266,cisco,"Cisco Systems, Inc.",CSCO,US,ticker
+r0267,samsung,"Samsung Electronics Co., Ltd.","Samsung Electronics Co., Ltd.",KR,base
+r0268,samsung,"Samsung Electronics Co., Ltd.",Samsung Electronics,KR,suffix
+r0269,samsung,"Samsung Electronics Co., Ltd.",삼성전자,KR,translit
+r0270,samsung,"Samsung Electronics Co., Ltd.",Samsung Elec,KR,abbrev
+r0271,sony,Sony Group Corporation,Sony Group Corporation,JP,base
+r0272,sony,Sony Group Corporation,Sony Corporation,JP,former_name
+r0273,sony,Sony Group Corporation,Sony,JP,suffix
+r0274,sony,Sony Group Corporation,ソニー,JP,translit
+r0275,hitachi,"Hitachi, Ltd.","Hitachi, Ltd.",JP,base
+r0276,hitachi,"Hitachi, Ltd.",Hitachi,JP,suffix
+r0277,hitachi,"Hitachi, Ltd.",日立製作所,JP,translit
+r0278,lvmh,LVMH Moët Hennessy Louis Vuitton,LVMH Moët Hennessy Louis Vuitton,FR,base
+r0279,lvmh,LVMH Moët Hennessy Louis Vuitton,Moet Hennessy Louis Vuitton,FR,translit
+r0280,lvmh,LVMH Moët Hennessy Louis Vuitton,LVMH,FR,acronym
+r0281,maersk,A.P. Moller-Maersk A/S,A.P. Moller-Maersk A/S,DK,base
+r0282,maersk,A.P. Moller-Maersk A/S,AP Moller Maersk,DK,spacing_punct
+r0283,maersk,A.P. Moller-Maersk A/S,Maersk,DK,suffix
+r0284,maersk,A.P. Moller-Maersk A/S,A.P. Møller – Mærsk,DK,translit
+r0285,tcs,Tata Consultancy Services Limited,Tata Consultancy Services Limited,IN,base
+r0286,tcs,Tata Consultancy Services Limited,Tata Consultancy Services,IN,suffix
+r0287,tcs,Tata Consultancy Services Limited,TCS,IN,acronym
+r0288,abinbev,Anheuser-Busch InBev SA/NV,Anheuser-Busch InBev SA/NV,BE,base
+r0289,abinbev,Anheuser-Busch InBev SA/NV,AB InBev,BE,abbrev
+r0290,abinbev,Anheuser-Busch InBev SA/NV,Anheuser Busch InBev,BE,spacing_punct
+r0291,united_air,"United Airlines Holdings, Inc.","United Airlines Holdings, Inc.",US,base
+r0292,united_air,"United Airlines Holdings, Inc.",United Airlines,US,suffix
+r0293,united_air,"United Airlines Holdings, Inc.",United Air Lines,US,spacing_punct
+r0294,united_air,"United Airlines Holdings, Inc.",UAL,US,ticker
+r0295,ups,"United Parcel Service, Inc.","United Parcel Service, Inc.",US,base
+r0296,ups,"United Parcel Service, Inc.",United Parcel Service,US,suffix
+r0297,ups,"United Parcel Service, Inc.",UPS,US,acronym
+r0298,unitedhealth,UnitedHealth Group Incorporated,UnitedHealth Group Incorporated,US,base
+r0299,unitedhealth,UnitedHealth Group Incorporated,UnitedHealth Group,US,suffix
+r0300,unitedhealth,UnitedHealth Group Incorporated,UNH,US,ticker
+r0301,amer_air,American Airlines Group Inc.,American Airlines Group Inc.,US,base
+r0302,amer_air,American Airlines Group Inc.,American Airlines,US,suffix
+r0303,amer_air,American Airlines Group Inc.,AAL,US,ticker
+r0304,aep,"American Electric Power Company, Inc.","American Electric Power Company, Inc.",US,base
+r0305,aep,"American Electric Power Company, Inc.",American Electric Power,US,suffix
+r0306,aep,"American Electric Power Company, Inc.",AEP,US,acronym
+r0307,aig,"American International Group, Inc.","American International Group, Inc.",US,base
+r0308,aig,"American International Group, Inc.",American International Group,US,suffix
+r0309,aig,"American International Group, Inc.",AIG,US,acronym
+r0310,genmills,"General Mills, Inc.","General Mills, Inc.",US,base
+r0311,genmills,"General Mills, Inc.",General Mills,US,suffix
+r0312,genmills,"General Mills, Inc.",GIS,US,ticker
+r0313,gendynamics,General Dynamics Corporation,General Dynamics Corporation,US,base
+r0314,gendynamics,General Dynamics Corporation,General Dynamics,US,suffix
+r0315,gendynamics,General Dynamics Corporation,GD,US,ticker
+r0316,stanchart,Standard Chartered PLC,Standard Chartered PLC,GB,base
+r0317,stanchart,Standard Chartered PLC,Standard Chartered,GB,suffix
+r0318,sandp,S&P Global Inc.,S&P Global Inc.,US,base
+r0319,sandp,S&P Global Inc.,Standard & Poor's,US,former_name
+r0320,sandp,S&P Global Inc.,S&P Global,US,suffix
+r0321,bankofchina,Bank of China Limited,Bank of China Limited,CN,base
+r0322,bankofchina,Bank of China Limited,Bank of China,CN,suffix
+r0323,bankofchina,Bank of China Limited,中国银行,CN,translit
+r0324,bankofmontreal,Bank of Montreal,Bank of Montreal,CA,base
+r0325,bankofmontreal,Bank of Montreal,BMO,CA,acronym
+r0326,bankofmontreal,Bank of Montreal,BMO Financial Group,CA,suffix
+r0327,deutschetelekom,Deutsche Telekom AG,Deutsche Telekom AG,DE,base
+r0328,deutschetelekom,Deutsche Telekom AG,Deutsche Telekom,DE,suffix
+r0329,deutschepost,Deutsche Post AG,Deutsche Post AG,DE,base
+r0330,deutschepost,Deutsche Post AG,Deutsche Post DHL Group,DE,suffix
+r0331,deutschepost,Deutsche Post AG,DHL Group,DE,former_name
+r0332,rbc,Royal Bank of Canada,Royal Bank of Canada,CA,base
+r0333,rbc,Royal Bank of Canada,RBC,CA,acronym
+r0334,rbc,Royal Bank of Canada,Royal Bank,CA,abbrev
+r0335,rbs,NatWest Group plc,NatWest Group plc,GB,base
+r0336,rbs,NatWest Group plc,Royal Bank of Scotland Group,GB,former_name
+r0337,rbs,NatWest Group plc,RBS,GB,acronym
+r0338,creditsuisse,Credit Suisse Group AG,Credit Suisse Group AG,CH,base
+r0339,creditsuisse,Credit Suisse Group AG,Credit Suisse,CH,suffix
+r0340,creditsuisse,Credit Suisse Group AG,Crédit Suisse,CH,translit
+r0341,creditagricole,Crédit Agricole S.A.,Crédit Agricole S.A.,FR,base
+r0342,creditagricole,Crédit Agricole S.A.,Credit Agricole,FR,translit
+r0343,creditagricole,Crédit Agricole S.A.,Crédit Agricole,FR,suffix
+r0344,johnson_controls,Johnson Controls International plc,Johnson Controls International plc,IE,base
+r0345,johnson_controls,Johnson Controls International plc,Johnson Controls,IE,suffix
+r0346,scjohnson,"S. C. Johnson & Son, Inc.","S. C. Johnson & Son, Inc.",US,base
+r0347,scjohnson,"S. C. Johnson & Son, Inc.",SC Johnson,US,spacing_punct
+r0348,tatamotors,Tata Motors Limited,Tata Motors Limited,IN,base
+r0349,tatamotors,Tata Motors Limited,Tata Motors,IN,suffix
+r0350,tatasteel,Tata Steel Limited,Tata Steel Limited,IN,base
+r0351,tatasteel,Tata Steel Limited,Tata Steel,IN,suffix
+r0352,samsung_heavy,"Samsung Heavy Industries Co., Ltd.","Samsung Heavy Industries Co., Ltd.",KR,base
+r0353,samsung_heavy,"Samsung Heavy Industries Co., Ltd.",Samsung Heavy Industries,KR,suffix
+r0354,delta_air,"Delta Air Lines, Inc.","Delta Air Lines, Inc.",US,base
+r0355,delta_air,"Delta Air Lines, Inc.",Delta Air Lines,US,suffix
+r0356,delta_air,"Delta Air Lines, Inc.",DAL,US,ticker
+r0357,delta_elec,"Delta Electronics, Inc.","Delta Electronics, Inc.",TW,base
+r0358,delta_elec,"Delta Electronics, Inc.",Delta Electronics,TW,suffix
+r0359,lincoln_fin,Lincoln National Corporation,Lincoln National Corporation,US,base
+r0360,lincoln_fin,Lincoln National Corporation,Lincoln Financial Group,US,suffix
+r0361,lincoln_elec,"Lincoln Electric Holdings, Inc.","Lincoln Electric Holdings, Inc.",US,base
+r0362,lincoln_elec,"Lincoln Electric Holdings, Inc.",Lincoln Electric,US,suffix
+r0363,allianz,Allianz SE,Allianz SE,DE,base
+r0364,allianz,Allianz SE,Allianz,DE,suffix
+r0365,alliancebernstein,AllianceBernstein Holding L.P.,AllianceBernstein Holding L.P.,US,base
+r0366,alliancebernstein,AllianceBernstein Holding L.P.,Alliance Bernstein,US,spacing_punct
+r0367,alliancebernstein,AllianceBernstein Holding L.P.,AllianceBernstein,US,suffix
+r0368,firstsolar,"First Solar, Inc.","First Solar, Inc.",US,base
+r0369,firstsolar,"First Solar, Inc.",First Solar,US,suffix
+r0370,firstsolar,"First Solar, Inc.",FSLR,US,ticker
+r0371,firstrepublic,First Republic Bank,First Republic Bank,US,base
+r0372,firstrepublic,First Republic Bank,First Republic,US,suffix
+r0373,hp,HP Inc.,HP Inc.,US,base
+r0374,hp,HP Inc.,Hewlett-Packard,US,former_name
+r0375,hp,HP Inc.,Hewlett Packard,US,spacing_punct
+r0376,hp,HP Inc.,HPQ,US,ticker
+r0377,hpe,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise Company,US,base
+r0378,hpe,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise,US,suffix
+r0379,hpe,Hewlett Packard Enterprise Company,HPE,US,acronym

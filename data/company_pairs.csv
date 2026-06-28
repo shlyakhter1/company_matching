@@ -1,0 +1,956 @@
+pair_id,name_a,name_b,label,pair_type,cluster_a,cluster_b
+p0001,LVMH Moët Hennessy Louis Vuitton,Moet Hennessy Louis Vuitton,1,positive,lvmh,lvmh
+p0002,"NIKE, Inc.",NKE,1,positive,nike,nike
+p0003,Bank of America Corporation,Bank of America,1,positive,bofa,bofa
+p0004,ASML Holding,"Netflix, Inc.",0,easy_negative,asml,netflix
+p0005,AT&T Inc.,A T & T,1,positive,att,att
+p0006,Delta Air Lines,"Delta Electronics, Inc.",0,hard_negative,delta_air,delta_elec
+p0007,Credit Suisse,"First Solar, Inc.",0,easy_negative,creditsuisse,firstsolar
+p0008,American International Group,AIG,1,positive,aig,aig
+p0009,ExxonMobil,Exxon,1,positive,exxon,exxon
+p0010,General Electric Company,Lincoln Electric,0,hard_negative,ge,lincoln_elec
+p0011,United Airlines,UAL,1,positive,united_air,united_air
+p0012,American Express Company,American Electric Power,0,hard_negative,amex,aep
+p0013,A.P. Moller-Maersk A/S,AP Moller Maersk,1,positive,maersk,maersk
+p0014,Deutsche Bank AG,Deutsche Telekom,0,hard_negative,deutschebank,deutschetelekom
+p0015,General Motors,General Electric Company,0,hard_negative,gm,ge
+p0016,HSBC Holdings plc,Hongkong and Shanghai Banking Corporation,1,positive,hsbc,hsbc
+p0017,American Airlines,AAL,1,positive,amer_air,amer_air
+p0018,"Advanced Micro Devices, Inc.",AMD,1,positive,amd,amd
+p0019,"Cisco Systems, Inc.",Cisco Systems,1,positive,cisco,cisco
+p0020,"Merck & Co., Inc.",Merck Sharp & Dohme,1,positive,merck_us,merck_us
+p0021,Bank of Montreal,Royal Bank,0,hard_negative,bankofmontreal,rbc
+p0022,3M Company,I.B.M.,0,easy_negative,mmm,ibm
+p0023,Johnson and Johnson,Johnson Controls,0,hard_negative,jnj,johnson_controls
+p0024,Bank of China Limited,中国银行,1,positive,bankofchina,bankofchina
+p0025,Hewlett Packard,Tata Consultancy Services Limited,0,easy_negative,hp,tcs
+p0026,"Amazon.com, Inc.",AMZN,1,positive,amazon,amazon
+p0027,Amazon.com,Citigroup,0,easy_negative,amazon,citi
+p0028,Merck Group,First Solar,0,easy_negative,merck_de,firstsolar
+p0029,Chevron,Deutsche Telekom AG,0,easy_negative,chevron,deutschetelekom
+p0030,JPMorgan Chase,Cisco Systems,0,easy_negative,jpmorgan,cisco
+p0031,General Motors Company,"Tesla Motors, Inc.",0,hard_negative,gm,tesla
+p0032,Citi,C,1,positive,citi,citi
+p0033,Stellantis N.V.,Fiat Chrysler Automobiles,1,positive,stellantis,stellantis
+p0034,Royal Bank of Scotland Group,RBS,1,positive,rbs,rbs
+p0035,"Netflix, Inc.",NFLX,1,positive,netflix,netflix
+p0036,"United Airlines Holdings, Inc.",American Airlines,0,hard_negative,united_air,amer_air
+p0037,Intel Corporation,Intel Corp,1,positive,intel,intel
+p0038,Genral Electric,Lincoln Electric,0,hard_negative,ge,lincoln_elec
+p0039,Daimler AG,Mercedes-Benz,1,positive,mercedes,mercedes
+p0040,Royal Bank,First Republic Bank,0,hard_negative,rbc,firstrepublic
+p0041,"Samsung Electronics Co., Ltd.","Delta Electronics, Inc.",0,hard_negative,samsung,delta_elec
+p0042,Saudi Aramco,Aramco,1,positive,aramco,aramco
+p0043,General Motors Company,General Dynamics,0,hard_negative,gm,gendynamics
+p0044,Deutsche Bank AG,Bank of China,0,hard_negative,deutschebank,bankofchina
+p0045,Ford Motor Co.,Ford,1,positive,ford,ford
+p0046,Pfizer,Deutsche Telekom AG,0,easy_negative,pfizer,deutschetelekom
+p0047,"Meta Platforms, Inc.",META,1,positive,meta,meta
+p0048,Alibaba Group Holding Limited,BABA,1,positive,alibaba,alibaba
+p0049,Alibaba Group,BABA,1,positive,alibaba,alibaba
+p0050,"The Home Depot, Inc.",The Home Depot,1,positive,homedepot,homedepot
+p0051,"American Electric Power Company, Inc.",American Electric Power,1,positive,aep,aep
+p0052,"Merck & Co., Inc.",Merck KGaA,0,hard_negative,merck_us,merck_de
+p0053,General Dynamics,First Solar,0,easy_negative,gendynamics,firstsolar
+p0054,General Electric Co.,GE,1,positive,ge,ge
+p0055,BofA,BAC,1,positive,bofa,bofa
+p0056,Mastercard Incorporated,General Motors,0,easy_negative,mastercard,gm
+p0057,General Motors Company,General Motors,1,positive,gm,gm
+p0058,AstraZeneca PLC,AstraZeneca,1,positive,astrazeneca,astrazeneca
+p0059,Bank of America,Royal Bank of Canada,0,hard_negative,bofa,rbc
+p0060,AAPL,Aple Inc,1,positive,apple,apple
+p0061,Merck and Co,E. Merck,0,hard_negative,merck_us,merck_de
+p0062,Johnson & Johnson,J&J,1,positive,jnj,jnj
+p0063,Morgan Stanley & Co.,MS,1,positive,morganstanley,morganstanley
+p0064,ASML Holding N.V.,ASML Holding,1,positive,asml,asml
+p0065,IBM Corp.,Internationl Business Machines,1,positive,ibm,ibm
+p0066,Saudi Arabian Oil Company,Merck and Co,0,easy_negative,aramco,merck_us
+p0067,MS,A.P. Møller – Mærsk,0,easy_negative,morganstanley,maersk
+p0068,First Solar,FSLR,1,positive,firstsolar,firstsolar
+p0069,American Express,American International Group,0,hard_negative,amex,aig
+p0070,International Business Machines Corporation,IBM,1,positive,ibm,ibm
+p0071,Unilever PLC,Unilever,1,positive,unilever,unilever
+p0072,British Petroleum,BP,1,positive,bp,bp
+p0073,Hitachi,日立製作所,1,positive,hitachi,hitachi
+p0074,Bayerische Motoren Werke AG,BMW,1,positive,bmw,bmw
+p0075,Deutsche Post DHL Group,DHL Group,1,positive,deutschepost,deutschepost
+p0076,"General Mills, Inc.",GIS,1,positive,genmills,genmills
+p0077,Sony Corporation,Sony,1,positive,sony,sony
+p0078,AstraZeneca PLC,Astra Zeneca,1,positive,astrazeneca,astrazeneca
+p0079,PJSC Gazprom,Gazprom,1,positive,gazprom,gazprom
+p0080,AP Moller Maersk,Maersk,1,positive,maersk,maersk
+p0081,United Airlines,United Parcel Service,0,hard_negative,united_air,ups
+p0082,Delta Air Lines,Delta Electronics,0,hard_negative,delta_air,delta_elec
+p0083,Tata Consultancy Services,TCS,1,positive,tcs,tcs
+p0084,HP Inc.,Hewlett Packard,1,positive,hp,hp
+p0085,Siemens,General Dynamics Corporation,0,easy_negative,siemens,gendynamics
+p0086,HSBC Holdings plc,Société des Produits Nestlé,0,easy_negative,hsbc,nestle
+p0087,Airbus Group,Airbus,1,positive,airbus,airbus
+p0088,TotalEnergies,Total,1,positive,total,total
+p0089,IBM,IBM Corp.,1,positive,ibm,ibm
+p0090,Novartis International AG,Johnson Controls International plc,0,hard_negative,novartis,johnson_controls
+p0091,International Business Machines Corporation,IBM Corp.,1,positive,ibm,ibm
+p0092,American Express Company,American Telephone & Telegraph,0,hard_negative,amex,att
+p0093,"United Airlines Holdings, Inc.",United Airlines,1,positive,united_air,united_air
+p0094,"Honda Motor Co., Ltd.",Honda,1,positive,honda,honda
+p0095,Oracle Corporation,Oracle,1,positive,oracle,oracle
+p0096,Tata Consultancy Services,CVX,0,easy_negative,tcs,chevron
+p0097,Exxon Mobil Corporation,Exxon,1,positive,exxon,exxon
+p0098,TotalEnergies SE,TotalEnergies,1,positive,total,total
+p0099,CVX,Saudi Aramco,0,easy_negative,chevron,aramco
+p0100,AstraZeneca PLC,AZN,1,positive,astrazeneca,astrazeneca
+p0101,The Coca-Cola Company,Santander,0,easy_negative,cocacola,santander
+p0102,Nestlé S.A.,Nestle SA,1,positive,nestle,nestle
+p0103,Bank of America,Bank of Montreal,0,hard_negative,bofa,bankofmontreal
+p0104,Nike Inc,NKE,1,positive,nike,nike
+p0105,"American Electric Power Company, Inc.",Lincoln Electric,0,hard_negative,aep,lincoln_elec
+p0106,Astra Zeneca,AZN,1,positive,astrazeneca,astrazeneca
+p0107,Deutsche Bank AG,Royal Bank,0,hard_negative,deutschebank,rbc
+p0108,Daimler AG,MS,0,easy_negative,mercedes,morganstanley
+p0109,American Electric Power,"Lincoln Electric Holdings, Inc.",0,hard_negative,aep,lincoln_elec
+p0110,Ford Motor Company,"Honda Motor Co., Ltd.",0,hard_negative,ford,honda
+p0111,GM,Genral Motors,1,positive,gm,gm
+p0112,American Airlines Group Inc.,"American Electric Power Company, Inc.",0,hard_negative,amer_air,aep
+p0113,UnitedHealth Group,Anheuser Busch InBev,0,easy_negative,unitedhealth,abinbev
+p0114,Deutsche Bank AG,Royal Bank of Canada,0,hard_negative,deutschebank,rbc
+p0115,Volkswagen AG,Standard Chartered PLC,0,easy_negative,vw,stanchart
+p0116,TSM,A.P. Møller – Mærsk,0,easy_negative,tsmc,maersk
+p0117,Sony Group Corporation,ソニー,1,positive,sony,sony
+p0118,"United Parcel Service, Inc.",UPS,1,positive,ups,ups
+p0119,Novartis International AG,"American International Group, Inc.",0,hard_negative,novartis,aig
+p0120,SAP SE,SAP AG,1,positive,sap,sap
+p0121,Moet Hennessy Louis Vuitton,LVMH,1,positive,lvmh,lvmh
+p0122,CRM,General Electric Company,0,easy_negative,salesforce,ge
+p0123,Bank of Montreal,Royal Bank of Canada,0,hard_negative,bankofmontreal,rbc
+p0124,Visa Inc.,Visa,1,positive,visa,visa
+p0125,American Express Company,American International Group,0,hard_negative,amex,aig
+p0126,"Banco Santander, S.A.",Banco Santander,1,positive,santander,santander
+p0127,Royal Dutch Shell,Royal Bank of Canada,0,hard_negative,shell,rbc
+p0128,GSK plc,GSK,1,positive,gsk,gsk
+p0129,United Airlines,BofA,0,easy_negative,united_air,bofa
+p0130,Bank of America Corporation,Deutsche Bank,0,hard_negative,bofa,deutschebank
+p0131,Merck KGaA,Merck Group,1,positive,merck_de,merck_de
+p0132,American Electric Power,"American International Group, Inc.",0,hard_negative,aep,aig
+p0133,General Electric Co.,American Electric Power,0,hard_negative,ge,aep
+p0134,Johnson Controls International plc,Johnson Controls,1,positive,johnson_controls,johnson_controls
+p0135,Bank of America,Union Bank of Switzerland,0,hard_negative,bofa,ubs
+p0136,Citigroup Inc.,Citigroup,1,positive,citi,citi
+p0137,Pepsi,Crédit Agricole S.A.,0,easy_negative,pepsico,creditagricole
+p0138,"PepsiCo, Inc.",PepsiCo,1,positive,pepsico,pepsico
+p0139,Apple Inc.,"Samsung Electronics Co., Ltd.",0,easy_negative,apple,samsung
+p0140,Credit Agricole,Sony Corporation,0,easy_negative,creditagricole,sony
+p0141,GE,American Express Company,0,easy_negative,ge,amex
+p0142,Johnson and Johnson,Johnson Controls International plc,0,hard_negative,jnj,johnson_controls
+p0143,Genral Electric,American Electric Power,0,hard_negative,ge,aep
+p0144,Bank of America,Bank of China Limited,0,hard_negative,bofa,bankofchina
+p0145,Union Bank of Switzerland,Bank of Montreal,0,hard_negative,ubs,bankofmontreal
+p0146,General Mills,VZ,0,easy_negative,genmills,verizon
+p0147,The Procter & Gamble Company,Procter and Gamble,1,positive,pg,pg
+p0148,"Tesla Motors, Inc.",Tata Motors,0,hard_negative,tesla,tatamotors
+p0149,RTX Corporation,Raytheon,1,positive,rtx,rtx
+p0150,The Boeing Company,AAPL,0,easy_negative,boeing,apple
+p0151,PJSC Gazprom,OAO Gazprom,1,positive,gazprom,gazprom
+p0152,Procter and Gamble,Maersk,0,easy_negative,pg,maersk
+p0153,Royal Bank of Canada,Royal Bank,1,positive,rbc,rbc
+p0154,"Delta Air Lines, Inc.",Astra Zeneca,0,easy_negative,delta_air,astrazeneca
+p0155,Bank of China Limited,Bank of Montreal,0,hard_negative,bankofchina,bankofmontreal
+p0156,MCD,UBS Group AG,0,easy_negative,mcdonalds,ubs
+p0157,GlaxoSmithKline,GSK,1,positive,gsk,gsk
+p0158,Bank of America,Verizon Communications Inc.,0,easy_negative,bofa,verizon
+p0159,Deutsche Bank,Bank of Montreal,0,hard_negative,deutschebank,bankofmontreal
+p0160,Deutsche Bank AG,Deutsche Post AG,0,hard_negative,deutschebank,deutschepost
+p0161,General Electric Co.,HSBC,0,easy_negative,ge,hsbc
+p0162,AP Moller Maersk,INTC,0,easy_negative,maersk,intel
+p0163,Deutsche Telekom,Deutsche Post DHL Group,0,hard_negative,deutschetelekom,deutschepost
+p0164,Mercedes Benz,Mercedes-Benz,1,positive,mercedes,mercedes
+p0165,Tata Consultancy Services,Tata Motors,0,hard_negative,tcs,tatamotors
+p0166,Fiat Chrysler Automobiles,Airbus Group,0,easy_negative,stellantis,airbus
+p0167,"Netflix, Inc.",Netflix,1,positive,netflix,netflix
+p0168,Deutsche Bank,First Republic Bank,0,hard_negative,deutschebank,firstrepublic
+p0169,Anheuser-Busch InBev SA/NV,Anheuser Busch InBev,1,positive,abinbev,abinbev
+p0170,Exxon Mobil Corporation,The Home Depot,0,easy_negative,exxon,homedepot
+p0171,"Tesla Motors, Inc.",Ford Motor Co.,0,easy_negative,tesla,ford
+p0172,L'Oréal S.A.,L'Oreal,1,positive,loreal,loreal
+p0173,Bank of America,Deutsche Bank AG,0,hard_negative,bofa,deutschebank
+p0174,Toyota Motor Corporation,Toyota,1,positive,toyota,toyota
+p0175,General Dynamics Corporation,General Dynamics,1,positive,gendynamics,gendynamics
+p0176,Google LLC,Google Inc.,1,positive,google,google
+p0177,Johnson Controls International plc,Ford Motor Company,0,easy_negative,johnson_controls,ford
+p0178,Saudi Arabian Oil Company,Nike,0,easy_negative,aramco,nike
+p0179,Johnson Controls,"S. C. Johnson & Son, Inc.",0,hard_negative,johnson_controls,scjohnson
+p0180,Deutsche Bank AG,Deutsche Bank,1,positive,deutschebank,deutschebank
+p0181,Microsoft Corp.,MSFT,1,positive,microsoft,microsoft
+p0182,"Hitachi, Ltd.",L'Oréal S.A.,0,easy_negative,hitachi,loreal
+p0183,"Salesforce, Inc.","S. C. Johnson & Son, Inc.",0,easy_negative,salesforce,scjohnson
+p0184,IBM Corp.,Advanced Micro Devices,0,easy_negative,ibm,amd
+p0185,Toyota Motor Corporation,Ford Motor Co.,0,hard_negative,toyota,ford
+p0186,Citigroup Inc.,Citi,1,positive,citi,citi
+p0187,Deutsche Bank,Minnesota Mining and Manufacturing,0,easy_negative,deutschebank,mmm
+p0188,Johnson and Johnson,Volkswagen Aktiengesellschaft,0,easy_negative,jnj,vw
+p0189,Apple Inc.,Aple Inc,1,positive,apple,apple
+p0190,KO,中国银行,0,easy_negative,cocacola,bankofchina
+p0191,"Apple Computer, Inc.",Aple Inc,1,positive,apple,apple
+p0192,Advanced Micro Devices,Exxon,0,easy_negative,amd,exxon
+p0193,American Express,Bank of America Corporation,0,easy_negative,amex,bofa
+p0194,Oracle Corporation,Oracle Corp.,1,positive,oracle,oracle
+p0195,LVMH,META,0,easy_negative,lvmh,meta
+p0196,Alliance Bernstein,"The Goldman Sachs Group, Inc.",0,easy_negative,alliancebernstein,goldman
+p0197,Genral Electric,"Lincoln Electric Holdings, Inc.",0,hard_negative,ge,lincoln_elec
+p0198,Nestle SA,Nestle,1,positive,nestle,nestle
+p0199,Pfizer Inc.,Mercedes Benz,0,easy_negative,pfizer,mercedes
+p0200,Apple Inc.,"Apple Computer, Inc.",1,positive,apple,apple
+p0201,Merck and Co,Merck Group,0,hard_negative,merck_us,merck_de
+p0202,Alibaba Group,Alibaba,1,positive,alibaba,alibaba
+p0203,American Express Company,"American Electric Power Company, Inc.",0,hard_negative,amex,aep
+p0204,"NIKE, Inc.",Nike,1,positive,nike,nike
+p0205,L'Oréal S.A.,LOreal,1,positive,loreal,loreal
+p0206,Nike,NKE,1,positive,nike,nike
+p0207,Deutsche Post AG,Verizon,0,easy_negative,deutschepost,verizon
+p0208,Saudi Arabian Oil Company,American Telephone & Telegraph,0,easy_negative,aramco,att
+p0209,"United Parcel Service, Inc.",Mercedes-Benz,0,easy_negative,ups,mercedes
+p0210,General Motors,Genral Motors,1,positive,gm,gm
+p0211,TCS,American Electric Power,0,easy_negative,tcs,aep
+p0212,PepsiCo,RBS,0,easy_negative,pepsico,rbs
+p0213,Bank of China,Bank of Montreal,0,hard_negative,bankofchina,bankofmontreal
+p0214,"Honda Motor Co., Ltd.",Honda Motor,1,positive,honda,honda
+p0215,Bank of China Limited,First Republic Bank,0,hard_negative,bankofchina,firstrepublic
+p0216,Berkshire Hathaway Inc.,"Honda Motor Co., Ltd.",0,easy_negative,berkshire,honda
+p0217,Nvidia,NVDA,1,positive,nvidia,nvidia
+p0218,Royal Bank of Canada,Royal Bank of Scotland Group,0,hard_negative,rbc,rbs
+p0219,Bank of America Corporation,BofA,1,positive,bofa,bofa
+p0220,General Motors,General Dynamics,0,hard_negative,gm,gendynamics
+p0221,"Apple Computer, Inc.",AAPL,1,positive,apple,apple
+p0222,American Airlines,"American International Group, Inc.",0,hard_negative,amer_air,aig
+p0223,Exxon,XOM,1,positive,exxon,exxon
+p0224,Bank of America,Deutsche Bank,0,hard_negative,bofa,deutschebank
+p0225,General Motors,General Dynamics Corporation,0,hard_negative,gm,gendynamics
+p0226,Royal Bank of Scotland Group,First Republic Bank,0,hard_negative,rbs,firstrepublic
+p0227,A T & T,American Telephone & Telegraph,1,positive,att,att
+p0228,Bank of Montreal,BMO Financial Group,1,positive,bankofmontreal,bankofmontreal
+p0229,UnitedHealth Group,UNH,1,positive,unitedhealth,unitedhealth
+p0230,Sony Group Corporation,Sony,1,positive,sony,sony
+p0231,S&P Global Inc.,Union Bank of Switzerland,0,easy_negative,sandp,ubs
+p0232,SAP SE,SAP,1,positive,sap,sap
+p0233,"American Electric Power Company, Inc.","Lincoln Electric Holdings, Inc.",0,hard_negative,aep,lincoln_elec
+p0234,"Samsung Electronics Co., Ltd.",Samsung Elec,1,positive,samsung,samsung
+p0235,MSFT,Microsft,1,positive,microsoft,microsoft
+p0236,Pfizer,PFE,1,positive,pfizer,pfizer
+p0237,Shell plc,Shell,1,positive,shell,shell
+p0238,Johnson and Johnson,SC Johnson,0,hard_negative,jnj,scjohnson
+p0239,Credit Suisse Group AG,Mercedes Benz,0,easy_negative,creditsuisse,mercedes
+p0240,"Delta Electronics, Inc.",CSCO,0,easy_negative,delta_elec,cisco
+p0241,TotalEnergies SE,Total,1,positive,total,total
+p0242,AT&T Inc.,AT&T,1,positive,att,att
+p0243,United Parcel Service,UPS,1,positive,ups,ups
+p0244,"Banco Santander, S.A.",Santander,1,positive,santander,santander
+p0245,NVIDIA Corporation,NVDA,1,positive,nvidia,nvidia
+p0246,Ford Motor Co.,Honda Motor,0,hard_negative,ford,honda
+p0247,Deutsche Bank AG,Deutsche Telekom AG,0,hard_negative,deutschebank,deutschetelekom
+p0248,Bank of China Limited,Royal Bank of Canada,0,hard_negative,bankofchina,rbc
+p0249,American Express Company,American Airlines Group Inc.,0,hard_negative,amex,amer_air
+p0250,Novartis,Novartis International AG,1,positive,novartis,novartis
+p0251,Sony,ソニー,1,positive,sony,sony
+p0252,Apple,Aple Inc,1,positive,apple,apple
+p0253,Bank of America Corporation,Royal Bank of Canada,0,hard_negative,bofa,rbc
+p0254,Berkshire Hathaway,BRK.A,1,positive,berkshire,berkshire
+p0255,"Lincoln Electric Holdings, Inc.",Lincoln Electric,1,positive,lincoln_elec,lincoln_elec
+p0256,Tata Motors Limited,Tata Steel Limited,0,hard_negative,tatamotors,tatasteel
+p0257,Wal Mart,WMT,1,positive,walmart,walmart
+p0258,"Lincoln Electric Holdings, Inc.",BofA,0,easy_negative,lincoln_elec,bofa
+p0259,Royal Bank of Canada,RBC,1,positive,rbc,rbc
+p0260,Lincoln Financial Group,Lincoln Electric,0,hard_negative,lincoln_fin,lincoln_elec
+p0261,HSBC,Hongkong and Shanghai Banking Corporation,1,positive,hsbc,hsbc
+p0262,Bank of America Corporation,Bank of China,0,hard_negative,bofa,bankofchina
+p0263,Unilever PLC,Unilever N.V.,1,positive,unilever,unilever
+p0264,Bank of America Corporation,Royal Bank of Scotland Group,0,hard_negative,bofa,rbs
+p0265,Intel Corporation,INTC,1,positive,intel,intel
+p0266,General Electric Company,General Dynamics Corporation,0,hard_negative,ge,gendynamics
+p0267,American Electric Power,Lincoln Electric,0,hard_negative,aep,lincoln_elec
+p0268,Crédit Agricole S.A.,Credit Agricole,1,positive,creditagricole,creditagricole
+p0269,Costco Wholesale Corporation,COST,1,positive,costco,costco
+p0270,JPMorgan Chase,GlaxoSmithKline,0,easy_negative,jpmorgan,gsk
+p0271,NKE,Shell,0,easy_negative,nike,shell
+p0272,"General Mills, Inc.",General Mills,1,positive,genmills,genmills
+p0273,General Electric Co.,"General Mills, Inc.",0,hard_negative,ge,genmills
+p0274,NVIDIA Corporation,Nvidia,1,positive,nvidia,nvidia
+p0275,"First Solar, Inc.",First Solar,1,positive,firstsolar,firstsolar
+p0276,"Tesla, Inc.",Alphabet Inc.,0,easy_negative,tesla,alphabet
+p0277,Bank of Montreal,Royal Bank of Scotland Group,0,hard_negative,bankofmontreal,rbs
+p0278,Amazon,AMZN,1,positive,amazon,amazon
+p0279,Toyota Motor Corporation,Toyota Motor Corp,1,positive,toyota,toyota
+p0280,Deutsche Bank,Royal Bank of Canada,0,hard_negative,deutschebank,rbc
+p0281,Deutsche Bank AG,Bank of Montreal,0,hard_negative,deutschebank,bankofmontreal
+p0282,Berkshire Hathaway Inc.,BRK.A,1,positive,berkshire,berkshire
+p0283,"First Solar, Inc.",First Republic Bank,0,hard_negative,firstsolar,firstrepublic
+p0284,General Motors,Tata Motors,0,hard_negative,gm,tatamotors
+p0285,JPMorgan Chase & Co.,JPMorgan Chase,1,positive,jpmorgan,jpmorgan
+p0286,Alliance Bernstein,AllianceBernstein,1,positive,alliancebernstein,alliancebernstein
+p0287,American Express Company,"American International Group, Inc.",0,hard_negative,amex,aig
+p0288,Bank of China,Royal Bank,0,hard_negative,bankofchina,rbc
+p0289,Genral Electric,CVX,0,easy_negative,ge,chevron
+p0290,Nvidia,Nvidia Corp,1,positive,nvidia,nvidia
+p0291,J.P. Morgan,"General Mills, Inc.",0,easy_negative,jpmorgan,genmills
+p0292,Hewlett Packard,Hewlett Packard Enterprise,0,hard_negative,hp,hpe
+p0293,LVMH Moët Hennessy Louis Vuitton,SAP SE,0,easy_negative,lvmh,sap
+p0294,LVMH Moët Hennessy Louis Vuitton,LVMH,1,positive,lvmh,lvmh
+p0295,Johnson & Johnson,SC Johnson,0,hard_negative,jnj,scjohnson
+p0296,Citigroup Inc.,Tesla,0,easy_negative,citi,tesla
+p0297,Taiwan Semiconductor,Novartis AG,0,easy_negative,tsmc,novartis
+p0298,"Samsung Heavy Industries Co., Ltd.",Samsung Heavy Industries,1,positive,samsung_heavy,samsung_heavy
+p0299,Toyota Motor Corporation,トヨタ自動車,1,positive,toyota,toyota
+p0300,VZ,Siemens Aktiengesellschaft,0,easy_negative,verizon,siemens
+p0301,Deutsche Telekom,Deutsche Post AG,0,hard_negative,deutschetelekom,deutschepost
+p0302,General Motors Company,General Dynamics Corporation,0,hard_negative,gm,gendynamics
+p0303,Netflix,NFLX,1,positive,netflix,netflix
+p0304,Alibaba,UNH,0,easy_negative,alibaba,unitedhealth
+p0305,Samsung Electronics,"Samsung Heavy Industries Co., Ltd.",0,hard_negative,samsung,samsung_heavy
+p0306,NVIDIA Corporation,BMW,0,easy_negative,nvidia,bmw
+p0307,Daimler AG,Mercedes Benz,1,positive,mercedes,mercedes
+p0308,Merck and Co,MSD,1,positive,merck_us,merck_us
+p0309,Allianz SE,Société des Produits Nestlé,0,easy_negative,allianz,nestle
+p0310,Bank of America Corporation,Bank of China Limited,0,hard_negative,bofa,bankofchina
+p0311,American Airlines Group Inc.,American Airlines,1,positive,amer_air,amer_air
+p0312,Газпром,OAO Gazprom,1,positive,gazprom,gazprom
+p0313,"Amazon.com, Inc.",MMM,0,easy_negative,amazon,mmm
+p0314,Credit Suisse Group AG,Credit Suisse,1,positive,creditsuisse,creditsuisse
+p0315,JP Morgan,Morgan Stanley & Co.,0,hard_negative,jpmorgan,morganstanley
+p0316,"United Parcel Service, Inc.",United Parcel Service,1,positive,ups,ups
+p0317,日立製作所,NVIDIA Corporation,0,easy_negative,hitachi,nvidia
+p0318,First Solar,Hewlett Packard Enterprise,0,easy_negative,firstsolar,hpe
+p0319,Hewlett-Packard,HPQ,1,positive,hp,hp
+p0320,General Dynamics,NatWest Group plc,0,easy_negative,gendynamics,rbs
+p0321,AMD,Advanced Micro Devices,1,positive,amd,amd
+p0322,AB InBev,Taiwan Semiconductor Manufacturing Company Limited,0,easy_negative,abinbev,tsmc
+p0323,The Procter & Gamble Company,Procter & Gamble Co.,1,positive,pg,pg
+p0324,UPS,Hewlett Packard Enterprise Company,0,easy_negative,ups,hpe
+p0325,Hewlett-Packard,Hewlett Packard,1,positive,hp,hp
+p0326,Exxon Mobil Corporation,ExxonMobil,1,positive,exxon,exxon
+p0327,Hewlett Packard Enterprise Company,Toyota Motor Corp,0,easy_negative,hpe,toyota
+p0328,The Boeing Company,BA,1,positive,boeing,boeing
+p0329,SAP AG,SAP,1,positive,sap,sap
+p0330,Minnesota Mining and Manufacturing,3M,1,positive,mmm,mmm
+p0331,GlaxoSmithKline plc,XOM,0,easy_negative,gsk,exxon
+p0332,삼성전자,Samsung Elec,1,positive,samsung,samsung
+p0333,Merck Sharp & Dohme,Merck Group,0,hard_negative,merck_us,merck_de
+p0334,F. Hoffmann-La Roche,Roche,1,positive,roche,roche
+p0335,Siemens AG,Siemens,1,positive,siemens,siemens
+p0336,Johnson and Johnson,J&J,1,positive,jnj,jnj
+p0337,Lincoln Electric,Unilever,0,easy_negative,lincoln_elec,unilever
+p0338,Oracle,J&J,0,easy_negative,oracle,jnj
+p0339,OAO Gazprom,AMZN,0,easy_negative,gazprom,amazon
+p0340,Honda,Honda Motor,1,positive,honda,honda
+p0341,AB InBev,Anheuser Busch InBev,1,positive,abinbev,abinbev
+p0342,L'Oreal,L'Oréal,1,positive,loreal,loreal
+p0343,"Facebook, Inc.",Meta,1,positive,meta,meta
+p0344,General Motors,"Tesla Motors, Inc.",0,hard_negative,gm,tesla
+p0345,A.P. Moller-Maersk A/S,Maersk,1,positive,maersk,maersk
+p0346,General Motors,GM,1,positive,gm,gm
+p0347,Standard Chartered PLC,Standard & Poor's,0,hard_negative,stanchart,sandp
+p0348,Lincoln Financial Group,"Lincoln Electric Holdings, Inc.",0,hard_negative,lincoln_fin,lincoln_elec
+p0349,Microsoft Corporation,MSFT,1,positive,microsoft,microsoft
+p0350,Hewlett Packard,Hewlett Packard Enterprise Company,0,hard_negative,hp,hpe
+p0351,Fiat Chrysler Automobiles,Stellantis,1,positive,stellantis,stellantis
+p0352,American Express Company,American Airlines,0,hard_negative,amex,amer_air
+p0353,American Electric Power,AEP,1,positive,aep,aep
+p0354,Deutsche Bank,Deutsche Telekom,0,hard_negative,deutschebank,deutschetelekom
+p0355,United Airlines,American Airlines,0,hard_negative,united_air,amer_air
+p0356,DAL,GSK plc,0,easy_negative,delta_air,gsk
+p0357,"The Goldman Sachs Group, Inc.","Honda Motor Co., Ltd.",0,easy_negative,goldman,honda
+p0358,NKE,Banco Santander,0,easy_negative,nike,santander
+p0359,"General Mills, Inc.",General Dynamics Corporation,0,hard_negative,genmills,gendynamics
+p0360,Deutsche Telekom AG,Deutsche Post DHL Group,0,hard_negative,deutschetelekom,deutschepost
+p0361,"Tesla, Inc.",TSLA,1,positive,tesla,tesla
+p0362,HP Inc.,Hewlett-Packard,1,positive,hp,hp
+p0363,Mercedes-Benz Group AG,Daimler AG,1,positive,mercedes,mercedes
+p0364,"Cisco Systems, Inc.",CSCO,1,positive,cisco,cisco
+p0365,CRM,Aple Inc,0,easy_negative,salesforce,apple
+p0366,The Boeing Company,Boeing Co,1,positive,boeing,boeing
+p0367,Tata Motors,Tata Steel Limited,0,hard_negative,tatamotors,tatasteel
+p0368,Procter & Gamble Co.,Procter and Gamble,1,positive,pg,pg
+p0369,Deutsche Bank,Deutsche Telekom AG,0,hard_negative,deutschebank,deutschetelekom
+p0370,Airbus Group,GlaxoSmithKline plc,0,easy_negative,airbus,gsk
+p0371,Samsung Electronics,Samsung Heavy Industries,0,hard_negative,samsung,samsung_heavy
+p0372,"Merck & Co., Inc.",Merck and Co,1,positive,merck_us,merck_us
+p0373,American Telephone & Telegraph,American Airlines,0,hard_negative,att,amer_air
+p0374,AT&T,American Telephone & Telegraph,1,positive,att,att
+p0375,Tata Consultancy Services Limited,Tata Steel,0,hard_negative,tcs,tatasteel
+p0376,Amex,AXP,1,positive,amex,amex
+p0377,"Apple Computer, Inc.",Apple,1,positive,apple,apple
+p0378,General Mills,General Dynamics Corporation,0,hard_negative,genmills,gendynamics
+p0379,Maersk,A.P. Møller – Mærsk,1,positive,maersk,maersk
+p0380,American Express Company,AXP,1,positive,amex,amex
+p0381,"Delta Electronics, Inc.",Google Inc.,0,easy_negative,delta_elec,google
+p0382,Siemens Aktiengesellschaft,Siemens,1,positive,siemens,siemens
+p0383,HP Inc.,Visa,0,easy_negative,hp,visa
+p0384,Bank of China Limited,Royal Bank,0,hard_negative,bankofchina,rbc
+p0385,"First Solar, Inc.",FSLR,1,positive,firstsolar,firstsolar
+p0386,Deutsche Bank AG,Union Bank of Switzerland,0,hard_negative,deutschebank,ubs
+p0387,Alibaba,Saudi Arabian Oil Company,0,easy_negative,alibaba,aramco
+p0388,MSD,United Airlines,0,easy_negative,merck_us,united_air
+p0389,UnitedHealth Group Incorporated,UnitedHealth Group,1,positive,unitedhealth,unitedhealth
+p0390,GE,Genral Electric,1,positive,ge,ge
+p0391,Samsung Elec,"Samsung Heavy Industries Co., Ltd.",0,hard_negative,samsung,samsung_heavy
+p0392,"Delta Air Lines, Inc.",Delta Electronics,0,hard_negative,delta_air,delta_elec
+p0393,"Honda Motor Co., Ltd.","First Solar, Inc.",0,easy_negative,honda,firstsolar
+p0394,Pfizer Inc.,Pfizer,1,positive,pfizer,pfizer
+p0395,"American Electric Power Company, Inc.","American International Group, Inc.",0,hard_negative,aep,aig
+p0396,Novartis AG,Novartis,1,positive,novartis,novartis
+p0397,Credit Agricole,TSMC,0,easy_negative,creditagricole,tsmc
+p0398,American Airlines,American International Group,0,hard_negative,amer_air,aig
+p0399,The Home Depot,Raytheon Technologies,0,easy_negative,homedepot,rtx
+p0400,McDonald's Corporation,MCD,1,positive,mcdonalds,mcdonalds
+p0401,Bayerische Motoren Werke AG,BMW AG,1,positive,bmw,bmw
+p0402,TSMC,Taiwan Semiconductor,1,positive,tsmc,tsmc
+p0403,Santander,Banco Santander,1,positive,santander,santander
+p0404,JP Morgan,J.P. Morgan,1,positive,jpmorgan,jpmorgan
+p0405,Johnson and Johnson,"S. C. Johnson & Son, Inc.",0,hard_negative,jnj,scjohnson
+p0406,Stellantis N.V.,Stellantis,1,positive,stellantis,stellantis
+p0407,"Amazon.com, Inc.",Amazon,1,positive,amazon,amazon
+p0408,Royal Dutch Shell,Shell,1,positive,shell,shell
+p0409,"Meta Platforms, Inc.",Meta,1,positive,meta,meta
+p0410,Deutsche Bank,Bank of China,0,hard_negative,deutschebank,bankofchina
+p0411,"Tesla, Inc.",Tesla,1,positive,tesla,tesla
+p0412,Crédit Agricole,Hewlett Packard Enterprise Company,0,easy_negative,creditagricole,hpe
+p0413,Novartis International AG,AZN,0,easy_negative,novartis,astrazeneca
+p0414,Mastercard Incorporated,MasterCard,1,positive,mastercard,mastercard
+p0415,Hewlett-Packard,Hewlett Packard Enterprise,0,hard_negative,hp,hpe
+p0416,"Netflix, Inc.",Procter and Gamble,0,easy_negative,netflix,pg
+p0417,Siemens AG,Siemens Aktiengesellschaft,1,positive,siemens,siemens
+p0418,Bank of Montreal,First Republic Bank,0,hard_negative,bankofmontreal,firstrepublic
+p0419,"Salesforce, Inc.","Salesforce.com, Inc.",1,positive,salesforce,salesforce
+p0420,UBS Group AG,Union Bank of Switzerland,1,positive,ubs,ubs
+p0421,Deutsche Telekom AG,Deutsche Post AG,0,hard_negative,deutschetelekom,deutschepost
+p0422,Tata Consultancy Services Limited,TCS,1,positive,tcs,tcs
+p0423,General Motors Company,Tata Motors Limited,0,hard_negative,gm,tatamotors
+p0424,Honda,本田技研工業,1,positive,honda,honda
+p0425,Verizon,VZ,1,positive,verizon,verizon
+p0426,HSBC Holdings plc,Crédit Suisse,0,easy_negative,hsbc,creditsuisse
+p0427,American Airlines Group Inc.,American International Group,0,hard_negative,amer_air,aig
+p0428,International Business Machines Corporation,I.B.M.,1,positive,ibm,ibm
+p0429,General Electric Co.,Genral Electric,1,positive,ge,ge
+p0430,United Airlines,"United Parcel Service, Inc.",0,hard_negative,united_air,ups
+p0431,Hitachi,Hewlett Packard Enterprise Company,0,easy_negative,hitachi,hpe
+p0432,Genral Motors,"Tesla Motors, Inc.",0,hard_negative,gm,tesla
+p0433,Chevron Corporation,Wal Mart,0,easy_negative,chevron,walmart
+p0434,Sony Corporation,ソニー,1,positive,sony,sony
+p0435,3M Company,MMM,1,positive,mmm,mmm
+p0436,American Airlines,"American Electric Power Company, Inc.",0,hard_negative,amer_air,aep
+p0437,"The Goldman Sachs Group, Inc.",Goldman Sachs,1,positive,goldman,goldman
+p0438,General Motors,General Mills,0,hard_negative,gm,genmills
+p0439,Hongkong and Shanghai Banking Corporation,Procter and Gamble,0,easy_negative,hsbc,pg
+p0440,"S. C. Johnson & Son, Inc.",SC Johnson,1,positive,scjohnson,scjohnson
+p0441,Chevron Corporation,CVX,1,positive,chevron,chevron
+p0442,Credit Suisse,Crédit Suisse,1,positive,creditsuisse,creditsuisse
+p0443,"The Home Depot, Inc.","Apple Computer, Inc.",0,easy_negative,homedepot,apple
+p0444,CRM,Hitachi,0,easy_negative,salesforce,hitachi
+p0445,"Amazon.com, Inc.",ASML Holding N.V.,0,easy_negative,amazon,asml
+p0446,Cisco Systems,Cisco,1,positive,cisco,cisco
+p0447,United Parcel Service,Daimler AG,0,easy_negative,ups,mercedes
+p0448,TotalEnergies SE,Total S.A.,1,positive,total,total
+p0449,Ford Motor Company,Ford,1,positive,ford,ford
+p0450,American Airlines Group Inc.,AAL,1,positive,amer_air,amer_air
+p0451,Berkshire Hathaway Inc.,Berkshire,1,positive,berkshire,berkshire
+p0452,IBM,I.B.M.,1,positive,ibm,ibm
+p0453,ASML,ASML Holding,1,positive,asml,asml
+p0454,GSK,Siemens,0,easy_negative,gsk,siemens
+p0455,Hewlett Packard Enterprise Company,HPE,1,positive,hpe,hpe
+p0456,Citigroup,Citi,1,positive,citi,citi
+p0457,Union Bank of Switzerland,Royal Bank of Scotland Group,0,hard_negative,ubs,rbs
+p0458,Crédit Agricole,AllianceBernstein,0,easy_negative,creditagricole,alliancebernstein
+p0459,Apple,AAPL,1,positive,apple,apple
+p0460,General Electric Co.,Standard & Poor's,0,easy_negative,ge,sandp
+p0461,McDonald's Corporation,McDonalds,1,positive,mcdonalds,mcdonalds
+p0462,Coca Cola,Alphabet Inc.,0,easy_negative,cocacola,alphabet
+p0463,Visa Inc.,V,1,positive,visa,visa
+p0464,NatWest Group plc,RBS,1,positive,rbs,rbs
+p0465,Delta Air Lines,DAL,1,positive,delta_air,delta_air
+p0466,OAO Gazprom,"Samsung Electronics Co., Ltd.",0,easy_negative,gazprom,samsung
+p0467,Bank of America Corporation,Royal Bank,0,hard_negative,bofa,rbc
+p0468,United Air Lines,"United Parcel Service, Inc.",0,hard_negative,united_air,ups
+p0469,Procter & Gamble Co.,Proctor & Gamble,1,positive,pg,pg
+p0470,ASML Holding N.V.,CVX,0,easy_negative,asml,chevron
+p0471,NVDA,Nvidia Corp,1,positive,nvidia,nvidia
+p0472,Google Inc.,Google,1,positive,google,google
+p0473,Crédit Suisse,BMO,0,easy_negative,creditsuisse,bankofmontreal
+p0474,UnitedHealth Group Incorporated,Saudi Arabian Oil Company,0,easy_negative,unitedhealth,aramco
+p0475,Airbus SE,Airbus Group,1,positive,airbus,airbus
+p0476,Bank of China,中国银行,1,positive,bankofchina,bankofchina
+p0477,"American International Group, Inc.",American International Group,1,positive,aig,aig
+p0478,RTX Corporation,Raytheon Technologies,1,positive,rtx,rtx
+p0479,DHL Group,INTC,0,easy_negative,deutschepost,intel
+p0480,Bank of America,Royal Bank,0,hard_negative,bofa,rbc
+p0481,S&P Global Inc.,Standard & Poor's,1,positive,sandp,sandp
+p0482,United Air Lines,"Delta Air Lines, Inc.",0,hard_negative,united_air,delta_air
+p0483,Samsung Electronics,Samsung Elec,1,positive,samsung,samsung
+p0484,Berkshire Hathaway,Berkshire,1,positive,berkshire,berkshire
+p0485,Tata Consultancy Services Limited,Tata Consultancy Services,1,positive,tcs,tcs
+p0486,Toyota Motor Corporation,MCD,0,easy_negative,toyota,mcdonalds
+p0487,"Meta Platforms, Inc.","Facebook, Inc.",1,positive,meta,meta
+p0488,Citigroup,C,1,positive,citi,citi
+p0489,UnitedHealth Group Incorporated,UNH,1,positive,unitedhealth,unitedhealth
+p0490,VW,Hewlett Packard Enterprise,0,easy_negative,vw,hpe
+p0491,Volkswagen AG,Volkswagen Aktiengesellschaft,1,positive,vw,vw
+p0492,Toyota Motor Corp,"Honda Motor Co., Ltd.",0,hard_negative,toyota,honda
+p0493,Nestlé S.A.,Société des Produits Nestlé,1,positive,nestle,nestle
+p0494,American Telephone & Telegraph,American Electric Power,0,hard_negative,att,aep
+p0495,"Samsung Electronics Co., Ltd.",Samsung Electronics,1,positive,samsung,samsung
+p0496,Roche Holding AG,Roche,1,positive,roche,roche
+p0497,Anheuser-Busch InBev SA/NV,Aple Inc,0,easy_negative,abinbev,apple
+p0498,ASML Holding N.V.,Home Depot,0,easy_negative,asml,homedepot
+p0499,Amazon.com,"Salesforce.com, Inc.",0,hard_negative,amazon,salesforce
+p0500,American Express Company,American Express,1,positive,amex,amex
+p0501,J.P. Morgan,JPMorgan Chase,1,positive,jpmorgan,jpmorgan
+p0502,Merck Sharp & Dohme,E. Merck,0,hard_negative,merck_us,merck_de
+p0503,United Airlines,United Air Lines,1,positive,united_air,united_air
+p0504,MCD,S&P Global Inc.,0,easy_negative,mcdonalds,sandp
+p0505,BP p.l.c.,British Petroleum,1,positive,bp,bp
+p0506,Total S.A.,TotalEnergies,1,positive,total,total
+p0507,Chevron,UPS,0,easy_negative,chevron,ups
+p0508,Bank of America Corporation,Bank of Montreal,0,hard_negative,bofa,bankofmontreal
+p0509,Mastercard Incorporated,Mastercard,1,positive,mastercard,mastercard
+p0510,American Telephone & Telegraph,"American International Group, Inc.",0,hard_negative,att,aig
+p0511,Nestlé S.A.,Pfizer Inc.,0,easy_negative,nestle,pfizer
+p0512,BRK.A,Amazon,0,easy_negative,berkshire,amazon
+p0513,P&G,Proctor & Gamble,1,positive,pg,pg
+p0514,General Electric Co.,General Dynamics,0,hard_negative,ge,gendynamics
+p0515,Genral Motors,Tata Motors,0,hard_negative,gm,tatamotors
+p0516,BMO,PEP,0,easy_negative,bankofmontreal,pepsico
+p0517,Credit Suisse,Credit Agricole,0,hard_negative,creditsuisse,creditagricole
+p0518,Deutsche Telekom AG,Deutsche Telekom,1,positive,deutschetelekom,deutschetelekom
+p0519,TotalEnergies,General Motors,0,easy_negative,total,gm
+p0520,Taiwan Semiconductor Manufacturing Company Limited,TSMC,1,positive,tsmc,tsmc
+p0521,General Motors Company,Genral Motors,1,positive,gm,gm
+p0522,Union Bank of Switzerland,Bank of China Limited,0,hard_negative,ubs,bankofchina
+p0523,S&P Global Inc.,NVIDIA Corporation,0,easy_negative,sandp,nvidia
+p0524,United Air Lines,UAL,1,positive,united_air,united_air
+p0525,Honda Motor,本田技研工業,1,positive,honda,honda
+p0526,Hewlett Packard Enterprise,HPE,1,positive,hpe,hpe
+p0527,PEP,"Delta Electronics, Inc.",0,easy_negative,pepsico,delta_elec
+p0528,American Telephone & Telegraph,American Airlines Group Inc.,0,hard_negative,att,amer_air
+p0529,United Air Lines,United Parcel Service,0,hard_negative,united_air,ups
+p0530,Deutsche Post AG,Deutsche Post DHL Group,1,positive,deutschepost,deutschepost
+p0531,Coca-Cola Co,KO,1,positive,cocacola,cocacola
+p0532,Toyota Motor Corp,Ford Motor Co.,0,hard_negative,toyota,ford
+p0533,NKE,Tata Motors Limited,0,easy_negative,nike,tatamotors
+p0534,Bank of China,Royal Bank of Scotland Group,0,hard_negative,bankofchina,rbs
+p0535,Tesla,TSLA,1,positive,tesla,tesla
+p0536,Volkswagen AG,VW,1,positive,vw,vw
+p0537,Shell plc,Газпром,0,easy_negative,shell,gazprom
+p0538,"Merck & Co., Inc.",Merck Group,0,hard_negative,merck_us,merck_de
+p0539,Toyota Motor Corp,Honda Motor,0,hard_negative,toyota,honda
+p0540,Stellantis N.V.,Oracle Corp.,0,easy_negative,stellantis,oracle
+p0541,Standard & Poor's,S&P Global,1,positive,sandp,sandp
+p0542,Bank of America Corporation,Union Bank of Switzerland,0,hard_negative,bofa,ubs
+p0543,Hitachi,"Samsung Heavy Industries Co., Ltd.",0,easy_negative,hitachi,samsung_heavy
+p0544,ExxonMobil,XOM,1,positive,exxon,exxon
+p0545,American Express,American Telephone & Telegraph,0,hard_negative,amex,att
+p0546,Saudi Arabian Oil Company,PFE,0,easy_negative,aramco,pfizer
+p0547,VW,Volkswagon,1,positive,vw,vw
+p0548,Johnson Controls International plc,SC Johnson,0,hard_negative,johnson_controls,scjohnson
+p0549,United Air Lines,Delta Air Lines,0,hard_negative,united_air,delta_air
+p0550,Nestle SA,Société des Produits Nestlé,1,positive,nestle,nestle
+p0551,Ford Motor Company,Ford Motor Co.,1,positive,ford,ford
+p0552,McDonalds,MCD,1,positive,mcdonalds,mcdonalds
+p0553,Citigroup Inc.,C,1,positive,citi,citi
+p0554,Fiat Chrysler Automobiles,Gazprom,0,easy_negative,stellantis,gazprom
+p0555,"Amazon.com, Inc.","Salesforce.com, Inc.",0,hard_negative,amazon,salesforce
+p0556,General Electric Company,General Mills,0,hard_negative,ge,genmills
+p0557,Maersk,AstraZeneca,0,easy_negative,maersk,astrazeneca
+p0558,"Samsung Electronics Co., Ltd.",Samsung Heavy Industries,0,hard_negative,samsung,samsung_heavy
+p0559,JP Morgan,JPMorgan Chase,1,positive,jpmorgan,jpmorgan
+p0560,International Business Machines Corporation,Novartis International AG,0,hard_negative,ibm,novartis
+p0561,BMO,BMO Financial Group,1,positive,bankofmontreal,bankofmontreal
+p0562,Bank of China Limited,Royal Bank of Scotland Group,0,hard_negative,bankofchina,rbs
+p0563,Deutsche Bank AG,Deutsche Post DHL Group,0,hard_negative,deutschebank,deutschepost
+p0564,Apple Inc.,Apple,1,positive,apple,apple
+p0565,General Electric Company,American Electric Power,0,hard_negative,ge,aep
+p0566,General Dynamics,GD,1,positive,gendynamics,gendynamics
+p0567,Toyota,トヨタ自動車,1,positive,toyota,toyota
+p0568,Boeing Co,BA,1,positive,boeing,boeing
+p0569,Ford Motor Co.,"Honda Motor Co., Ltd.",0,hard_negative,ford,honda
+p0570,Minnesota Mining and Manufacturing,MMM,1,positive,mmm,mmm
+p0571,Pfizer Inc.,PFE,1,positive,pfizer,pfizer
+p0572,American Telephone & Telegraph,Unilever,0,easy_negative,att,unilever
+p0573,International Business Machines Corporation,Internationl Business Machines,1,positive,ibm,ibm
+p0574,I.B.M.,Royal Bank,0,easy_negative,ibm,rbc
+p0575,American Express,American Airlines,0,hard_negative,amex,amer_air
+p0576,Bank of America Corporation,Deutsche Bank AG,0,hard_negative,bofa,deutschebank
+p0577,American Electric Power,American International Group,0,hard_negative,aep,aig
+p0578,Bank of Montreal,BMO,1,positive,bankofmontreal,bankofmontreal
+p0579,Airbus Group,EADS,1,positive,airbus,airbus
+p0580,Shell plc,Royal Dutch Shell,1,positive,shell,shell
+p0581,GlaxoSmithKline plc,GlaxoSmithKline,1,positive,gsk,gsk
+p0582,The Boeing Company,Boeing,1,positive,boeing,boeing
+p0583,Raytheon Technologies,Raytheon,1,positive,rtx,rtx
+p0584,Bank of America Corporation,First Republic Bank,0,hard_negative,bofa,firstrepublic
+p0585,Cisco,CSCO,1,positive,cisco,cisco
+p0586,General Electric Company,General Dynamics,0,hard_negative,ge,gendynamics
+p0587,"American Electric Power Company, Inc.",American International Group,0,hard_negative,aep,aig
+p0588,"First Solar, Inc.",First Republic,0,hard_negative,firstsolar,firstrepublic
+p0589,"Samsung Heavy Industries Co., Ltd.",BMO,0,easy_negative,samsung_heavy,bankofmontreal
+p0590,Gazprom,Газпром,1,positive,gazprom,gazprom
+p0591,Merck KGaA,General Electric Company,0,easy_negative,merck_de,ge
+p0592,AllianceBernstein Holding L.P.,Alliance Bernstein,1,positive,alliancebernstein,alliancebernstein
+p0593,American Airlines Group Inc.,American Electric Power,0,hard_negative,amer_air,aep
+p0594,Tata Motors Limited,Tata Steel,0,hard_negative,tatamotors,tatasteel
+p0595,Saudi Arabian Oil Company,Saudi Aramco,1,positive,aramco,aramco
+p0596,Johnson Controls,Citi,0,easy_negative,johnson_controls,citi
+p0597,General Motors Company,General Electric Co.,0,hard_negative,gm,ge
+p0598,The Coca-Cola Company,Coca-Cola Co,1,positive,cocacola,cocacola
+p0599,Alphabet,GOOGL,1,positive,alphabet,alphabet
+p0600,Merck and Co,Alibaba Group Holding Limited,0,easy_negative,merck_us,alibaba
+p0601,American Express Company,Amex,1,positive,amex,amex
+p0602,Novartis AG,Novartis International AG,1,positive,novartis,novartis
+p0603,BP,AMZN,0,easy_negative,bp,amazon
+p0604,Home Depot,The Home Depot,1,positive,homedepot,homedepot
+p0605,GlaxoSmithKline plc,Gazprom,0,easy_negative,gsk,gazprom
+p0606,Tata Motors Limited,Tata Motors,1,positive,tatamotors,tatamotors
+p0607,IBM,Internationl Business Machines,1,positive,ibm,ibm
+p0608,"Merck & Co., Inc.",MSD,1,positive,merck_us,merck_us
+p0609,"Delta Electronics, Inc.",Delta Electronics,1,positive,delta_elec,delta_elec
+p0610,Tata Consultancy Services Limited,Tata Motors,0,hard_negative,tcs,tatamotors
+p0611,"First Solar, Inc.","Delta Electronics, Inc.",0,easy_negative,firstsolar,delta_elec
+p0612,Deutsche Bank,Deutsche Post DHL Group,0,hard_negative,deutschebank,deutschepost
+p0613,Coca-Cola Co,Coca Cola,1,positive,cocacola,cocacola
+p0614,General Dynamics Corporation,GD,1,positive,gendynamics,gendynamics
+p0615,Royal Dutch Shell,Royal Bank of Scotland Group,0,hard_negative,shell,rbs
+p0616,Bank of China,Royal Bank of Canada,0,hard_negative,bankofchina,rbc
+p0617,BMW AG,BMW,1,positive,bmw,bmw
+p0618,Lincoln National Corporation,Lincoln Financial Group,1,positive,lincoln_fin,lincoln_fin
+p0619,Deutsche Bank,Royal Bank of Scotland Group,0,hard_negative,deutschebank,rbs
+p0620,Amex,TCS,0,easy_negative,amex,tcs
+p0621,American Express,"American International Group, Inc.",0,hard_negative,amex,aig
+p0622,General Electric Company,Genral Electric,1,positive,ge,ge
+p0623,Alibaba,PepsiCo,0,easy_negative,alibaba,pepsico
+p0624,The Boeing Company,A T & T,0,easy_negative,boeing,att
+p0625,Taiwan Semiconductor Manufacturing Company Limited,TSM,1,positive,tsmc,tsmc
+p0626,"Honda Motor Co., Ltd.",本田技研工業,1,positive,honda,honda
+p0627,McDonalds,McDonald's,1,positive,mcdonalds,mcdonalds
+p0628,International Business Machines Corporation,American International Group,0,hard_negative,ibm,aig
+p0629,MasterCard,Mastercard,1,positive,mastercard,mastercard
+p0630,Union Bank of Switzerland,Royal Bank of Canada,0,hard_negative,ubs,rbc
+p0631,UBS Group AG,S&P Global,0,easy_negative,ubs,sandp
+p0632,日立製作所,MSFT,0,easy_negative,hitachi,microsoft
+p0633,Bank of America Corporation,BAC,1,positive,bofa,bofa
+p0634,Johnson & Johnson,Johnson Controls International plc,0,hard_negative,jnj,johnson_controls
+p0635,Union Bank of Switzerland,Bank of China,0,hard_negative,ubs,bankofchina
+p0636,Berkshire Hathaway Inc.,Berkshire Hathaway,1,positive,berkshire,berkshire
+p0637,Taiwan Semiconductor Manufacturing Company Limited,Taiwan Semiconductor,1,positive,tsmc,tsmc
+p0638,Bayerische Motoren Werke AG,JPMorgan Chase & Co.,0,easy_negative,bmw,jpmorgan
+p0639,American Telephone & Telegraph,American International Group,0,hard_negative,att,aig
+p0640,Nestle,Société des Produits Nestlé,1,positive,nestle,nestle
+p0641,American Express,AXP,1,positive,amex,amex
+p0642,Amazon.com,AMZN,1,positive,amazon,amazon
+p0643,The Procter & Gamble Company,P&G,1,positive,pg,pg
+p0644,AstraZeneca,Royal Bank of Scotland Group,0,easy_negative,astrazeneca,rbs
+p0645,American International Group,Johnson Controls International plc,0,hard_negative,aig,johnson_controls
+p0646,General Electric Co.,Lincoln Electric,0,hard_negative,ge,lincoln_elec
+p0647,Bank of China Limited,Bank of China,1,positive,bankofchina,bankofchina
+p0648,Apple Inc.,AAPL,1,positive,apple,apple
+p0649,Credit Suisse Group AG,NVDA,0,easy_negative,creditsuisse,nvidia
+p0650,Taiwan Semiconductor,TSM,1,positive,tsmc,tsmc
+p0651,American Express,American Electric Power,0,hard_negative,amex,aep
+p0652,Total S.A.,Total,1,positive,total,total
+p0653,Walmart Inc.,"Wal-Mart Stores, Inc.",1,positive,walmart,walmart
+p0654,Exxon Mobil Corporation,XOM,1,positive,exxon,exxon
+p0655,Samsung Heavy Industries,Apple,0,easy_negative,samsung_heavy,apple
+p0656,McDonald's Corporation,McDonald's,1,positive,mcdonalds,mcdonalds
+p0657,A.P. Moller-Maersk A/S,Proctor & Gamble,0,easy_negative,maersk,pg
+p0658,Samsung Electronics,Delta Electronics,0,hard_negative,samsung,delta_elec
+p0659,HSBC Holdings plc,HSBC,1,positive,hsbc,hsbc
+p0660,AstraZeneca,Astra Zeneca,1,positive,astrazeneca,astrazeneca
+p0661,"Salesforce.com, Inc.",Crédit Agricole S.A.,0,easy_negative,salesforce,creditagricole
+p0662,NVIDIA Corporation,Nvidia Corp,1,positive,nvidia,nvidia
+p0663,Tata Motors,Tata Steel,0,hard_negative,tatamotors,tatasteel
+p0664,General Electric Co.,General Mills,0,hard_negative,ge,genmills
+p0665,General Electric Company,General Electric Co.,1,positive,ge,ge
+p0666,Credit Agricole,Crédit Agricole,1,positive,creditagricole,creditagricole
+p0667,Tata Consultancy Services Limited,Tata Motors Limited,0,hard_negative,tcs,tatamotors
+p0668,Procter and Gamble,Proctor & Gamble,1,positive,pg,pg
+p0669,AllianceBernstein Holding L.P.,AllianceBernstein,1,positive,alliancebernstein,alliancebernstein
+p0670,GSK,Lincoln Financial Group,0,easy_negative,gsk,lincoln_fin
+p0671,"United Airlines Holdings, Inc.",UAL,1,positive,united_air,united_air
+p0672,Taiwan Semiconductor Manufacturing Company Limited,Minnesota Mining and Manufacturing,0,hard_negative,tsmc,mmm
+p0673,MasterCard,MA,1,positive,mastercard,mastercard
+p0674,"General Mills, Inc.",General Dynamics,0,hard_negative,genmills,gendynamics
+p0675,HSBC Holdings plc,Shell plc,0,easy_negative,hsbc,shell
+p0676,Citi,Credit Agricole,0,easy_negative,citi,creditagricole
+p0677,Deutsche Post AG,DHL Group,1,positive,deutschepost,deutschepost
+p0678,General Motors Company,General Mills,0,hard_negative,gm,genmills
+p0679,Volkswagen AG,Volkswagon,1,positive,vw,vw
+p0680,"The Home Depot, Inc.",Home Depot,1,positive,homedepot,homedepot
+p0681,American Electric Power,Amazon,0,easy_negative,aep,amazon
+p0682,LOreal,L'Oréal,1,positive,loreal,loreal
+p0683,Deutsche Bank AG,First Republic Bank,0,hard_negative,deutschebank,firstrepublic
+p0684,"Tesla, Inc.","Tesla Motors, Inc.",1,positive,tesla,tesla
+p0685,"Tesla Motors, Inc.",Tesla,1,positive,tesla,tesla
+p0686,"Salesforce.com, Inc.",CRM,1,positive,salesforce,salesforce
+p0687,First Solar,First Republic Bank,0,hard_negative,firstsolar,firstrepublic
+p0688,Johnson & Johnson,"S. C. Johnson & Son, Inc.",0,hard_negative,jnj,scjohnson
+p0689,TSMC,TSM,1,positive,tsmc,tsmc
+p0690,General Motors,Tata Motors Limited,0,hard_negative,gm,tatamotors
+p0691,General Mills,GIS,1,positive,genmills,genmills
+p0692,"Advanced Micro Devices, Inc.",Advanced Micro Devices,1,positive,amd,amd
+p0693,Toyota Motor Corp,Toyota,1,positive,toyota,toyota
+p0694,General Electric Company,"American Electric Power Company, Inc.",0,hard_negative,ge,aep
+p0695,Fiat Chrysler Automobiles,Volkswagen Aktiengesellschaft,0,easy_negative,stellantis,vw
+p0696,"Salesforce, Inc.",CRM,1,positive,salesforce,salesforce
+p0697,JPMorgan Chase & Co.,JP Morgan,1,positive,jpmorgan,jpmorgan
+p0698,PFE,Johnson Controls International plc,0,easy_negative,pfizer,johnson_controls
+p0699,Allianz SE,Allianz,1,positive,allianz,allianz
+p0700,Deutsche Bank,Bank of China Limited,0,hard_negative,deutschebank,bankofchina
+p0701,Merck and Co,Merck KGaA,0,hard_negative,merck_us,merck_de
+p0702,Nestlé S.A.,Nestle,1,positive,nestle,nestle
+p0703,Samsung Elec,Samsung Heavy Industries,0,hard_negative,samsung,samsung_heavy
+p0704,Tata Steel Limited,CVX,0,easy_negative,tatasteel,chevron
+p0705,GSK plc,GlaxoSmithKline,1,positive,gsk,gsk
+p0706,HSBC Holdings plc,Oracle Corp.,0,easy_negative,hsbc,oracle
+p0707,American Airlines,American Electric Power,0,hard_negative,amer_air,aep
+p0708,TSM,Unilever PLC,0,easy_negative,tsmc,unilever
+p0709,The Procter & Gamble Company,Proctor & Gamble,1,positive,pg,pg
+p0710,Airbus SE,Boeing,0,easy_negative,airbus,boeing
+p0711,Salesforce,CRM,1,positive,salesforce,salesforce
+p0712,Oracle Corp.,Oracle,1,positive,oracle,oracle
+p0713,Coca Cola,KO,1,positive,cocacola,cocacola
+p0714,General Mills,Royal Bank of Scotland Group,0,easy_negative,genmills,rbs
+p0715,GM,Pepsi,0,easy_negative,gm,pepsico
+p0716,Microsoft Corp.,Microsft,1,positive,microsoft,microsoft
+p0717,L'Oreal,LOreal,1,positive,loreal,loreal
+p0718,PJSC Gazprom,Газпром,1,positive,gazprom,gazprom
+p0719,"Hitachi, Ltd.",Hitachi,1,positive,hitachi,hitachi
+p0720,Mastercard,MA,1,positive,mastercard,mastercard
+p0721,Procter and Gamble,P&G,1,positive,pg,pg
+p0722,Morgan Stanley,MS,1,positive,morganstanley,morganstanley
+p0723,AstraZeneca,AZN,1,positive,astrazeneca,astrazeneca
+p0724,Unilever,Unilever N.V.,1,positive,unilever,unilever
+p0725,Crédit Suisse,Crédit Agricole,0,hard_negative,creditsuisse,creditagricole
+p0726,Genral Electric,"American Electric Power Company, Inc.",0,hard_negative,ge,aep
+p0727,Royal Dutch Shell,Royal Bank,0,hard_negative,shell,rbc
+p0728,"PepsiCo, Inc.",PEP,1,positive,pepsico,pepsico
+p0729,Airbus,BP p.l.c.,0,easy_negative,airbus,bp
+p0730,UBS Group AG,UBS,1,positive,ubs,ubs
+p0731,Goldman Sachs,GS,1,positive,goldman,goldman
+p0732,JPMorgan Chase & Co.,J.P. Morgan,1,positive,jpmorgan,jpmorgan
+p0733,Lincoln National Corporation,"Lincoln Electric Holdings, Inc.",0,hard_negative,lincoln_fin,lincoln_elec
+p0734,American Express,"American Electric Power Company, Inc.",0,hard_negative,amex,aep
+p0735,Volkswagen Aktiengesellschaft,VW,1,positive,vw,vw
+p0736,3M,MMM,1,positive,mmm,mmm
+p0737,Morgan Stanley,Morgan Stanley & Co.,1,positive,morganstanley,morganstanley
+p0738,Stellantis,Ford,0,easy_negative,stellantis,ford
+p0739,American Express,Amex,1,positive,amex,amex
+p0740,Alibaba Group Holding Limited,Alibaba Group,1,positive,alibaba,alibaba
+p0741,L'Oréal,"The Goldman Sachs Group, Inc.",0,easy_negative,loreal,goldman
+p0742,The Coca-Cola Company,KO,1,positive,cocacola,cocacola
+p0743,Hewlett Packard,HPQ,1,positive,hp,hp
+p0744,Bank of America,Royal Bank of Scotland Group,0,hard_negative,bofa,rbs
+p0745,Samsung Electronics,삼성전자,1,positive,samsung,samsung
+p0746,Airbus,EADS,1,positive,airbus,airbus
+p0747,Credit Suisse Group AG,Credit Agricole,0,hard_negative,creditsuisse,creditagricole
+p0748,Credit Suisse Group AG,Crédit Suisse,1,positive,creditsuisse,creditsuisse
+p0749,"Cisco Systems, Inc.",Cisco,1,positive,cisco,cisco
+p0750,Toyota Motor Corp,Ford Motor Company,0,hard_negative,toyota,ford
+p0751,Deutsche Bank,Union Bank of Switzerland,0,hard_negative,deutschebank,ubs
+p0752,Procter & Gamble Co.,Netflix,0,easy_negative,pg,netflix
+p0753,McDonalds,"Delta Electronics, Inc.",0,easy_negative,mcdonalds,delta_elec
+p0754,General Electric Co.,"Lincoln Electric Holdings, Inc.",0,hard_negative,ge,lincoln_elec
+p0755,General Motors,"General Mills, Inc.",0,hard_negative,gm,genmills
+p0756,General Electric Company,GE,1,positive,ge,ge
+p0757,Credit Agricole,A.P. Møller – Mærsk,0,easy_negative,creditagricole,maersk
+p0758,Crédit Suisse,Crédit Agricole S.A.,0,hard_negative,creditsuisse,creditagricole
+p0759,LVMH,AIG,0,easy_negative,lvmh,aig
+p0760,Visa,V,1,positive,visa,visa
+p0761,Procter & Gamble Co.,P&G,1,positive,pg,pg
+p0762,Roche Holding AG,F. Hoffmann-La Roche,1,positive,roche,roche
+p0763,Google LLC,Google,1,positive,google,google
+p0764,First Republic Bank,First Republic,1,positive,firstrepublic,firstrepublic
+p0765,Tata Consultancy Services,Tata Motors Limited,0,hard_negative,tcs,tatamotors
+p0766,Union Bank of Switzerland,First Republic Bank,0,hard_negative,ubs,firstrepublic
+p0767,Bank of America,First Republic Bank,0,hard_negative,bofa,firstrepublic
+p0768,"Delta Air Lines, Inc.","Delta Electronics, Inc.",0,hard_negative,delta_air,delta_elec
+p0769,GOOGL,Merck and Co,0,easy_negative,alphabet,merck_us
+p0770,Walmart Inc.,Wal Mart,1,positive,walmart,walmart
+p0771,General Electric Co.,General Dynamics Corporation,0,hard_negative,ge,gendynamics
+p0772,Tata Consultancy Services,Tata Steel,0,hard_negative,tcs,tatasteel
+p0773,S&P Global Inc.,S&P Global,1,positive,sandp,sandp
+p0774,SAP SE,McDonalds,0,easy_negative,sap,mcdonalds
+p0775,Walmart Inc.,WMT,1,positive,walmart,walmart
+p0776,Merck KGaA,E. Merck,1,positive,merck_de,merck_de
+p0777,"The Goldman Sachs Group, Inc.",GS,1,positive,goldman,goldman
+p0778,American Airlines Group Inc.,"American International Group, Inc.",0,hard_negative,amer_air,aig
+p0779,Microsoft Corporation,Microsoft Corp.,1,positive,microsoft,microsoft
+p0780,"Tesla Motors, Inc.",Tata Motors Limited,0,hard_negative,tesla,tatamotors
+p0781,"PepsiCo, Inc.",Pepsi,1,positive,pepsico,pepsico
+p0782,BMO Financial Group,Lincoln Financial Group,0,hard_negative,bankofmontreal,lincoln_fin
+p0783,Royal Bank,Royal Bank of Scotland Group,0,hard_negative,rbc,rbs
+p0784,Pepsi,PEP,1,positive,pepsico,pepsico
+p0785,Verizon Communications Inc.,Verizon,1,positive,verizon,verizon
+p0786,"NIKE, Inc.",Nike Inc,1,positive,nike,nike
+p0787,Sony Group Corporation,Sony Corporation,1,positive,sony,sony
+p0788,Deutsche Bank,DB,1,positive,deutschebank,deutschebank
+p0789,Deutsche Bank,Deutsche Post AG,0,hard_negative,deutschebank,deutschepost
+p0790,LVMH Moët Hennessy Louis Vuitton,Minnesota Mining and Manufacturing,0,easy_negative,lvmh,mmm
+p0791,Boeing,BA,1,positive,boeing,boeing
+p0792,Johnson & Johnson,Johnson Controls,0,hard_negative,jnj,johnson_controls
+p0793,"Amazon.com, Inc.",Amazon.com,1,positive,amazon,amazon
+p0794,GOOGL,Alibaba,0,easy_negative,alphabet,alibaba
+p0795,Novartis AG,3M Company,0,easy_negative,novartis,mmm
+p0796,Société des Produits Nestlé,Airbus SE,0,easy_negative,nestle,airbus
+p0797,Hewlett-Packard,Hewlett Packard Enterprise Company,0,hard_negative,hp,hpe
+p0798,Deutsche Bank AG,Royal Bank of Scotland Group,0,hard_negative,deutschebank,rbs
+p0799,International Business Machines Corporation,Johnson Controls International plc,0,hard_negative,ibm,johnson_controls
+p0800,Oracle Corp.,Verizon,0,easy_negative,oracle,verizon
+p0801,"Wal-Mart Stores, Inc.",WMT,1,positive,walmart,walmart
+p0802,HP Inc.,HPQ,1,positive,hp,hp
+p0803,PepsiCo,PEP,1,positive,pepsico,pepsico
+p0804,Merck Group,E. Merck,1,positive,merck_de,merck_de
+p0805,Costco Wholesale Corporation,Costco,1,positive,costco,costco
+p0806,Boeing Co,Boeing,1,positive,boeing,boeing
+p0807,McDonald's,MCD,1,positive,mcdonalds,mcdonalds
+p0808,TotalEnergies,VW,0,easy_negative,total,vw
+p0809,Advanced Micro Devices,XOM,0,easy_negative,amd,exxon
+p0810,"Delta Air Lines, Inc.",DAL,1,positive,delta_air,delta_air
+p0811,"The Home Depot, Inc.",SC Johnson,0,easy_negative,homedepot,scjohnson
+p0812,Genral Motors,Genral Electric,0,hard_negative,gm,ge
+p0813,MA,"Salesforce.com, Inc.",0,easy_negative,mastercard,salesforce
+p0814,Novartis International AG,American International Group,0,hard_negative,novartis,aig
+p0815,Deutsche Bank AG,Bank of China Limited,0,hard_negative,deutschebank,bankofchina
+p0816,The Coca-Cola Company,Coca Cola,1,positive,cocacola,cocacola
+p0817,General Motors,General Electric Co.,0,hard_negative,gm,ge
+p0818,"United Airlines Holdings, Inc.",American Airlines Group Inc.,0,hard_negative,united_air,amer_air
+p0819,Honda Motor,McDonald's Corporation,0,easy_negative,honda,mcdonalds
+p0820,Saudi Arabian Oil Company,Aramco,1,positive,aramco,aramco
+p0821,"Delta Air Lines, Inc.",Delta Air Lines,1,positive,delta_air,delta_air
+p0822,"S. C. Johnson & Son, Inc.",Honda Motor,0,easy_negative,scjohnson,honda
+p0823,Tata Consultancy Services,Tata Steel Limited,0,hard_negative,tcs,tatasteel
+p0824,Johnson Controls International plc,"S. C. Johnson & Son, Inc.",0,hard_negative,johnson_controls,scjohnson
+p0825,General Motors Company,General Electric Company,0,hard_negative,gm,ge
+p0826,"Hitachi, Ltd.",日立製作所,1,positive,hitachi,hitachi
+p0827,Tata Steel Limited,Tata Steel,1,positive,tatasteel,tatasteel
+p0828,GlaxoSmithKline plc,GSK,1,positive,gsk,gsk
+p0829,"Samsung Electronics Co., Ltd.",Delta Electronics,0,hard_negative,samsung,delta_elec
+p0830,RBC,Royal Bank,1,positive,rbc,rbc
+p0831,Microsoft Corporation,Microsft,1,positive,microsoft,microsoft
+p0832,Verizon Communications Inc.,VZ,1,positive,verizon,verizon
+p0833,General Electric Co.,"American Electric Power Company, Inc.",0,hard_negative,ge,aep
+p0834,Toyota Motor Corporation,"Honda Motor Co., Ltd.",0,hard_negative,toyota,honda
+p0835,International Business Machines Corporation,Chevron Corporation,0,easy_negative,ibm,chevron
+p0836,AP Moller Maersk,A.P. Møller – Mærsk,1,positive,maersk,maersk
+p0837,American Telephone & Telegraph,"American Electric Power Company, Inc.",0,hard_negative,att,aep
+p0838,Exxon,Gazprom,0,easy_negative,exxon,gazprom
+p0839,Ford Motor Company,Honda Motor,0,hard_negative,ford,honda
+p0840,Cisco Systems,CSCO,1,positive,cisco,cisco
+p0841,I.B.M.,Internationl Business Machines,1,positive,ibm,ibm
+p0842,Bank of America,Crédit Suisse,0,easy_negative,bofa,creditsuisse
+p0843,American Express,American Airlines Group Inc.,0,hard_negative,amex,amer_air
+p0844,"Apple Computer, Inc.",UBS,0,easy_negative,apple,ubs
+p0845,Volkswagen Aktiengesellschaft,Volkswagon,1,positive,vw,vw
+p0846,Wal Mart,UnitedHealth Group,0,easy_negative,walmart,unitedhealth
+p0847,General Mills,General Dynamics,0,hard_negative,genmills,gendynamics
+p0848,"American International Group, Inc.",Johnson Controls International plc,0,hard_negative,aig,johnson_controls
+p0849,L'Oréal S.A.,L'Oréal,1,positive,loreal,loreal
+p0850,Honda Motor,Verizon Communications Inc.,0,easy_negative,honda,verizon
+p0851,Toyota Motor Corporation,Honda Motor,0,hard_negative,toyota,honda
+p0852,GSK plc,GlaxoSmithKline plc,1,positive,gsk,gsk
+p0853,"Wal-Mart Stores, Inc.",Wal Mart,1,positive,walmart,walmart
+p0854,International Business Machines Corporation,"American International Group, Inc.",0,hard_negative,ibm,aig
+p0855,JPMorgan Chase & Co.,"Salesforce.com, Inc.",0,easy_negative,jpmorgan,salesforce
+p0856,Johnson Controls,SC Johnson,0,hard_negative,johnson_controls,scjohnson
+p0857,SAP AG,KO,0,easy_negative,sap,cocacola
+p0858,ASML Holding N.V.,ASML,1,positive,asml,asml
+p0859,Bank of America,BofA,1,positive,bofa,bofa
+p0860,Genral Motors,Tata Motors Limited,0,hard_negative,gm,tatamotors
+p0861,"American International Group, Inc.",AIG,1,positive,aig,aig
+p0862,Anheuser-Busch InBev SA/NV,AB InBev,1,positive,abinbev,abinbev
+p0863,J.P. Morgan,Morgan Stanley & Co.,0,hard_negative,jpmorgan,morganstanley
+p0864,Bank of China,First Republic Bank,0,hard_negative,bankofchina,firstrepublic
+p0865,3M Company,3M,1,positive,mmm,mmm
+p0866,"Facebook, Inc.",META,1,positive,meta,meta
+p0867,General Motors Company,"General Mills, Inc.",0,hard_negative,gm,genmills
+p0868,Johnson & Johnson,Johnson and Johnson,1,positive,jnj,jnj
+p0869,3M Company,Minnesota Mining and Manufacturing,1,positive,mmm,mmm
+p0870,Chevron Corporation,Chevron,1,positive,chevron,chevron
+p0871,UBS,Coca-Cola Co,0,easy_negative,ubs,cocacola
+p0872,The Procter & Gamble Company,Moet Hennessy Louis Vuitton,0,easy_negative,pg,lvmh
+p0873,Apple Inc.,BAC,0,easy_negative,apple,bofa
+p0874,Johnson Controls,NatWest Group plc,0,easy_negative,johnson_controls,rbs
+p0875,I.B.M.,UNH,0,easy_negative,ibm,unitedhealth
+p0876,Merck Sharp & Dohme,Merck KGaA,0,hard_negative,merck_us,merck_de
+p0877,General Motors Company,Tata Motors,0,hard_negative,gm,tatamotors
+p0878,BP p.l.c.,BP,1,positive,bp,bp
+p0879,A.P. Moller-Maersk A/S,A.P. Møller – Mærsk,1,positive,maersk,maersk
+p0880,DHL Group,Bank of America,0,easy_negative,deutschepost,bofa
+p0881,Alibaba,BABA,1,positive,alibaba,alibaba
+p0882,Samsung Electronics,"Delta Electronics, Inc.",0,hard_negative,samsung,delta_elec
+p0883,Royal Bank of Canada,First Republic Bank,0,hard_negative,rbc,firstrepublic
+p0884,UBS,Union Bank of Switzerland,1,positive,ubs,ubs
+p0885,Lincoln Electric,Honda Motor,0,easy_negative,lincoln_elec,honda
+p0886,Toyota Motor Corp,トヨタ自動車,1,positive,toyota,toyota
+p0887,JP Morgan,Morgan Stanley,0,hard_negative,jpmorgan,morganstanley
+p0888,Standard Chartered,Standard & Poor's,0,hard_negative,stanchart,sandp
+p0889,Mercedes-Benz Group AG,Mercedes Benz,1,positive,mercedes,mercedes
+p0890,Berkshire,BRK.A,1,positive,berkshire,berkshire
+p0891,"Tesla Motors, Inc.",TSLA,1,positive,tesla,tesla
+p0892,Lincoln National Corporation,Lincoln Electric,0,hard_negative,lincoln_fin,lincoln_elec
+p0893,Alphabet Inc.,GOOGL,1,positive,alphabet,alphabet
+p0894,AEP,Nestle,0,easy_negative,aep,nestle
+p0895,Bank of America,BAC,1,positive,bofa,bofa
+p0896,Costco,COST,1,positive,costco,costco
+p0897,Amazon,Amazon.com,1,positive,amazon,amazon
+p0898,Exxon,McDonalds,0,easy_negative,exxon,mcdonalds
+p0899,I.B.M.,IBM Corp.,1,positive,ibm,ibm
+p0900,"Merck & Co., Inc.",E. Merck,0,hard_negative,merck_us,merck_de
+p0901,Sony Group Corporation,Aple Inc,0,easy_negative,sony,apple
+p0902,Intel Corp,INTC,1,positive,intel,intel
+p0903,United Airlines,American Airlines Group Inc.,0,hard_negative,united_air,amer_air
+p0904,Mastercard Incorporated,MA,1,positive,mastercard,mastercard
+p0905,"Samsung Electronics Co., Ltd.",삼성전자,1,positive,samsung,samsung
+p0906,"Salesforce.com, Inc.",Salesforce,1,positive,salesforce,salesforce
+p0907,"United Airlines Holdings, Inc.","United Parcel Service, Inc.",0,hard_negative,united_air,ups
+p0908,Sony Corporation,GlaxoSmithKline,0,easy_negative,sony,gsk
+p0909,Alphabet Inc.,Alphabet,1,positive,alphabet,alphabet
+p0910,"Samsung Electronics Co., Ltd.","Samsung Heavy Industries Co., Ltd.",0,hard_negative,samsung,samsung_heavy
+p0911,Merck and Co,Merck Sharp & Dohme,1,positive,merck_us,merck_us
+p0912,"Hitachi, Ltd.",UBS Group AG,0,easy_negative,hitachi,ubs
+p0913,Alibaba Group Holding Limited,Alibaba,1,positive,alibaba,alibaba
+p0914,NatWest Group plc,Royal Bank of Scotland Group,1,positive,rbs,rbs
+p0915,JPMorgan Chase & Co.,American Express Company,0,easy_negative,jpmorgan,amex
+p0916,"Salesforce.com, Inc.",American Electric Power,0,easy_negative,salesforce,aep
+p0917,PepsiCo,Pepsi,1,positive,pepsico,pepsico
+p0918,L'Oreal,Total S.A.,0,easy_negative,loreal,total
+p0919,AstraZeneca,Alphabet Inc.,0,easy_negative,astrazeneca,alphabet
+p0920,Samsung Electronics,HSBC,0,easy_negative,samsung,hsbc
+p0921,AT&T,A T & T,1,positive,att,att
+p0922,Airbus SE,Airbus,1,positive,airbus,airbus
+p0923,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise,1,positive,hpe,hpe
+p0924,Deutsche Bank AG,DB,1,positive,deutschebank,deutschebank
+p0925,Airbus SE,EADS,1,positive,airbus,airbus
+p0926,"United Airlines Holdings, Inc.",United Air Lines,1,positive,united_air,united_air
+p0927,Nike,Nike Inc,1,positive,nike,nike
+p0928,"Salesforce, Inc.",Salesforce,1,positive,salesforce,salesforce
+p0929,Gazprom,OAO Gazprom,1,positive,gazprom,gazprom
+p0930,J.P. Morgan,Morgan Stanley,0,hard_negative,jpmorgan,morganstanley
+p0931,Nestlé S.A.,UPS,0,easy_negative,nestle,ups
+p0932,General Motors Company,GM,1,positive,gm,gm
+p0933,Crédit Agricole S.A.,Crédit Agricole,1,positive,creditagricole,creditagricole
+p0934,Toyota Motor Corporation,Ford Motor Company,0,hard_negative,toyota,ford
+p0935,Merck Sharp & Dohme,MSD,1,positive,merck_us,merck_us
+p0936,"United Parcel Service, Inc.","The Home Depot, Inc.",0,easy_negative,ups,homedepot
+p0937,General Electric Company,"Lincoln Electric Holdings, Inc.",0,hard_negative,ge,lincoln_elec
+p0938,"United Airlines Holdings, Inc.",United Parcel Service,0,hard_negative,united_air,ups
+p0939,Tata Consultancy Services Limited,Tata Steel Limited,0,hard_negative,tcs,tatasteel
+p0940,"American Electric Power Company, Inc.",AEP,1,positive,aep,aep
+p0941,Airbus SE,Bank of China Limited,0,easy_negative,airbus,bankofchina
+p0942,Meta,META,1,positive,meta,meta
+p0943,First Solar,First Republic,0,hard_negative,firstsolar,firstrepublic
+p0944,General Electric Company,"General Mills, Inc.",0,hard_negative,ge,genmills
+p0945,Mercedes-Benz Group AG,Mercedes-Benz,1,positive,mercedes,mercedes
+p0946,KO,SAP SE,0,easy_negative,cocacola,sap
+p0947,Bank of America,Bank of China,0,hard_negative,bofa,bankofchina
+p0948,MasterCard,Hewlett-Packard,0,easy_negative,mastercard,hp
+p0949,Chevron,CVX,1,positive,chevron,chevron
+p0950,Roche Holding AG,PEP,0,easy_negative,roche,pepsico
+p0951,Standard Chartered PLC,Standard Chartered,1,positive,stanchart,stanchart
+p0952,Total,Johnson & Johnson,0,easy_negative,total,jnj
+p0953,Deutsche Bank,Royal Bank,0,hard_negative,deutschebank,rbc
+p0954,Union Bank of Switzerland,Royal Bank,0,hard_negative,ubs,rbc
+p0955,AT&T Inc.,American Telephone & Telegraph,1,positive,att,att
