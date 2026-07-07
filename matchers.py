@@ -222,6 +222,37 @@ class AliasRouter:
         return self._tfidf.embed(names)
 
 # ----------------------------------------------------------------------------
+class EmbeddingRouter:
+    """Name-specialized embedding model as the routing scorer (Round 4).
+    Wraps SentenceTransformerMatcher; with_alias=True additionally floors the
+    score with AliasRouter's initialism/contraction rules — the rules are free
+    recall (0.85-0.92, below auto-accept) so rescued pairs still route to the
+    LLM band rather than being trusted blindly."""
+    def __init__(self, model_id, short=None, with_alias=True):
+        self._st = SentenceTransformerMatcher(model_id, short=short)
+        self._alias = AliasRouter() if with_alias else None
+        self.with_alias = with_alias
+        self.name = "router_" + (short or model_id.split("/")[-1].replace("-", "_"))
+        self.needs = ["sentence-transformers", "torch"]
+
+    def score_pairs(self, pairs):
+        # Raw cosine clipped to [0,1], NOT the (cos+1)/2 mapping used by the bare
+        # st_* matchers: these contrastive name models put same-company pairs near
+        # cos 1.0 and unrelated names near/below 0. (cos+1)/2 compresses everything
+        # into [0.5, 1.0], which pushes hard negatives (Merck&Co vs Merck KGaA,
+        # cos 0.95) above the 0.95 auto-accept and leaves nothing below the 0.10
+        # auto-reject. Clipped raw cosine keeps them in the LLM band (REQ-3).
+        a = self._st.embed([p[0] for p in pairs])
+        b = self._st.embed([p[1] for p in pairs])
+        s = np.clip(_cos(a, b), 0.0, 1.0)
+        if self._alias is not None:
+            s = np.maximum(s, np.array([self._alias._rule(a_, b_) for a_, b_ in pairs]))
+        return s
+
+    def embed(self, names):
+        return self._st.embed(names)
+
+# ----------------------------------------------------------------------------
 def default_registry():
     """The matchers run by benchmark.py unless --matchers is given.
     Embedding/API backends are included but skipped gracefully if unavailable."""
@@ -233,7 +264,12 @@ def default_registry():
         AliasRouter(),
         SentenceTransformerMatcher("BAAI/bge-m3", short="bge_m3"),
         SentenceTransformerMatcher("dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en"),
-        SentenceTransformerMatcher("Graphlet-AI/eridu", short="eridu"),
+        # Graphlet-AI/eridu (Round 4 spec's Router B) was removed from HF Hub
+        # (404, no release artifacts); lt-wikidata-comp-multi is the explicit
+        # substitute — same LinkTransformer family, multilingual/cross-script.
+        SentenceTransformerMatcher("dell-research-harvard/lt-wikidata-comp-multi", short="lt_comp_multi"),
+        EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en"),
+        EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-multi", short="lt_comp_multi"),
         OpenAIMatcher("text-embedding-3-small"),
         CohereMatcher("embed-v4.0"),
     ]
@@ -245,7 +281,7 @@ def available(m):
             import rapidfuzz; return True, ""
         if isinstance(m, TfidfMatcher):
             import sklearn; return True, ""
-        if isinstance(m, SentenceTransformerMatcher):
+        if isinstance(m, (SentenceTransformerMatcher, EmbeddingRouter)):
             import sentence_transformers; return True, "(will download model on first use)"
         if isinstance(m, OpenAIMatcher):
             import openai
