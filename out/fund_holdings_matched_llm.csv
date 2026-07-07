@@ -1,0 +1,51 @@
+company_name,fund_name,holding_value,matched_canonical,match_score,match_status
+Apple Inc.,ARK Innovation ETF,4250000,Apple Inc.,0.9900,matched
+MSFT,Vanguard Growth Fund,8100000,Microsoft Corporation,0.9800,matched
+Alphabet,Fidelity Blue Chip Growth,3300000,Alphabet Inc.,0.9800,matched
+Meta,T. Rowe Price Growth Stock,2750000,"Meta Platforms, Inc.",0.9700,matched
+AMZN,Vanguard Growth Fund,9500000,"Amazon.com, Inc.",0.9800,matched
+Nvidia Corp,ARK Innovation ETF,6800000,NVIDIA Corporation,0.9900,matched
+NVDA,Fidelity Blue Chip Growth,5200000,NVIDIA Corporation,0.9800,matched
+Advanced Micro Devices,T. Rowe Price Growth Stock,1800000,"Advanced Micro Devices, Inc.",0.9900,matched
+Microsft,ARK Innovation ETF,2100000,Microsoft Corporation,0.9700,matched
+Taiwan Semiconductor,Fidelity Blue Chip Growth,4100000,Taiwan Semiconductor Manufacturing Company Limited,0.9800,matched
+TSMC,Vanguard Growth Fund,3900000,Taiwan Semiconductor Manufacturing Company Limited,0.9800,matched
+Broadcom Inc.,T. Rowe Price Growth Stock,2600000,,0.9500,no_match
+Tesla Inc,ARK Innovation ETF,7700000,"Tesla, Inc.",0.9900,matched
+Tesla Motors,Fidelity Blue Chip Growth,3400000,"Tesla, Inc.",0.9700,matched
+TSLA,Vanguard Growth Fund,5100000,"Tesla, Inc.",0.9800,matched
+Toyota Motor Corp,T. Rowe Price Growth Stock,1950000,Toyota Motor Corporation,0.9900,matched
+Volkswagon AG,Fidelity Blue Chip Growth,870000,Volkswagen AG,0.9700,matched
+BMW AG,Vanguard Growth Fund,1100000,Bayerische Motoren Werke AG,0.9900,matched
+Johnson and Johnson,ARK Innovation ETF,3600000,Johnson & Johnson,0.9800,matched
+J&J,Fidelity Blue Chip Growth,2900000,Johnson & Johnson,0.9700,matched
+Pfizer,T. Rowe Price Growth Stock,1750000,Pfizer Inc.,0.9900,matched
+Eli Lilly & Co,Vanguard Growth Fund,4800000,,0.9700,no_match
+AstraZeneca,ARK Innovation ETF,2200000,AstraZeneca PLC,0.9900,matched
+Astra Zeneca,Fidelity Blue Chip Growth,1600000,AstraZeneca PLC,0.9800,matched
+GlaxoSmithKline,T. Rowe Price Growth Stock,1350000,GSK plc,0.9700,matched
+Merck and Co,Vanguard Growth Fund,2450000,"Merck & Co., Inc.",0.9300,matched
+Merck Group,ARK Innovation ETF,980000,Merck KGaA,0.9000,matched
+Abbvie,Fidelity Blue Chip Growth,3100000,,0.9700,no_match
+Bristol Myers Squibb,T. Rowe Price Growth Stock,1900000,,0.9600,no_match
+JPMorgan Chase & Co,Vanguard Growth Fund,5500000,JPMorgan Chase & Co.,0.9900,matched
+JP Morgan Chase,ARK Innovation ETF,4200000,JPMorgan Chase & Co.,0.9800,matched
+Goldman Sachs Group,Fidelity Blue Chip Growth,3700000,"The Goldman Sachs Group, Inc.",0.9900,matched
+Bank of America,T. Rowe Price Growth Stock,2800000,Bank of America Corporation,0.9800,matched
+HSBC Holdings,Vanguard Growth Fund,1600000,HSBC Holdings plc,0.9900,matched
+Visa Inc.,ARK Innovation ETF,4400000,Visa Inc.,0.9900,matched
+MasterCard,Fidelity Blue Chip Growth,3800000,Mastercard Incorporated,0.9800,matched
+Pay Pal,T. Rowe Price Growth Stock,1200000,,0.9500,no_match
+Salesforce.com Inc.,Vanguard Growth Fund,2100000,"Salesforce, Inc.",0.9800,matched
+ServiceNow,ARK Innovation ETF,3300000,,0.9600,no_match
+Adobe Systems,Fidelity Blue Chip Growth,2700000,,0.9700,no_match
+SAP AG,T. Rowe Price Growth Stock,1500000,SAP SE,0.9700,matched
+Oracle Corp,Vanguard Growth Fund,2900000,Oracle Corporation,0.9900,matched
+International Business Machines,ARK Innovation ETF,1800000,International Business Machines Corporation,0.9900,matched
+I.B.M.,Fidelity Blue Chip Growth,1400000,International Business Machines Corporation,0.9800,matched
+Shell plc,T. Rowe Price Growth Stock,2600000,Shell plc,0.9900,matched
+Royal Dutch Shell,Vanguard Growth Fund,2100000,Shell plc,0.9700,matched
+BP p.l.c.,ARK Innovation ETF,1300000,BP p.l.c.,0.9900,matched
+Total Energies,Fidelity Blue Chip Growth,1700000,TotalEnergies SE,0.9700,matched
+Chevron Corp,T. Rowe Price Growth Stock,3200000,Chevron Corporation,0.9900,matched
+ExxonMobil Corporation,Vanguard Growth Fund,4100000,Exxon Mobil Corporation,0.9900,matched
