@@ -172,6 +172,56 @@ class CohereMatcher:
         return (_cos(a, b) + 1) / 2
 
 # ----------------------------------------------------------------------------
+class AliasRouter:
+    """TF-IDF augmented with classic alias rules (initialisms + ticker-style
+    contractions). A fully-offline step toward an embedding router: rescues
+    zero-character-overlap variants like 'AMZN'<->'Amazon.com, Inc.' or
+    'GS'<->'Goldman Sachs' into the LLM band instead of auto-rejecting them.
+    Rules score 0.85-0.92, deliberately below the auto-accept threshold, so
+    rescued pairs are routed to the adjudicator rather than trusted blindly."""
+    def __init__(self):
+        self._tfidf = TfidfMatcher()
+        self.name = "alias_router"
+        self.needs = ["scikit-learn"]
+
+    @staticmethod
+    def _initials(name):
+        from normalize import normalize
+        toks = normalize(name).split()
+        return "".join(t[0] for t in toks) if len(toks) >= 2 else ""
+
+    @staticmethod
+    def _is_contraction(short, long_name):
+        from normalize import normalize
+        s = normalize(short).replace(" ", "")
+        if not (3 <= len(s) <= 6):
+            return False
+        for t in normalize(long_name).split():
+            if len(t) > len(s) and t[0] == s[0]:
+                it = iter(t)
+                if all(c in it for c in s):
+                    return True
+        return False
+
+    def _rule(self, a, b):
+        from normalize import normalize
+        na, nb = normalize(a), normalize(b)
+        sc = 0.0
+        for s, l in ((na, b), (nb, a)):
+            if len(s.split()) == 1 and 2 <= len(s) <= 6 and s == self._initials(l):
+                sc = max(sc, 0.92)
+        if len(na.split()) == 1 and self._is_contraction(a, b): sc = max(sc, 0.85)
+        if len(nb.split()) == 1 and self._is_contraction(b, a): sc = max(sc, 0.85)
+        return sc
+
+    def score_pairs(self, pairs):
+        base = self._tfidf.score_pairs(pairs)
+        return np.maximum(base, np.array([self._rule(a, b) for a, b in pairs]))
+
+    def embed(self, names):
+        return self._tfidf.embed(names)
+
+# ----------------------------------------------------------------------------
 def default_registry():
     """The matchers run by benchmark.py unless --matchers is given.
     Embedding/API backends are included but skipped gracefully if unavailable."""
@@ -180,6 +230,7 @@ def default_registry():
         FuzzyMatcher("token_sort", normalize=True),
         FuzzyMatcher("token_set",  normalize=True),
         TfidfMatcher(),
+        AliasRouter(),
         SentenceTransformerMatcher("BAAI/bge-m3", short="bge_m3"),
         SentenceTransformerMatcher("dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en"),
         SentenceTransformerMatcher("Graphlet-AI/eridu", short="eridu"),
