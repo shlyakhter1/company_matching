@@ -22,7 +22,9 @@ strict-JSON responses, with one retry on parse failure.
 Usage:
   python llm_matcher.py holdings
   python llm_matcher.py holdings --top-k 5 --model claude-sonnet-4-6
-  python llm_matcher.py pairs --band-lo 0.15 --band-hi 0.95
+  python llm_matcher.py pairs --band-lo 0.10 --band-hi 0.95
+  python llm_matcher.py pairs --blocker lt_comp_en --reuse out/llm_band2_decisions.csv \
+      --out-name llm_band3_decisions.csv
   python llm_matcher.py pairs --all --backend openai --model gpt-4o-mini
 """
 import argparse, csv, json, os, re, sys, time
@@ -95,6 +97,10 @@ def build_blocker(kind):
         return M.TfidfMatcher()
     if kind == "alias":
         return M.AliasRouter()   # tfidf + initialism/contraction rules (Round 3)
+    if kind == "lt_comp_en":     # Round 4 embedding routers (clipped cosine + alias rules)
+        return M.EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en")
+    if kind == "lt_comp_multi":
+        return M.EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-multi", short="lt_comp_multi")
     return M.SentenceTransformerMatcher(kind)  # e.g. dell-research-harvard/lt-wikidata-comp-en
 
 def topk_candidates(blocker, queries, variants, canonicals, k):
@@ -168,6 +174,18 @@ def run_holdings(a):
 # --------------------------------------------------------------------------
 # mode: pairs
 # --------------------------------------------------------------------------
+def load_reuse(paths):
+    """Prior decisions keyed by pair_id, from any CSV with pair_id + llm_same columns
+    (both the frozen llm_band*_decisions.csv records and this script's own output)."""
+    reuse = {}
+    for p in paths:
+        for r in csv.DictReader(open(p, encoding="utf-8")):
+            v = (r.get("llm_same") or "").strip()
+            if v in ("0", "1", "True", "False"):
+                reuse[r["pair_id"]] = int(v in ("1", "True"))
+    return reuse
+
+
 def run_pairs(a):
     rows = list(csv.DictReader(open(a.pairs, encoding="utf-8")))
     print(f"pairs: {len(rows)}")
@@ -183,39 +201,52 @@ def run_pairs(a):
         print(f"baseline {a.blocker}: auto-reject {int(np.sum(s < a.band_lo))} · "
               f"auto-accept {int(np.sum(s > a.band_hi))} · LLM band {len(band)}")
 
-    decisions = {}
+    reuse = load_reuse(a.reuse) if a.reuse else {}
+    decisions = {}   # row idx -> (same, confidence, source)
+    if reuse:
+        for i in band:
+            pid = rows[i]["pair_id"]
+            if pid in reuse:
+                decisions[i] = (bool(reuse[pid]), "", "reused")
+        print(f"reused {len(decisions)}/{len(band)} band decisions (C4); "
+              f"{len(band) - len(decisions)} new pairs go to the LLM")
+    band = [i for i in band if i not in decisions]
+
+    n_calls = 0
     for start in range(0, len(band), a.batch):
         chunk = band[start: start + a.batch]
         items = "".join(f'Pair {j + 1}: "{rows[i]["name_a"]}"  vs  "{rows[i]["name_b"]}"\n'
                         for j, i in enumerate(chunk))
         resp = llm(a.backend, a.model, SYS, PAIRS_TASK.format(items=items))
+        n_calls += 1
         for d in resp:
-            decisions[chunk[d["i"] - 1]] = (bool(d["same"]), float(d.get("confidence", 0.5)))
+            decisions[chunk[d["i"] - 1]] = (bool(d["same"]), float(d.get("confidence", 0.5)), "new")
         print(f"  adjudicated {min(start + a.batch, len(band))}/{len(band)}")
+    print(f"LLM calls: {n_calls}")
 
     os.makedirs(a.outdir, exist_ok=True)
-    outp = os.path.join(a.outdir, "llm_pair_decisions.csv")
+    outp = os.path.join(a.outdir, a.out_name)
     with open(outp, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["pair_id", "name_a", "name_b", "label", "pair_type",
-                    "route", "baseline_score", "llm_same", "llm_confidence", "final_pred"])
+                    "route", "baseline_score", "llm_same", "llm_confidence", "final_pred",
+                    "source"])
         for i, r in enumerate(rows):
             if i in decisions:
-                same, conf = decisions[i]
+                same, conf, src = decisions[i]
                 route, pred = "llm", int(same)
+                same = int(same)
             elif base_scores is not None:
                 route = "auto_accept" if base_scores[i] > a.band_hi else "auto_reject"
-                same, conf, pred = "", "", int(base_scores[i] > a.band_hi)
+                same, conf, pred, src = "", "", int(base_scores[i] > a.band_hi), ""
             else:
-                route, same, conf, pred = "skipped", "", "", 0
+                route, same, conf, pred, src = "skipped", "", "", 0, ""
             w.writerow([r["pair_id"], r["name_a"], r["name_b"], r["label"], r["pair_type"],
                         route, "" if base_scores is None else f"{base_scores[i]:.4f}",
-                        same, conf, pred])
+                        same, conf, pred, src])
     # quick metrics
-    import collections
     y = np.array([int(r["label"]) for r in rows])
-    pred = np.array([int(l.strip()) for l in
-                     [row[-1] for row in csv.reader(open(outp))][1:]])
+    pred = np.array([int(r["final_pred"]) for r in csv.DictReader(open(outp))])
     tp = int(np.sum((pred == 1) & (y == 1))); fp = int(np.sum((pred == 1) & (y == 0)))
     fn = int(np.sum((pred == 0) & (y == 1)))
     P = tp / (tp + fp) if tp + fp else 0; R = tp / (tp + fn) if tp + fn else 0
@@ -246,10 +277,15 @@ def main():
     p = sub.add_parser("pairs", parents=[common])
     p.add_argument("--pairs", default="data/company_pairs.csv")
     p.add_argument("--all", action="store_true", help="send every pair to the LLM")
-    p.add_argument("--band-lo", type=float, default=0.15,
+    p.add_argument("--band-lo", type=float, default=0.10,
                    help="baseline score below which pairs auto-reject")
     p.add_argument("--band-hi", type=float, default=0.95,
                    help="baseline score above which pairs auto-accept")
+    p.add_argument("--reuse", nargs="+", default=None, metavar="CSV",
+                   help="prior decision files (pair_id + llm_same columns); band pairs "
+                        "already decided there are reused instead of re-adjudicated (C4)")
+    p.add_argument("--out-name", default="llm_pair_decisions.csv",
+                   help="output filename within --outdir")
 
     a = ap.parse_args()
     key = "ANTHROPIC_API_KEY" if a.backend == "anthropic" else "OPENAI_API_KEY"
