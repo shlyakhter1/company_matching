@@ -253,6 +253,8 @@ def main():
     ap.add_argument("--focus", default=None, help="matcher name for misses/explorer (default: best F1)")
     ap.add_argument("--embed-matcher", default="tfidf_char", help="matcher used for the 2D map")
     ap.add_argument("--reducer", default="umap", choices=["umap", "tsne", "pca"])
+    ap.add_argument("--no-map", action="store_true",
+                    help="skip the 2D embedding map (for pair-only datasets with no records file)")
     args = ap.parse_args()
 
     df, met, cols = load(args.outdir)
@@ -265,8 +267,11 @@ def main():
     print("  -> score_distributions.png");  plot_distributions(df, cols, met, args.outdir)
     cpath, mpng, nfp, nfn, thr = miss_report(df, met, focus, args.outdir)
     print(f"  -> miss_table_{focus}.png  ({nfp} false merges, {nfn} missed @ thr={thr:.2f})")
-    png, html, algo, used = embedding_map(args.records, args.embed_matcher, args.outdir, args.reducer)
-    print(f"  -> embedding_map.png/.html  ({algo} of {used})")
+    if args.no_map:
+        print("  -> embedding map skipped (--no-map)")
+    else:
+        png, html, algo, used = embedding_map(args.records, args.embed_matcher, args.outdir, args.reducer)
+        print(f"  -> embedding_map.png/.html  ({algo} of {used})")
     eh = explorer(df, met, focus, args.outdir)
     print(f"  -> explorer_{focus}.html")
     print("done.")
