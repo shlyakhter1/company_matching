@@ -34,5 +34,41 @@
     "sweep_f1": 0.9083,
     "roc_auc": 0.9032,
     "avg_precision": 0.9312
+  },
+  "hybrid_ltcomp_llm": {
+    "router": "lt_comp_en",
+    "band_lo": 0.1,
+    "band_hi": 0.95,
+    "band_size": 596,
+    "reused": 596,
+    "missing": 0,
+    "llm_band_accuracy": 0.9933,
+    "precision": 0.9956,
+    "recall": 0.9615,
+    "f1": 0.9783,
+    "false_merges": 2,
+    "missed_pos": 18,
+    "sweep_thr": 0.9502,
+    "sweep_f1": 0.9783,
+    "roc_auc": 0.9756,
+    "avg_precision": 0.9816
+  },
+  "hybrid_ltmulti_llm": {
+    "router": "lt_comp_multi",
+    "band_lo": 0.1,
+    "band_hi": 0.95,
+    "band_size": 697,
+    "reused": 697,
+    "missing": 0,
+    "llm_band_accuracy": 0.9943,
+    "precision": 0.9978,
+    "recall": 0.9829,
+    "f1": 0.9903,
+    "false_merges": 1,
+    "missed_pos": 8,
+    "sweep_thr": 0.9507,
+    "sweep_f1": 0.9903,
+    "roc_auc": 0.9902,
+    "avg_precision": 0.9928
   }
 }

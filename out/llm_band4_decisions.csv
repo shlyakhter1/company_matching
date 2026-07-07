@@ -1,0 +1,956 @@
+pair_id,name_a,name_b,label,pair_type,route,baseline_score,llm_same,llm_confidence,final_pred,source
+p0001,LVMH Moët Hennessy Louis Vuitton,Moet Hennessy Louis Vuitton,1,positive,llm,0.9363,1,,1,reused
+p0002,"NIKE, Inc.",NKE,1,positive,llm,0.8500,1,,1,reused
+p0003,Bank of America Corporation,Bank of America,1,positive,auto_accept,0.9719,,,1,
+p0004,ASML Holding,"Netflix, Inc.",0,easy_negative,auto_reject,0.0000,,,0,
+p0005,AT&T Inc.,A T & T,1,positive,llm,0.7761,1,,1,reused
+p0006,Delta Air Lines,"Delta Electronics, Inc.",0,hard_negative,llm,0.6251,0,,0,reused
+p0007,Credit Suisse,"First Solar, Inc.",0,easy_negative,auto_reject,0.0000,,,0,
+p0008,American International Group,AIG,1,positive,llm,0.7237,1,,1,reused
+p0009,ExxonMobil,Exxon,1,positive,llm,0.9294,1,,1,reused
+p0010,General Electric Company,Lincoln Electric,0,hard_negative,llm,0.4787,0,,0,reused
+p0011,United Airlines,UAL,1,positive,llm,0.5549,1,,1,reused
+p0012,American Express Company,American Electric Power,0,hard_negative,llm,0.4405,0,,0,reused
+p0013,A.P. Moller-Maersk A/S,AP Moller Maersk,1,positive,llm,0.7938,1,,1,reused
+p0014,Deutsche Bank AG,Deutsche Telekom,0,hard_negative,llm,0.5484,0,,0,reused
+p0015,General Motors,General Electric Company,0,hard_negative,llm,0.5509,0,,0,reused
+p0016,HSBC Holdings plc,Hongkong and Shanghai Banking Corporation,1,positive,llm,0.7587,0,,0,reused
+p0017,American Airlines,AAL,1,positive,llm,0.6482,1,,1,reused
+p0018,"Advanced Micro Devices, Inc.",AMD,1,positive,llm,0.9200,1,,1,reused
+p0019,"Cisco Systems, Inc.",Cisco Systems,1,positive,auto_accept,0.9902,,,1,
+p0020,"Merck & Co., Inc.",Merck Sharp & Dohme,1,positive,llm,0.7299,1,,1,reused
+p0021,Bank of Montreal,Royal Bank,0,hard_negative,llm,0.4667,0,,0,reused
+p0022,3M Company,I.B.M.,0,easy_negative,llm,0.1942,0,0.99,0,new
+p0023,Johnson and Johnson,Johnson Controls,0,hard_negative,llm,0.7983,0,,0,reused
+p0024,Bank of China Limited,中国银行,1,positive,llm,0.9160,1,,1,reused
+p0025,Hewlett Packard,Tata Consultancy Services Limited,0,easy_negative,auto_reject,0.0973,,,0,
+p0026,"Amazon.com, Inc.",AMZN,1,positive,llm,0.8500,1,,1,reused
+p0027,Amazon.com,Citigroup,0,easy_negative,auto_reject,0.0102,,,0,
+p0028,Merck Group,First Solar,0,easy_negative,auto_reject,0.0000,,,0,
+p0029,Chevron,Deutsche Telekom AG,0,easy_negative,auto_reject,0.0597,,,0,
+p0030,JPMorgan Chase,Cisco Systems,0,easy_negative,auto_reject,0.0000,,,0,
+p0031,General Motors Company,"Tesla Motors, Inc.",0,hard_negative,llm,0.4586,0,,0,reused
+p0032,Citi,C,1,positive,llm,0.4435,1,0.85,1,new
+p0033,Stellantis N.V.,Fiat Chrysler Automobiles,1,positive,llm,0.5451,0,,0,reused
+p0034,Royal Bank of Scotland Group,RBS,1,positive,llm,0.9200,1,,1,reused
+p0035,"Netflix, Inc.",NFLX,1,positive,llm,0.8500,1,,1,reused
+p0036,"United Airlines Holdings, Inc.",American Airlines,0,hard_negative,llm,0.6413,0,,0,reused
+p0037,Intel Corporation,Intel Corp,1,positive,auto_accept,0.9864,,,1,
+p0038,Genral Electric,Lincoln Electric,0,hard_negative,llm,0.4342,0,,0,reused
+p0039,Daimler AG,Mercedes-Benz,1,positive,llm,0.5582,1,,1,reused
+p0040,Royal Bank,First Republic Bank,0,hard_negative,llm,0.5740,0,,0,reused
+p0041,"Samsung Electronics Co., Ltd.","Delta Electronics, Inc.",0,hard_negative,llm,0.3928,0,,0,reused
+p0042,Saudi Aramco,Aramco,1,positive,llm,0.8065,1,,1,reused
+p0043,General Motors Company,General Dynamics,0,hard_negative,llm,0.5434,0,,0,reused
+p0044,Deutsche Bank AG,Bank of China,0,hard_negative,llm,0.4094,0,,0,reused
+p0045,Ford Motor Co.,Ford,1,positive,llm,0.9328,1,,1,reused
+p0046,Pfizer,Deutsche Telekom AG,0,easy_negative,auto_reject,0.0732,,,0,
+p0047,"Meta Platforms, Inc.",META,1,positive,llm,0.5190,1,,1,reused
+p0048,Alibaba Group Holding Limited,BABA,1,positive,llm,0.2123,1,,1,reused
+p0049,Alibaba Group,BABA,1,positive,llm,0.3373,1,,1,reused
+p0050,"The Home Depot, Inc.",The Home Depot,1,positive,auto_accept,0.9719,,,1,
+p0051,"American Electric Power Company, Inc.",American Electric Power,1,positive,auto_accept,0.9598,,,1,
+p0052,"Merck & Co., Inc.",Merck KGaA,0,hard_negative,llm,0.8387,0,,0,reused
+p0053,General Dynamics,First Solar,0,easy_negative,llm,0.1370,0,0.99,0,new
+p0054,General Electric Co.,GE,1,positive,llm,0.9200,1,,1,reused
+p0055,BofA,BAC,1,positive,llm,0.4801,1,,1,reused
+p0056,Mastercard Incorporated,General Motors,0,easy_negative,llm,0.1153,0,,0,reused
+p0057,General Motors Company,General Motors,1,positive,auto_accept,0.9782,,,1,
+p0058,AstraZeneca PLC,AstraZeneca,1,positive,auto_accept,0.9651,,,1,
+p0059,Bank of America,Royal Bank of Canada,0,hard_negative,llm,0.4694,0,,0,reused
+p0060,AAPL,Aple Inc,1,positive,llm,0.5597,1,,1,reused
+p0061,Merck and Co,E. Merck,0,hard_negative,llm,0.8636,0,,0,reused
+p0062,Johnson & Johnson,J&J,1,positive,llm,0.7414,1,,1,reused
+p0063,Morgan Stanley & Co.,MS,1,positive,llm,0.9200,1,,1,reused
+p0064,ASML Holding N.V.,ASML Holding,1,positive,auto_accept,0.9615,,,1,
+p0065,IBM Corp.,Internationl Business Machines,1,positive,llm,0.9200,1,,1,reused
+p0066,Saudi Arabian Oil Company,Merck and Co,0,easy_negative,llm,0.1229,0,0.99,0,new
+p0067,MS,A.P. Møller – Mærsk,0,easy_negative,llm,0.2780,0,0.95,0,new
+p0068,First Solar,FSLR,1,positive,llm,0.3388,1,,1,reused
+p0069,American Express,American International Group,0,hard_negative,llm,0.5690,0,,0,reused
+p0070,International Business Machines Corporation,IBM,1,positive,llm,0.9200,1,,1,reused
+p0071,Unilever PLC,Unilever,1,positive,auto_accept,0.9721,,,1,
+p0072,British Petroleum,BP,1,positive,llm,0.9200,1,,1,reused
+p0073,Hitachi,日立製作所,1,positive,llm,0.6566,1,0.99,1,new
+p0074,Bayerische Motoren Werke AG,BMW,1,positive,llm,0.9200,1,,1,reused
+p0075,Deutsche Post DHL Group,DHL Group,1,positive,llm,0.8422,1,,1,reused
+p0076,"General Mills, Inc.",GIS,1,positive,llm,0.2888,1,,1,reused
+p0077,Sony Corporation,Sony,1,positive,auto_accept,0.9740,,,1,
+p0078,AstraZeneca PLC,Astra Zeneca,1,positive,llm,0.6992,1,,1,reused
+p0079,PJSC Gazprom,Gazprom,1,positive,llm,0.9220,1,0.99,1,new
+p0080,AP Moller Maersk,Maersk,1,positive,llm,0.5761,1,,1,reused
+p0081,United Airlines,United Parcel Service,0,hard_negative,llm,0.6268,0,,0,reused
+p0082,Delta Air Lines,Delta Electronics,0,hard_negative,llm,0.6378,0,,0,reused
+p0083,Tata Consultancy Services,TCS,1,positive,llm,0.9200,1,,1,reused
+p0084,HP Inc.,Hewlett Packard,1,positive,llm,0.9200,1,,1,reused
+p0085,Siemens,General Dynamics Corporation,0,easy_negative,auto_reject,0.0000,,,0,
+p0086,HSBC Holdings plc,Société des Produits Nestlé,0,easy_negative,auto_reject,0.0000,,,0,
+p0087,Airbus Group,Airbus,1,positive,llm,0.9435,1,0.97,1,new
+p0088,TotalEnergies,Total,1,positive,llm,0.8500,1,,1,reused
+p0089,IBM,IBM Corp.,1,positive,llm,0.9039,1,0.99,1,new
+p0090,Novartis International AG,Johnson Controls International plc,0,hard_negative,llm,0.1753,0,,0,reused
+p0091,International Business Machines Corporation,IBM Corp.,1,positive,llm,0.9200,1,,1,reused
+p0092,American Express Company,American Telephone & Telegraph,0,hard_negative,llm,0.4822,0,,0,reused
+p0093,"United Airlines Holdings, Inc.",United Airlines,1,positive,llm,0.9197,1,0.95,1,new
+p0094,"Honda Motor Co., Ltd.",Honda,1,positive,llm,0.9191,1,,1,reused
+p0095,Oracle Corporation,Oracle,1,positive,auto_accept,0.9694,,,1,
+p0096,Tata Consultancy Services,CVX,0,easy_negative,llm,0.1493,0,0.99,0,new
+p0097,Exxon Mobil Corporation,Exxon,1,positive,llm,0.8880,1,,1,reused
+p0098,TotalEnergies SE,TotalEnergies,1,positive,llm,0.9475,1,0.99,1,new
+p0099,CVX,Saudi Aramco,0,easy_negative,auto_reject,0.0853,,,0,
+p0100,AstraZeneca PLC,AZN,1,positive,llm,0.8500,1,,1,reused
+p0101,The Coca-Cola Company,Santander,0,easy_negative,llm,0.1615,0,0.99,0,new
+p0102,Nestlé S.A.,Nestle SA,1,positive,llm,0.8736,1,,1,reused
+p0103,Bank of America,Bank of Montreal,0,hard_negative,llm,0.4310,0,,0,reused
+p0104,Nike Inc,NKE,1,positive,llm,0.8500,1,,1,reused
+p0105,"American Electric Power Company, Inc.",Lincoln Electric,0,hard_negative,llm,0.5257,0,,0,reused
+p0106,Astra Zeneca,AZN,1,positive,llm,0.1761,1,,1,reused
+p0107,Deutsche Bank AG,Royal Bank,0,hard_negative,llm,0.4538,0,,0,reused
+p0108,Daimler AG,MS,0,easy_negative,auto_reject,0.0332,,,0,
+p0109,American Electric Power,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.4828,0,,0,reused
+p0110,Ford Motor Company,"Honda Motor Co., Ltd.",0,hard_negative,llm,0.4766,0,,0,reused
+p0111,GM,Genral Motors,1,positive,llm,0.9200,1,,1,reused
+p0112,American Airlines Group Inc.,"American Electric Power Company, Inc.",0,hard_negative,llm,0.3710,0,,0,reused
+p0113,UnitedHealth Group,Anheuser Busch InBev,0,easy_negative,auto_reject,0.0284,,,0,
+p0114,Deutsche Bank AG,Royal Bank of Canada,0,hard_negative,llm,0.3191,0,,0,reused
+p0115,Volkswagen AG,Standard Chartered PLC,0,easy_negative,auto_reject,0.0000,,,0,
+p0116,TSM,A.P. Møller – Mærsk,0,easy_negative,llm,0.2267,0,,0,reused
+p0117,Sony Group Corporation,ソニー,1,positive,llm,0.6882,1,,1,reused
+p0118,"United Parcel Service, Inc.",UPS,1,positive,llm,0.9200,1,,1,reused
+p0119,Novartis International AG,"American International Group, Inc.",0,hard_negative,auto_reject,0.0200,,,0,
+p0120,SAP SE,SAP AG,1,positive,llm,0.9039,1,0.97,1,new
+p0121,Moet Hennessy Louis Vuitton,LVMH,1,positive,llm,0.4638,1,,1,reused
+p0122,CRM,General Electric Company,0,easy_negative,auto_reject,0.0000,,,0,
+p0123,Bank of Montreal,Royal Bank of Canada,0,hard_negative,llm,0.6624,0,,0,reused
+p0124,Visa Inc.,Visa,1,positive,llm,0.9362,1,0.99,1,new
+p0125,American Express Company,American International Group,0,hard_negative,llm,0.5377,0,,0,reused
+p0126,"Banco Santander, S.A.",Banco Santander,1,positive,auto_accept,0.9771,,,1,
+p0127,Royal Dutch Shell,Royal Bank of Canada,0,hard_negative,llm,0.3177,0,,0,reused
+p0128,GSK plc,GSK,1,positive,llm,0.8777,1,0.99,1,new
+p0129,United Airlines,BofA,0,easy_negative,auto_reject,0.0000,,,0,
+p0130,Bank of America Corporation,Deutsche Bank,0,hard_negative,llm,0.4266,0,,0,reused
+p0131,Merck KGaA,Merck Group,1,positive,llm,0.9119,1,0.75,1,new
+p0132,American Electric Power,"American International Group, Inc.",0,hard_negative,llm,0.2912,0,,0,reused
+p0133,General Electric Co.,American Electric Power,0,hard_negative,llm,0.5008,0,,0,reused
+p0134,Johnson Controls International plc,Johnson Controls,1,positive,llm,0.9481,1,,1,reused
+p0135,Bank of America,Union Bank of Switzerland,0,hard_negative,llm,0.3263,0,,0,reused
+p0136,Citigroup Inc.,Citigroup,1,positive,auto_accept,0.9844,,,1,
+p0137,Pepsi,Crédit Agricole S.A.,0,easy_negative,auto_reject,0.0119,,,0,
+p0138,"PepsiCo, Inc.",PepsiCo,1,positive,auto_accept,0.9907,,,1,
+p0139,Apple Inc.,"Samsung Electronics Co., Ltd.",0,easy_negative,llm,0.1576,0,,0,reused
+p0140,Credit Agricole,Sony Corporation,0,easy_negative,auto_reject,0.0694,,,0,
+p0141,GE,American Express Company,0,easy_negative,auto_reject,0.0855,,,0,
+p0142,Johnson and Johnson,Johnson Controls International plc,0,hard_negative,llm,0.7479,0,,0,reused
+p0143,Genral Electric,American Electric Power,0,hard_negative,llm,0.3630,0,,0,reused
+p0144,Bank of America,Bank of China Limited,0,hard_negative,llm,0.4456,0,,0,reused
+p0145,Union Bank of Switzerland,Bank of Montreal,0,hard_negative,llm,0.3871,0,,0,reused
+p0146,General Mills,VZ,0,easy_negative,auto_reject,0.0000,,,0,
+p0147,The Procter & Gamble Company,Procter and Gamble,1,positive,auto_accept,0.9752,,,1,
+p0148,"Tesla Motors, Inc.",Tata Motors,0,hard_negative,llm,0.6800,0,,0,reused
+p0149,RTX Corporation,Raytheon,1,positive,llm,0.6228,1,,1,reused
+p0150,The Boeing Company,AAPL,0,easy_negative,auto_reject,0.0639,,,0,
+p0151,PJSC Gazprom,OAO Gazprom,1,positive,llm,0.8170,1,0.97,1,new
+p0152,Procter and Gamble,Maersk,0,easy_negative,auto_reject,0.0000,,,0,
+p0153,Royal Bank of Canada,Royal Bank,1,positive,llm,0.7794,1,,1,reused
+p0154,"Delta Air Lines, Inc.",Astra Zeneca,0,easy_negative,auto_reject,0.0733,,,0,
+p0155,Bank of China Limited,Bank of Montreal,0,hard_negative,llm,0.4764,0,,0,reused
+p0156,MCD,UBS Group AG,0,easy_negative,auto_reject,0.0000,,,0,
+p0157,GlaxoSmithKline,GSK,1,positive,llm,0.8500,1,,1,reused
+p0158,Bank of America,Verizon Communications Inc.,0,easy_negative,llm,0.1386,0,0.99,0,new
+p0159,Deutsche Bank,Bank of Montreal,0,hard_negative,llm,0.3654,0,,0,reused
+p0160,Deutsche Bank AG,Deutsche Post AG,0,hard_negative,llm,0.5329,0,,0,reused
+p0161,General Electric Co.,HSBC,0,easy_negative,llm,0.1349,0,0.99,0,new
+p0162,AP Moller Maersk,INTC,0,easy_negative,auto_reject,0.0000,,,0,
+p0163,Deutsche Telekom,Deutsche Post DHL Group,0,hard_negative,llm,0.5465,0,,0,reused
+p0164,Mercedes Benz,Mercedes-Benz,1,positive,auto_accept,0.9640,,,1,
+p0165,Tata Consultancy Services,Tata Motors,0,hard_negative,llm,0.6337,0,,0,reused
+p0166,Fiat Chrysler Automobiles,Airbus Group,0,easy_negative,auto_reject,0.0508,,,0,
+p0167,"Netflix, Inc.",Netflix,1,positive,auto_accept,0.9850,,,1,
+p0168,Deutsche Bank,First Republic Bank,0,hard_negative,llm,0.4985,0,,0,reused
+p0169,Anheuser-Busch InBev SA/NV,Anheuser Busch InBev,1,positive,llm,0.9457,1,0.99,1,new
+p0170,Exxon Mobil Corporation,The Home Depot,0,easy_negative,auto_reject,0.0952,,,0,
+p0171,"Tesla Motors, Inc.",Ford Motor Co.,0,easy_negative,llm,0.5118,0,,0,reused
+p0172,L'Oréal S.A.,L'Oreal,1,positive,llm,0.8720,1,,1,reused
+p0173,Bank of America,Deutsche Bank AG,0,hard_negative,llm,0.4329,0,,0,reused
+p0174,Toyota Motor Corporation,Toyota,1,positive,llm,0.9276,1,,1,reused
+p0175,General Dynamics Corporation,General Dynamics,1,positive,auto_accept,0.9676,,,1,
+p0176,Google LLC,Google Inc.,1,positive,auto_accept,0.9854,,,1,
+p0177,Johnson Controls International plc,Ford Motor Company,0,easy_negative,auto_reject,0.0294,,,0,
+p0178,Saudi Arabian Oil Company,Nike,0,easy_negative,auto_reject,0.0000,,,0,
+p0179,Johnson Controls,"S. C. Johnson & Son, Inc.",0,hard_negative,llm,0.7375,0,,0,reused
+p0180,Deutsche Bank AG,Deutsche Bank,1,positive,auto_accept,0.9741,,,1,
+p0181,Microsoft Corp.,MSFT,1,positive,llm,0.8500,1,,1,reused
+p0182,"Hitachi, Ltd.",L'Oréal S.A.,0,easy_negative,auto_reject,0.0000,,,0,
+p0183,"Salesforce, Inc.","S. C. Johnson & Son, Inc.",0,easy_negative,llm,0.2540,0,,0,reused
+p0184,IBM Corp.,Advanced Micro Devices,0,easy_negative,llm,0.2233,0,,0,reused
+p0185,Toyota Motor Corporation,Ford Motor Co.,0,hard_negative,llm,0.5720,0,,0,reused
+p0186,Citigroup Inc.,Citi,1,positive,llm,0.9012,1,,1,reused
+p0187,Deutsche Bank,Minnesota Mining and Manufacturing,0,easy_negative,auto_reject,0.0000,,,0,
+p0188,Johnson and Johnson,Volkswagen Aktiengesellschaft,0,easy_negative,auto_reject,0.0000,,,0,
+p0189,Apple Inc.,Aple Inc,1,positive,llm,0.8500,1,,1,reused
+p0190,KO,中国银行,0,easy_negative,auto_reject,0.0327,,,0,
+p0191,"Apple Computer, Inc.",Aple Inc,1,positive,llm,0.8500,1,,1,reused
+p0192,Advanced Micro Devices,Exxon,0,easy_negative,auto_reject,0.0000,,,0,
+p0193,American Express,Bank of America Corporation,0,easy_negative,llm,0.5337,0,,0,reused
+p0194,Oracle Corporation,Oracle Corp.,1,positive,auto_accept,0.9728,,,1,
+p0195,LVMH,META,0,easy_negative,auto_reject,0.0000,,,0,
+p0196,Alliance Bernstein,"The Goldman Sachs Group, Inc.",0,easy_negative,llm,0.2634,0,,0,reused
+p0197,Genral Electric,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.4627,0,,0,reused
+p0198,Nestle SA,Nestle,1,positive,llm,0.9449,1,0.99,1,new
+p0199,Pfizer Inc.,Mercedes Benz,0,easy_negative,auto_reject,0.0000,,,0,
+p0200,Apple Inc.,"Apple Computer, Inc.",1,positive,llm,0.8938,1,,1,reused
+p0201,Merck and Co,Merck Group,0,hard_negative,llm,0.8763,0,0.85,0,new
+p0202,Alibaba Group,Alibaba,1,positive,auto_accept,0.9753,,,1,
+p0203,American Express Company,"American Electric Power Company, Inc.",0,hard_negative,llm,0.4854,0,,0,reused
+p0204,"NIKE, Inc.",Nike,1,positive,llm,0.6414,1,0.99,1,new
+p0205,L'Oréal S.A.,LOreal,1,positive,llm,0.6186,1,,1,reused
+p0206,Nike,NKE,1,positive,llm,0.8500,1,,1,reused
+p0207,Deutsche Post AG,Verizon,0,easy_negative,llm,0.2312,0,,0,reused
+p0208,Saudi Arabian Oil Company,American Telephone & Telegraph,0,easy_negative,auto_reject,0.0000,,,0,
+p0209,"United Parcel Service, Inc.",Mercedes-Benz,0,easy_negative,auto_reject,0.0000,,,0,
+p0210,General Motors,Genral Motors,1,positive,llm,0.7270,1,,1,reused
+p0211,TCS,American Electric Power,0,easy_negative,auto_reject,0.0000,,,0,
+p0212,PepsiCo,RBS,0,easy_negative,auto_reject,0.0000,,,0,
+p0213,Bank of China,Bank of Montreal,0,hard_negative,llm,0.4588,0,,0,reused
+p0214,"Honda Motor Co., Ltd.",Honda Motor,1,positive,auto_accept,0.9823,,,1,
+p0215,Bank of China Limited,First Republic Bank,0,hard_negative,llm,0.4550,0,,0,reused
+p0216,Berkshire Hathaway Inc.,"Honda Motor Co., Ltd.",0,easy_negative,llm,0.3516,0,,0,reused
+p0217,Nvidia,NVDA,1,positive,llm,0.8500,1,,1,reused
+p0218,Royal Bank of Canada,Royal Bank of Scotland Group,0,hard_negative,llm,0.6847,0,,0,reused
+p0219,Bank of America Corporation,BofA,1,positive,llm,0.4068,1,,1,reused
+p0220,General Motors,General Dynamics,0,hard_negative,llm,0.5404,0,,0,reused
+p0221,"Apple Computer, Inc.",AAPL,1,positive,llm,0.1945,1,,1,reused
+p0222,American Airlines,"American International Group, Inc.",0,hard_negative,llm,0.5837,0,,0,reused
+p0223,Exxon,XOM,1,positive,llm,0.3865,1,,1,reused
+p0224,Bank of America,Deutsche Bank,0,hard_negative,llm,0.4741,0,,0,reused
+p0225,General Motors,General Dynamics Corporation,0,hard_negative,llm,0.5219,0,,0,reused
+p0226,Royal Bank of Scotland Group,First Republic Bank,0,hard_negative,llm,0.3978,0,,0,reused
+p0227,A T & T,American Telephone & Telegraph,1,positive,llm,0.7702,1,,1,reused
+p0228,Bank of Montreal,BMO Financial Group,1,positive,llm,0.4237,1,,1,reused
+p0229,UnitedHealth Group,UNH,1,positive,llm,0.8500,1,,1,reused
+p0230,Sony Group Corporation,Sony,1,positive,llm,0.9362,1,,1,reused
+p0231,S&P Global Inc.,Union Bank of Switzerland,0,easy_negative,llm,0.1402,0,,0,reused
+p0232,SAP SE,SAP,1,positive,llm,0.8612,1,0.99,1,new
+p0233,"American Electric Power Company, Inc.","Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.5108,0,,0,reused
+p0234,"Samsung Electronics Co., Ltd.",Samsung Elec,1,positive,llm,0.8850,1,,1,reused
+p0235,MSFT,Microsft,1,positive,llm,0.8500,1,,1,reused
+p0236,Pfizer,PFE,1,positive,llm,0.8500,1,,1,reused
+p0237,Shell plc,Shell,1,positive,auto_accept,0.9748,,,1,
+p0238,Johnson and Johnson,SC Johnson,0,hard_negative,llm,0.7683,0,,0,reused
+p0239,Credit Suisse Group AG,Mercedes Benz,0,easy_negative,auto_reject,0.0358,,,0,
+p0240,"Delta Electronics, Inc.",CSCO,0,easy_negative,auto_reject,0.0425,,,0,
+p0241,TotalEnergies SE,Total,1,positive,llm,0.8500,1,,1,reused
+p0242,AT&T Inc.,AT&T,1,positive,auto_accept,0.9743,,,1,
+p0243,United Parcel Service,UPS,1,positive,llm,0.9200,1,,1,reused
+p0244,"Banco Santander, S.A.",Santander,1,positive,llm,0.8448,1,,1,reused
+p0245,NVIDIA Corporation,NVDA,1,positive,llm,0.8500,1,,1,reused
+p0246,Ford Motor Co.,Honda Motor,0,hard_negative,llm,0.5111,0,,0,reused
+p0247,Deutsche Bank AG,Deutsche Telekom AG,0,hard_negative,llm,0.5754,0,,0,reused
+p0248,Bank of China Limited,Royal Bank of Canada,0,hard_negative,llm,0.5105,0,,0,reused
+p0249,American Express Company,American Airlines Group Inc.,0,hard_negative,llm,0.6094,0,,0,reused
+p0250,Novartis,Novartis International AG,1,positive,llm,0.9289,1,,1,reused
+p0251,Sony,ソニー,1,positive,llm,0.7572,1,,1,reused
+p0252,Apple,Aple Inc,1,positive,llm,0.8500,1,,1,reused
+p0253,Bank of America Corporation,Royal Bank of Canada,0,hard_negative,llm,0.5100,0,,0,reused
+p0254,Berkshire Hathaway,BRK.A,1,positive,llm,0.2584,1,0.99,1,new
+p0255,"Lincoln Electric Holdings, Inc.",Lincoln Electric,1,positive,llm,0.9250,1,0.99,1,new
+p0256,Tata Motors Limited,Tata Steel Limited,0,hard_negative,llm,0.7347,0,,0,reused
+p0257,Wal Mart,WMT,1,positive,llm,0.4102,1,,1,reused
+p0258,"Lincoln Electric Holdings, Inc.",BofA,0,easy_negative,auto_reject,0.0000,,,0,
+p0259,Royal Bank of Canada,RBC,1,positive,llm,0.9200,1,,1,reused
+p0260,Lincoln Financial Group,Lincoln Electric,0,hard_negative,llm,0.6114,0,,0,reused
+p0261,HSBC,Hongkong and Shanghai Banking Corporation,1,positive,llm,0.7647,1,,1,reused
+p0262,Bank of America Corporation,Bank of China,0,hard_negative,llm,0.5157,0,,0,reused
+p0263,Unilever PLC,Unilever N.V.,1,positive,auto_accept,0.9507,,,1,
+p0264,Bank of America Corporation,Royal Bank of Scotland Group,0,hard_negative,llm,0.3027,0,,0,reused
+p0265,Intel Corporation,INTC,1,positive,llm,0.4623,1,,1,reused
+p0266,General Electric Company,General Dynamics Corporation,0,hard_negative,llm,0.6489,0,,0,reused
+p0267,American Electric Power,Lincoln Electric,0,hard_negative,llm,0.5079,0,,0,reused
+p0268,Crédit Agricole S.A.,Credit Agricole,1,positive,llm,0.8854,1,0.99,1,new
+p0269,Costco Wholesale Corporation,COST,1,positive,llm,0.8500,1,,1,reused
+p0270,JPMorgan Chase,GlaxoSmithKline,0,easy_negative,auto_reject,0.0000,,,0,
+p0271,NKE,Shell,0,easy_negative,auto_reject,0.0000,,,0,
+p0272,"General Mills, Inc.",General Mills,1,positive,auto_accept,0.9867,,,1,
+p0273,General Electric Co.,"General Mills, Inc.",0,hard_negative,llm,0.5726,0,,0,reused
+p0274,NVIDIA Corporation,Nvidia,1,positive,auto_accept,0.9683,,,1,
+p0275,"First Solar, Inc.",First Solar,1,positive,auto_accept,0.9814,,,1,
+p0276,"Tesla, Inc.",Alphabet Inc.,0,easy_negative,auto_reject,0.0613,,,0,
+p0277,Bank of Montreal,Royal Bank of Scotland Group,0,hard_negative,llm,0.3898,0,,0,reused
+p0278,Amazon,AMZN,1,positive,llm,0.8500,1,,1,reused
+p0279,Toyota Motor Corporation,Toyota Motor Corp,1,positive,auto_accept,0.9935,,,1,
+p0280,Deutsche Bank,Royal Bank of Canada,0,hard_negative,llm,0.3883,0,,0,reused
+p0281,Deutsche Bank AG,Bank of Montreal,0,hard_negative,llm,0.3013,0,,0,reused
+p0282,Berkshire Hathaway Inc.,BRK.A,1,positive,llm,0.2228,1,0.99,1,new
+p0283,"First Solar, Inc.",First Republic Bank,0,hard_negative,llm,0.3195,0,,0,reused
+p0284,General Motors,Tata Motors,0,hard_negative,llm,0.5294,0,,0,reused
+p0285,JPMorgan Chase & Co.,JPMorgan Chase,1,positive,auto_accept,0.9509,,,1,
+p0286,Alliance Bernstein,AllianceBernstein,1,positive,llm,0.8510,1,,1,reused
+p0287,American Express Company,"American International Group, Inc.",0,hard_negative,llm,0.5755,0,,0,reused
+p0288,Bank of China,Royal Bank,0,hard_negative,llm,0.4107,0,,0,reused
+p0289,Genral Electric,CVX,0,easy_negative,auto_reject,0.0000,,,0,
+p0290,Nvidia,Nvidia Corp,1,positive,auto_accept,0.9877,,,1,
+p0291,J.P. Morgan,"General Mills, Inc.",0,easy_negative,llm,0.4859,0,,0,reused
+p0292,Hewlett Packard,Hewlett Packard Enterprise,0,hard_negative,llm,0.9430,0,,0,reused
+p0293,LVMH Moët Hennessy Louis Vuitton,SAP SE,0,easy_negative,auto_reject,0.0000,,,0,
+p0294,LVMH Moët Hennessy Louis Vuitton,LVMH,1,positive,llm,0.5872,1,,1,reused
+p0295,Johnson & Johnson,SC Johnson,0,hard_negative,llm,0.7599,0,,0,reused
+p0296,Citigroup Inc.,Tesla,0,easy_negative,auto_reject,0.0099,,,0,
+p0297,Taiwan Semiconductor,Novartis AG,0,easy_negative,llm,0.2094,0,0.99,0,new
+p0298,"Samsung Heavy Industries Co., Ltd.",Samsung Heavy Industries,1,positive,auto_accept,0.9845,,,1,
+p0299,Toyota Motor Corporation,トヨタ自動車,1,positive,llm,0.8318,1,,1,reused
+p0300,VZ,Siemens Aktiengesellschaft,0,easy_negative,llm,0.2901,0,0.99,0,new
+p0301,Deutsche Telekom,Deutsche Post AG,0,hard_negative,llm,0.6008,0,,0,reused
+p0302,General Motors Company,General Dynamics Corporation,0,hard_negative,llm,0.5579,0,,0,reused
+p0303,Netflix,NFLX,1,positive,llm,0.8500,1,,1,reused
+p0304,Alibaba,UNH,0,easy_negative,auto_reject,0.0000,,,0,
+p0305,Samsung Electronics,"Samsung Heavy Industries Co., Ltd.",0,hard_negative,llm,0.7395,0,,0,reused
+p0306,NVIDIA Corporation,BMW,0,easy_negative,auto_reject,0.0242,,,0,
+p0307,Daimler AG,Mercedes Benz,1,positive,llm,0.5527,1,,1,reused
+p0308,Merck and Co,MSD,1,positive,llm,0.4994,1,,1,reused
+p0309,Allianz SE,Société des Produits Nestlé,0,easy_negative,llm,0.1245,0,,0,reused
+p0310,Bank of America Corporation,Bank of China Limited,0,hard_negative,llm,0.4702,0,,0,reused
+p0311,American Airlines Group Inc.,American Airlines,1,positive,llm,0.9114,1,,1,reused
+p0312,Газпром,OAO Gazprom,1,positive,llm,0.7911,1,,1,reused
+p0313,"Amazon.com, Inc.",MMM,0,easy_negative,auto_reject,0.0930,,,0,
+p0314,Credit Suisse Group AG,Credit Suisse,1,positive,llm,0.9153,1,0.99,1,new
+p0315,JP Morgan,Morgan Stanley & Co.,0,hard_negative,llm,0.6732,0,,0,reused
+p0316,"United Parcel Service, Inc.",United Parcel Service,1,positive,auto_accept,0.9841,,,1,
+p0317,日立製作所,NVIDIA Corporation,0,easy_negative,llm,0.2734,0,,0,reused
+p0318,First Solar,Hewlett Packard Enterprise,0,easy_negative,auto_reject,0.0014,,,0,
+p0319,Hewlett-Packard,HPQ,1,positive,llm,0.5892,1,,1,reused
+p0320,General Dynamics,NatWest Group plc,0,easy_negative,auto_reject,0.0000,,,0,
+p0321,AMD,Advanced Micro Devices,1,positive,llm,0.9200,1,,1,reused
+p0322,AB InBev,Taiwan Semiconductor Manufacturing Company Limited,0,easy_negative,auto_reject,0.0000,,,0,
+p0323,The Procter & Gamble Company,Procter & Gamble Co.,1,positive,auto_accept,0.9730,,,1,
+p0324,UPS,Hewlett Packard Enterprise Company,0,easy_negative,llm,0.1212,0,0.99,0,new
+p0325,Hewlett-Packard,Hewlett Packard,1,positive,auto_accept,0.9968,,,1,
+p0326,Exxon Mobil Corporation,ExxonMobil,1,positive,auto_accept,0.9642,,,1,
+p0327,Hewlett Packard Enterprise Company,Toyota Motor Corp,0,easy_negative,auto_reject,0.0000,,,0,
+p0328,The Boeing Company,BA,1,positive,llm,0.5829,1,,1,reused
+p0329,SAP AG,SAP,1,positive,llm,0.8236,1,0.99,1,new
+p0330,Minnesota Mining and Manufacturing,3M,1,positive,llm,0.6762,1,,1,reused
+p0331,GlaxoSmithKline plc,XOM,0,easy_negative,auto_reject,0.0348,,,0,
+p0332,삼성전자,Samsung Elec,1,positive,llm,0.7566,1,,1,reused
+p0333,Merck Sharp & Dohme,Merck Group,0,hard_negative,llm,0.6447,0,,0,reused
+p0334,F. Hoffmann-La Roche,Roche,1,positive,llm,0.7735,1,,1,reused
+p0335,Siemens AG,Siemens,1,positive,auto_accept,0.9830,,,1,
+p0336,Johnson and Johnson,J&J,1,positive,llm,0.7368,1,,1,reused
+p0337,Lincoln Electric,Unilever,0,easy_negative,auto_reject,0.0984,,,0,
+p0338,Oracle,J&J,0,easy_negative,llm,0.1383,0,0.99,0,new
+p0339,OAO Gazprom,AMZN,0,easy_negative,auto_reject,0.0773,,,0,
+p0340,Honda,Honda Motor,1,positive,llm,0.9389,1,,1,reused
+p0341,AB InBev,Anheuser Busch InBev,1,positive,llm,0.8364,1,,1,reused
+p0342,L'Oreal,L'Oréal,1,positive,llm,0.8771,1,0.99,1,new
+p0343,"Facebook, Inc.",Meta,1,positive,llm,0.1931,1,0.99,1,new
+p0344,General Motors,"Tesla Motors, Inc.",0,hard_negative,llm,0.4777,0,,0,reused
+p0345,A.P. Moller-Maersk A/S,Maersk,1,positive,llm,0.6847,1,,1,reused
+p0346,General Motors,GM,1,positive,llm,0.9200,1,,1,reused
+p0347,Standard Chartered PLC,Standard & Poor's,0,hard_negative,llm,0.7034,0,,0,reused
+p0348,Lincoln Financial Group,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.6132,0,,0,reused
+p0349,Microsoft Corporation,MSFT,1,positive,llm,0.8500,1,,1,reused
+p0350,Hewlett Packard,Hewlett Packard Enterprise Company,0,hard_negative,auto_accept,0.9561,,,1,
+p0351,Fiat Chrysler Automobiles,Stellantis,1,positive,llm,0.5736,1,,1,reused
+p0352,American Express Company,American Airlines,0,hard_negative,llm,0.6743,0,,0,reused
+p0353,American Electric Power,AEP,1,positive,llm,0.9200,1,,1,reused
+p0354,Deutsche Bank,Deutsche Telekom,0,hard_negative,llm,0.5449,0,,0,reused
+p0355,United Airlines,American Airlines,0,hard_negative,llm,0.6384,0,,0,reused
+p0356,DAL,GSK plc,0,easy_negative,auto_reject,0.0000,,,0,
+p0357,"The Goldman Sachs Group, Inc.","Honda Motor Co., Ltd.",0,easy_negative,auto_reject,0.0647,,,0,
+p0358,NKE,Banco Santander,0,easy_negative,auto_reject,0.0000,,,0,
+p0359,"General Mills, Inc.",General Dynamics Corporation,0,hard_negative,llm,0.5684,0,,0,reused
+p0360,Deutsche Telekom AG,Deutsche Post DHL Group,0,hard_negative,llm,0.5351,0,,0,reused
+p0361,"Tesla, Inc.",TSLA,1,positive,llm,0.8500,1,,1,reused
+p0362,HP Inc.,Hewlett-Packard,1,positive,llm,0.9200,1,,1,reused
+p0363,Mercedes-Benz Group AG,Daimler AG,1,positive,llm,0.5670,1,,1,reused
+p0364,"Cisco Systems, Inc.",CSCO,1,positive,llm,0.8500,1,,1,reused
+p0365,CRM,Aple Inc,0,easy_negative,auto_reject,0.0000,,,0,
+p0366,The Boeing Company,Boeing Co,1,positive,auto_accept,0.9595,,,1,
+p0367,Tata Motors,Tata Steel Limited,0,hard_negative,llm,0.7053,0,,0,reused
+p0368,Procter & Gamble Co.,Procter and Gamble,1,positive,auto_accept,0.9619,,,1,
+p0369,Deutsche Bank,Deutsche Telekom AG,0,hard_negative,llm,0.5399,0,,0,reused
+p0370,Airbus Group,GlaxoSmithKline plc,0,easy_negative,auto_reject,0.0000,,,0,
+p0371,Samsung Electronics,Samsung Heavy Industries,0,hard_negative,llm,0.7632,0,,0,reused
+p0372,"Merck & Co., Inc.",Merck and Co,1,positive,auto_accept,0.9510,,,1,
+p0373,American Telephone & Telegraph,American Airlines,0,hard_negative,llm,0.4568,0,,0,reused
+p0374,AT&T,American Telephone & Telegraph,1,positive,llm,0.8420,1,,1,reused
+p0375,Tata Consultancy Services Limited,Tata Steel,0,hard_negative,llm,0.6597,0,,0,reused
+p0376,Amex,AXP,1,positive,llm,0.4650,1,,1,reused
+p0377,"Apple Computer, Inc.",Apple,1,positive,llm,0.8852,1,,1,reused
+p0378,General Mills,General Dynamics Corporation,0,hard_negative,llm,0.5449,0,,0,reused
+p0379,Maersk,A.P. Møller – Mærsk,1,positive,llm,0.5825,1,,1,reused
+p0380,American Express Company,AXP,1,positive,llm,0.4602,1,,1,reused
+p0381,"Delta Electronics, Inc.",Google Inc.,0,easy_negative,llm,0.2384,0,,0,reused
+p0382,Siemens Aktiengesellschaft,Siemens,1,positive,llm,0.9063,1,0.99,1,new
+p0383,HP Inc.,Visa,0,easy_negative,auto_reject,0.0000,,,0,
+p0384,Bank of China Limited,Royal Bank,0,hard_negative,llm,0.4363,0,,0,reused
+p0385,"First Solar, Inc.",FSLR,1,positive,llm,0.3306,1,,1,reused
+p0386,Deutsche Bank AG,Union Bank of Switzerland,0,hard_negative,llm,0.5151,0,,0,reused
+p0387,Alibaba,Saudi Arabian Oil Company,0,easy_negative,llm,0.3084,0,,0,reused
+p0388,MSD,United Airlines,0,easy_negative,auto_reject,0.0000,,,0,
+p0389,UnitedHealth Group Incorporated,UnitedHealth Group,1,positive,auto_accept,0.9865,,,1,
+p0390,GE,Genral Electric,1,positive,llm,0.9200,1,,1,reused
+p0391,Samsung Elec,"Samsung Heavy Industries Co., Ltd.",0,hard_negative,llm,0.6928,0,,0,reused
+p0392,"Delta Air Lines, Inc.",Delta Electronics,0,hard_negative,llm,0.6541,0,,0,reused
+p0393,"Honda Motor Co., Ltd.","First Solar, Inc.",0,easy_negative,auto_reject,0.0666,,,0,
+p0394,Pfizer Inc.,Pfizer,1,positive,auto_accept,0.9872,,,1,
+p0395,"American Electric Power Company, Inc.","American International Group, Inc.",0,hard_negative,llm,0.3145,0,,0,reused
+p0396,Novartis AG,Novartis,1,positive,llm,0.9490,1,0.99,1,new
+p0397,Credit Agricole,TSMC,0,easy_negative,auto_reject,0.0000,,,0,
+p0398,American Airlines,American International Group,0,hard_negative,llm,0.5622,0,,0,reused
+p0399,The Home Depot,Raytheon Technologies,0,easy_negative,auto_reject,0.0769,,,0,
+p0400,McDonald's Corporation,MCD,1,positive,llm,0.8500,1,,1,reused
+p0401,Bayerische Motoren Werke AG,BMW AG,1,positive,llm,0.9200,1,,1,reused
+p0402,TSMC,Taiwan Semiconductor,1,positive,llm,0.6231,1,,1,reused
+p0403,Santander,Banco Santander,1,positive,llm,0.8522,1,,1,reused
+p0404,JP Morgan,J.P. Morgan,1,positive,llm,0.8884,1,,1,reused
+p0405,Johnson and Johnson,"S. C. Johnson & Son, Inc.",0,hard_negative,llm,0.8718,0,,0,reused
+p0406,Stellantis N.V.,Stellantis,1,positive,auto_accept,0.9678,,,1,
+p0407,"Amazon.com, Inc.",Amazon,1,positive,auto_accept,0.9600,,,1,
+p0408,Royal Dutch Shell,Shell,1,positive,llm,0.8056,1,,1,reused
+p0409,"Meta Platforms, Inc.",Meta,1,positive,llm,0.8497,1,,1,reused
+p0410,Deutsche Bank,Bank of China,0,hard_negative,llm,0.4541,0,,0,reused
+p0411,"Tesla, Inc.",Tesla,1,positive,auto_accept,0.9781,,,1,
+p0412,Crédit Agricole,Hewlett Packard Enterprise Company,0,easy_negative,auto_reject,0.0000,,,0,
+p0413,Novartis International AG,AZN,0,easy_negative,auto_reject,0.0313,,,0,
+p0414,Mastercard Incorporated,MasterCard,1,positive,llm,0.8961,1,0.99,1,new
+p0415,Hewlett-Packard,Hewlett Packard Enterprise,0,hard_negative,llm,0.9390,0,,0,reused
+p0416,"Netflix, Inc.",Procter and Gamble,0,easy_negative,auto_reject,0.0000,,,0,
+p0417,Siemens AG,Siemens Aktiengesellschaft,1,positive,auto_accept,0.9508,,,1,
+p0418,Bank of Montreal,First Republic Bank,0,hard_negative,llm,0.3282,0,,0,reused
+p0419,"Salesforce, Inc.","Salesforce.com, Inc.",1,positive,auto_accept,0.9826,,,1,
+p0420,UBS Group AG,Union Bank of Switzerland,1,positive,llm,0.9200,1,,1,reused
+p0421,Deutsche Telekom AG,Deutsche Post AG,0,hard_negative,llm,0.6106,0,,0,reused
+p0422,Tata Consultancy Services Limited,TCS,1,positive,llm,0.9200,1,,1,reused
+p0423,General Motors Company,Tata Motors Limited,0,hard_negative,llm,0.5178,0,,0,reused
+p0424,Honda,本田技研工業,1,positive,llm,0.2294,1,,1,reused
+p0425,Verizon,VZ,1,positive,llm,0.3287,1,0.99,1,new
+p0426,HSBC Holdings plc,Crédit Suisse,0,easy_negative,llm,0.2030,0,0.99,0,new
+p0427,American Airlines Group Inc.,American International Group,0,hard_negative,llm,0.7115,0,,0,reused
+p0428,International Business Machines Corporation,I.B.M.,1,positive,llm,0.5941,1,,1,reused
+p0429,General Electric Co.,Genral Electric,1,positive,llm,0.6373,1,,1,reused
+p0430,United Airlines,"United Parcel Service, Inc.",0,hard_negative,llm,0.6195,0,,0,reused
+p0431,Hitachi,Hewlett Packard Enterprise Company,0,easy_negative,llm,0.3606,0,,0,reused
+p0432,Genral Motors,"Tesla Motors, Inc.",0,hard_negative,llm,0.3237,0,,0,reused
+p0433,Chevron Corporation,Wal Mart,0,easy_negative,llm,0.1221,0,0.99,0,new
+p0434,Sony Corporation,ソニー,1,positive,llm,0.7518,1,,1,reused
+p0435,3M Company,MMM,1,positive,llm,0.5339,1,,1,reused
+p0436,American Airlines,"American Electric Power Company, Inc.",0,hard_negative,llm,0.4035,0,,0,reused
+p0437,"The Goldman Sachs Group, Inc.",Goldman Sachs,1,positive,auto_accept,0.9657,,,1,
+p0438,General Motors,General Mills,0,hard_negative,llm,0.6498,0,,0,reused
+p0439,Hongkong and Shanghai Banking Corporation,Procter and Gamble,0,easy_negative,auto_reject,0.0886,,,0,
+p0440,"S. C. Johnson & Son, Inc.",SC Johnson,1,positive,llm,0.8714,1,,1,reused
+p0441,Chevron Corporation,CVX,1,positive,llm,0.2019,1,,1,reused
+p0442,Credit Suisse,Crédit Suisse,1,positive,llm,0.9171,1,0.99,1,new
+p0443,"The Home Depot, Inc.","Apple Computer, Inc.",0,easy_negative,auto_reject,0.0402,,,0,
+p0444,CRM,Hitachi,0,easy_negative,auto_reject,0.0000,,,0,
+p0445,"Amazon.com, Inc.",ASML Holding N.V.,0,easy_negative,auto_reject,0.0052,,,0,
+p0446,Cisco Systems,Cisco,1,positive,llm,0.9036,1,,1,reused
+p0447,United Parcel Service,Daimler AG,0,easy_negative,auto_reject,0.0967,,,0,
+p0448,TotalEnergies SE,Total S.A.,1,positive,llm,0.6875,1,,1,reused
+p0449,Ford Motor Company,Ford,1,positive,auto_accept,0.9571,,,1,
+p0450,American Airlines Group Inc.,AAL,1,positive,llm,0.6081,1,,1,reused
+p0451,Berkshire Hathaway Inc.,Berkshire,1,positive,llm,0.6905,1,,1,reused
+p0452,IBM,I.B.M.,1,positive,llm,0.9200,1,,1,reused
+p0453,ASML,ASML Holding,1,positive,llm,0.7980,1,,1,reused
+p0454,GSK,Siemens,0,easy_negative,auto_reject,0.0994,,,0,
+p0455,Hewlett Packard Enterprise Company,HPE,1,positive,llm,0.9200,1,,1,reused
+p0456,Citigroup,Citi,1,positive,llm,0.8993,1,,1,reused
+p0457,Union Bank of Switzerland,Royal Bank of Scotland Group,0,hard_negative,llm,0.3445,0,,0,reused
+p0458,Crédit Agricole,AllianceBernstein,0,easy_negative,auto_reject,0.0900,,,0,
+p0459,Apple,AAPL,1,positive,llm,0.2548,1,,1,reused
+p0460,General Electric Co.,Standard & Poor's,0,easy_negative,llm,0.2685,0,0.99,0,new
+p0461,McDonald's Corporation,McDonalds,1,positive,auto_accept,0.9769,,,1,
+p0462,Coca Cola,Alphabet Inc.,0,easy_negative,auto_reject,0.0359,,,0,
+p0463,Visa Inc.,V,1,positive,llm,0.4089,1,,1,reused
+p0464,NatWest Group plc,RBS,1,positive,llm,0.1330,1,,1,reused
+p0465,Delta Air Lines,DAL,1,positive,llm,0.9200,1,,1,reused
+p0466,OAO Gazprom,"Samsung Electronics Co., Ltd.",0,easy_negative,auto_reject,0.0000,,,0,
+p0467,Bank of America Corporation,Royal Bank,0,hard_negative,llm,0.4318,0,,0,reused
+p0468,United Air Lines,"United Parcel Service, Inc.",0,hard_negative,llm,0.6283,0,,0,reused
+p0469,Procter & Gamble Co.,Proctor & Gamble,1,positive,llm,0.8331,1,,1,reused
+p0470,ASML Holding N.V.,CVX,0,easy_negative,auto_reject,0.0000,,,0,
+p0471,NVDA,Nvidia Corp,1,positive,llm,0.8500,1,,1,reused
+p0472,Google Inc.,Google,1,positive,auto_accept,0.9787,,,1,
+p0473,Crédit Suisse,BMO,0,easy_negative,auto_reject,0.0000,,,0,
+p0474,UnitedHealth Group Incorporated,Saudi Arabian Oil Company,0,easy_negative,auto_reject,0.0000,,,0,
+p0475,Airbus SE,Airbus Group,1,positive,llm,0.9186,1,0.95,1,new
+p0476,Bank of China,中国银行,1,positive,auto_accept,0.9527,,,1,
+p0477,"American International Group, Inc.",American International Group,1,positive,auto_accept,0.9869,,,1,
+p0478,RTX Corporation,Raytheon Technologies,1,positive,llm,0.6714,1,,1,reused
+p0479,DHL Group,INTC,0,easy_negative,auto_reject,0.0000,,,0,
+p0480,Bank of America,Royal Bank,0,hard_negative,llm,0.4474,0,,0,reused
+p0481,S&P Global Inc.,Standard & Poor's,1,positive,llm,0.7726,1,,1,reused
+p0482,United Air Lines,"Delta Air Lines, Inc.",0,hard_negative,llm,0.5923,0,,0,reused
+p0483,Samsung Electronics,Samsung Elec,1,positive,llm,0.8942,1,,1,reused
+p0484,Berkshire Hathaway,Berkshire,1,positive,llm,0.7072,1,,1,reused
+p0485,Tata Consultancy Services Limited,Tata Consultancy Services,1,positive,auto_accept,0.9725,,,1,
+p0486,Toyota Motor Corporation,MCD,0,easy_negative,llm,0.1212,0,0.99,0,new
+p0487,"Meta Platforms, Inc.","Facebook, Inc.",1,positive,llm,0.3542,1,,1,reused
+p0488,Citigroup,C,1,positive,llm,0.4070,1,0.95,1,new
+p0489,UnitedHealth Group Incorporated,UNH,1,positive,llm,0.8500,1,,1,reused
+p0490,VW,Hewlett Packard Enterprise,0,easy_negative,auto_reject,0.0173,,,0,
+p0491,Volkswagen AG,Volkswagen Aktiengesellschaft,1,positive,auto_accept,0.9708,,,1,
+p0492,Toyota Motor Corp,"Honda Motor Co., Ltd.",0,hard_negative,llm,0.4848,0,,0,reused
+p0493,Nestlé S.A.,Société des Produits Nestlé,1,positive,llm,0.8022,1,,1,reused
+p0494,American Telephone & Telegraph,American Electric Power,0,hard_negative,llm,0.4332,0,,0,reused
+p0495,"Samsung Electronics Co., Ltd.",Samsung Electronics,1,positive,auto_accept,0.9887,,,1,
+p0496,Roche Holding AG,Roche,1,positive,llm,0.8974,1,0.99,1,new
+p0497,Anheuser-Busch InBev SA/NV,Aple Inc,0,easy_negative,auto_reject,0.0600,,,0,
+p0498,ASML Holding N.V.,Home Depot,0,easy_negative,auto_reject,0.0000,,,0,
+p0499,Amazon.com,"Salesforce.com, Inc.",0,hard_negative,llm,0.1892,0,,0,reused
+p0500,American Express Company,American Express,1,positive,auto_accept,0.9745,,,1,
+p0501,J.P. Morgan,JPMorgan Chase,1,positive,llm,0.6527,1,,1,reused
+p0502,Merck Sharp & Dohme,E. Merck,0,hard_negative,llm,0.6214,0,,0,reused
+p0503,United Airlines,United Air Lines,1,positive,auto_accept,0.9602,,,1,
+p0504,MCD,S&P Global Inc.,0,easy_negative,auto_reject,0.0000,,,0,
+p0505,BP p.l.c.,British Petroleum,1,positive,llm,0.7728,1,,1,reused
+p0506,Total S.A.,TotalEnergies,1,positive,llm,0.7134,1,,1,reused
+p0507,Chevron,UPS,0,easy_negative,auto_reject,0.0053,,,0,
+p0508,Bank of America Corporation,Bank of Montreal,0,hard_negative,llm,0.4355,0,,0,reused
+p0509,Mastercard Incorporated,Mastercard,1,positive,llm,0.9348,1,0.99,1,new
+p0510,American Telephone & Telegraph,"American International Group, Inc.",0,hard_negative,llm,0.3059,0,,0,reused
+p0511,Nestlé S.A.,Pfizer Inc.,0,easy_negative,llm,0.1992,0,0.99,0,new
+p0512,BRK.A,Amazon,0,easy_negative,auto_reject,0.0864,,,0,
+p0513,P&G,Proctor & Gamble,1,positive,llm,0.6958,1,,1,reused
+p0514,General Electric Co.,General Dynamics,0,hard_negative,llm,0.6108,0,,0,reused
+p0515,Genral Motors,Tata Motors,0,hard_negative,llm,0.3647,0,,0,reused
+p0516,BMO,PEP,0,easy_negative,auto_reject,0.0000,,,0,
+p0517,Credit Suisse,Credit Agricole,0,hard_negative,llm,0.6792,0,,0,reused
+p0518,Deutsche Telekom AG,Deutsche Telekom,1,positive,auto_accept,0.9867,,,1,
+p0519,TotalEnergies,General Motors,0,easy_negative,auto_reject,0.0182,,,0,
+p0520,Taiwan Semiconductor Manufacturing Company Limited,TSMC,1,positive,llm,0.7176,1,,1,reused
+p0521,General Motors Company,Genral Motors,1,positive,llm,0.6962,1,,1,reused
+p0522,Union Bank of Switzerland,Bank of China Limited,0,hard_negative,llm,0.3588,0,,0,reused
+p0523,S&P Global Inc.,NVIDIA Corporation,0,easy_negative,auto_reject,0.0064,,,0,
+p0524,United Air Lines,UAL,1,positive,llm,0.9200,1,,1,reused
+p0525,Honda Motor,本田技研工業,1,positive,llm,0.2286,1,,1,reused
+p0526,Hewlett Packard Enterprise,HPE,1,positive,llm,0.9200,1,,1,reused
+p0527,PEP,"Delta Electronics, Inc.",0,easy_negative,auto_reject,0.0852,,,0,
+p0528,American Telephone & Telegraph,American Airlines Group Inc.,0,hard_negative,llm,0.3760,0,,0,reused
+p0529,United Air Lines,United Parcel Service,0,hard_negative,llm,0.6429,0,,0,reused
+p0530,Deutsche Post AG,Deutsche Post DHL Group,1,positive,llm,0.8915,1,,1,reused
+p0531,Coca-Cola Co,KO,1,positive,llm,0.2880,1,,1,reused
+p0532,Toyota Motor Corp,Ford Motor Co.,0,hard_negative,llm,0.5951,0,,0,reused
+p0533,NKE,Tata Motors Limited,0,easy_negative,auto_reject,0.0000,,,0,
+p0534,Bank of China,Royal Bank of Scotland Group,0,hard_negative,llm,0.3395,0,,0,reused
+p0535,Tesla,TSLA,1,positive,llm,0.8500,1,,1,reused
+p0536,Volkswagen AG,VW,1,positive,llm,0.8608,1,,1,reused
+p0537,Shell plc,Газпром,0,easy_negative,llm,0.1256,0,0.99,0,new
+p0538,"Merck & Co., Inc.",Merck Group,0,hard_negative,llm,0.8891,0,0.97,0,new
+p0539,Toyota Motor Corp,Honda Motor,0,hard_negative,llm,0.4860,0,,0,reused
+p0540,Stellantis N.V.,Oracle Corp.,0,easy_negative,auto_reject,0.0000,,,0,
+p0541,Standard & Poor's,S&P Global,1,positive,llm,0.7713,1,,1,reused
+p0542,Bank of America Corporation,Union Bank of Switzerland,0,hard_negative,llm,0.2984,0,,0,reused
+p0543,Hitachi,"Samsung Heavy Industries Co., Ltd.",0,easy_negative,llm,0.2493,0,,0,reused
+p0544,ExxonMobil,XOM,1,positive,llm,0.4721,1,,1,reused
+p0545,American Express,American Telephone & Telegraph,0,hard_negative,llm,0.4699,0,,0,reused
+p0546,Saudi Arabian Oil Company,PFE,0,easy_negative,auto_reject,0.0000,,,0,
+p0547,VW,Volkswagon,1,positive,llm,0.5970,1,,1,reused
+p0548,Johnson Controls International plc,SC Johnson,0,hard_negative,llm,0.6912,0,,0,reused
+p0549,United Air Lines,Delta Air Lines,0,hard_negative,llm,0.6005,0,,0,reused
+p0550,Nestle SA,Société des Produits Nestlé,1,positive,llm,0.7870,1,,1,reused
+p0551,Ford Motor Company,Ford Motor Co.,1,positive,auto_accept,0.9846,,,1,
+p0552,McDonalds,MCD,1,positive,llm,0.8500,1,,1,reused
+p0553,Citigroup Inc.,C,1,positive,llm,0.4587,1,0.85,1,new
+p0554,Fiat Chrysler Automobiles,Gazprom,0,easy_negative,auto_reject,0.0053,,,0,
+p0555,"Amazon.com, Inc.","Salesforce.com, Inc.",0,hard_negative,llm,0.2119,0,,0,reused
+p0556,General Electric Company,General Mills,0,hard_negative,llm,0.5521,0,,0,reused
+p0557,Maersk,AstraZeneca,0,easy_negative,auto_reject,0.0864,,,0,
+p0558,"Samsung Electronics Co., Ltd.",Samsung Heavy Industries,0,hard_negative,llm,0.7440,0,,0,reused
+p0559,JP Morgan,JPMorgan Chase,1,positive,llm,0.7701,1,,1,reused
+p0560,International Business Machines Corporation,Novartis International AG,0,hard_negative,llm,0.1338,0,,0,reused
+p0561,BMO,BMO Financial Group,1,positive,llm,0.6874,1,,1,reused
+p0562,Bank of China Limited,Royal Bank of Scotland Group,0,hard_negative,llm,0.3838,0,,0,reused
+p0563,Deutsche Bank AG,Deutsche Post DHL Group,0,hard_negative,llm,0.4607,0,,0,reused
+p0564,Apple Inc.,Apple,1,positive,auto_accept,0.9869,,,1,
+p0565,General Electric Company,American Electric Power,0,hard_negative,llm,0.4863,0,,0,reused
+p0566,General Dynamics,GD,1,positive,llm,0.9200,1,,1,reused
+p0567,Toyota,トヨタ自動車,1,positive,llm,0.8655,1,,1,reused
+p0568,Boeing Co,BA,1,positive,llm,0.5170,1,,1,reused
+p0569,Ford Motor Co.,"Honda Motor Co., Ltd.",0,hard_negative,llm,0.4720,0,,0,reused
+p0570,Minnesota Mining and Manufacturing,MMM,1,positive,llm,0.9200,1,,1,reused
+p0571,Pfizer Inc.,PFE,1,positive,llm,0.8500,1,,1,reused
+p0572,American Telephone & Telegraph,Unilever,0,easy_negative,llm,0.1027,0,,0,reused
+p0573,International Business Machines Corporation,Internationl Business Machines,1,positive,llm,0.9195,1,,1,reused
+p0574,I.B.M.,Royal Bank,0,easy_negative,llm,0.2581,0,0.99,0,new
+p0575,American Express,American Airlines,0,hard_negative,llm,0.6721,0,,0,reused
+p0576,Bank of America Corporation,Deutsche Bank AG,0,hard_negative,llm,0.3807,0,,0,reused
+p0577,American Electric Power,American International Group,0,hard_negative,llm,0.2764,0,,0,reused
+p0578,Bank of Montreal,BMO,1,positive,llm,0.4050,1,,1,reused
+p0579,Airbus Group,EADS,1,positive,llm,0.6187,1,,1,reused
+p0580,Shell plc,Royal Dutch Shell,1,positive,llm,0.8098,1,,1,reused
+p0581,GlaxoSmithKline plc,GlaxoSmithKline,1,positive,auto_accept,0.9557,,,1,
+p0582,The Boeing Company,Boeing,1,positive,llm,0.9482,1,0.99,1,new
+p0583,Raytheon Technologies,Raytheon,1,positive,llm,0.9350,1,,1,reused
+p0584,Bank of America Corporation,First Republic Bank,0,hard_negative,llm,0.4646,0,,0,reused
+p0585,Cisco,CSCO,1,positive,llm,0.8500,1,,1,reused
+p0586,General Electric Company,General Dynamics,0,hard_negative,llm,0.6303,0,,0,reused
+p0587,"American Electric Power Company, Inc.",American International Group,0,hard_negative,llm,0.2813,0,,0,reused
+p0588,"First Solar, Inc.",First Republic,0,hard_negative,llm,0.4749,0,,0,reused
+p0589,"Samsung Heavy Industries Co., Ltd.",BMO,0,easy_negative,auto_reject,0.0000,,,0,
+p0590,Gazprom,Газпром,1,positive,llm,0.8744,1,,1,reused
+p0591,Merck KGaA,General Electric Company,0,easy_negative,auto_reject,0.0684,,,0,
+p0592,AllianceBernstein Holding L.P.,Alliance Bernstein,1,positive,llm,0.7199,1,,1,reused
+p0593,American Airlines Group Inc.,American Electric Power,0,hard_negative,llm,0.3777,0,,0,reused
+p0594,Tata Motors Limited,Tata Steel,0,hard_negative,llm,0.6698,0,,0,reused
+p0595,Saudi Arabian Oil Company,Saudi Aramco,1,positive,llm,0.8294,1,,1,reused
+p0596,Johnson Controls,Citi,0,easy_negative,llm,0.2220,0,,0,reused
+p0597,General Motors Company,General Electric Co.,0,hard_negative,llm,0.6198,0,,0,reused
+p0598,The Coca-Cola Company,Coca-Cola Co,1,positive,auto_accept,0.9716,,,1,
+p0599,Alphabet,GOOGL,1,positive,llm,0.3121,0,,0,reused
+p0600,Merck and Co,Alibaba Group Holding Limited,0,easy_negative,auto_reject,0.0000,,,0,
+p0601,American Express Company,Amex,1,positive,llm,0.6871,1,,1,reused
+p0602,Novartis AG,Novartis International AG,1,positive,auto_accept,0.9743,,,1,
+p0603,BP,AMZN,0,easy_negative,auto_reject,0.0000,,,0,
+p0604,Home Depot,The Home Depot,1,positive,auto_accept,0.9553,,,1,
+p0605,GlaxoSmithKline plc,Gazprom,0,easy_negative,llm,0.2492,0,0.99,0,new
+p0606,Tata Motors Limited,Tata Motors,1,positive,auto_accept,0.9705,,,1,
+p0607,IBM,Internationl Business Machines,1,positive,llm,0.9200,1,,1,reused
+p0608,"Merck & Co., Inc.",MSD,1,positive,llm,0.5225,1,,1,reused
+p0609,"Delta Electronics, Inc.",Delta Electronics,1,positive,auto_accept,0.9936,,,1,
+p0610,Tata Consultancy Services Limited,Tata Motors,0,hard_negative,llm,0.6478,0,,0,reused
+p0611,"First Solar, Inc.","Delta Electronics, Inc.",0,easy_negative,llm,0.1697,0,0.99,0,new
+p0612,Deutsche Bank,Deutsche Post DHL Group,0,hard_negative,llm,0.4654,0,,0,reused
+p0613,Coca-Cola Co,Coca Cola,1,positive,auto_accept,0.9733,,,1,
+p0614,General Dynamics Corporation,GD,1,positive,llm,0.9200,1,,1,reused
+p0615,Royal Dutch Shell,Royal Bank of Scotland Group,0,hard_negative,llm,0.3671,0,,0,reused
+p0616,Bank of China,Royal Bank of Canada,0,hard_negative,llm,0.5044,0,,0,reused
+p0617,BMW AG,BMW,1,positive,auto_accept,0.9598,,,1,
+p0618,Lincoln National Corporation,Lincoln Financial Group,1,positive,llm,0.7349,1,,1,reused
+p0619,Deutsche Bank,Royal Bank of Scotland Group,0,hard_negative,llm,0.3352,0,,0,reused
+p0620,Amex,TCS,0,easy_negative,auto_reject,0.0000,,,0,
+p0621,American Express,"American International Group, Inc.",0,hard_negative,llm,0.6003,0,,0,reused
+p0622,General Electric Company,Genral Electric,1,positive,llm,0.6118,1,,1,reused
+p0623,Alibaba,PepsiCo,0,easy_negative,llm,0.1823,0,0.99,0,new
+p0624,The Boeing Company,A T & T,0,easy_negative,auto_reject,0.0856,,,0,
+p0625,Taiwan Semiconductor Manufacturing Company Limited,TSM,1,positive,llm,0.9200,1,,1,reused
+p0626,"Honda Motor Co., Ltd.",本田技研工業,1,positive,llm,0.2427,1,,1,reused
+p0627,McDonalds,McDonald's,1,positive,auto_accept,0.9901,,,1,
+p0628,International Business Machines Corporation,American International Group,0,hard_negative,llm,0.2948,0,,0,reused
+p0629,MasterCard,Mastercard,1,positive,llm,0.9437,1,0.99,1,new
+p0630,Union Bank of Switzerland,Royal Bank of Canada,0,hard_negative,llm,0.3523,0,,0,reused
+p0631,UBS Group AG,S&P Global,0,easy_negative,auto_reject,0.0861,,,0,
+p0632,日立製作所,MSFT,0,easy_negative,llm,0.1028,0,0.99,0,new
+p0633,Bank of America Corporation,BAC,1,positive,llm,0.5922,1,,1,reused
+p0634,Johnson & Johnson,Johnson Controls International plc,0,hard_negative,llm,0.7263,0,,0,reused
+p0635,Union Bank of Switzerland,Bank of China,0,hard_negative,llm,0.3613,0,,0,reused
+p0636,Berkshire Hathaway Inc.,Berkshire Hathaway,1,positive,auto_accept,0.9754,,,1,
+p0637,Taiwan Semiconductor Manufacturing Company Limited,Taiwan Semiconductor,1,positive,llm,0.9405,1,,1,reused
+p0638,Bayerische Motoren Werke AG,JPMorgan Chase & Co.,0,easy_negative,auto_reject,0.0584,,,0,
+p0639,American Telephone & Telegraph,American International Group,0,hard_negative,llm,0.2947,0,,0,reused
+p0640,Nestle,Société des Produits Nestlé,1,positive,llm,0.6952,1,,1,reused
+p0641,American Express,AXP,1,positive,llm,0.4474,1,,1,reused
+p0642,Amazon.com,AMZN,1,positive,llm,0.8500,1,,1,reused
+p0643,The Procter & Gamble Company,P&G,1,positive,llm,0.7502,1,,1,reused
+p0644,AstraZeneca,Royal Bank of Scotland Group,0,easy_negative,auto_reject,0.0000,,,0,
+p0645,American International Group,Johnson Controls International plc,0,hard_negative,llm,0.2397,0,,0,reused
+p0646,General Electric Co.,Lincoln Electric,0,hard_negative,llm,0.5335,0,,0,reused
+p0647,Bank of China Limited,Bank of China,1,positive,auto_accept,0.9699,,,1,
+p0648,Apple Inc.,AAPL,1,positive,llm,0.2544,1,,1,reused
+p0649,Credit Suisse Group AG,NVDA,0,easy_negative,auto_reject,0.0000,,,0,
+p0650,Taiwan Semiconductor,TSM,1,positive,llm,0.4874,1,,1,reused
+p0651,American Express,American Electric Power,0,hard_negative,llm,0.4133,0,,0,reused
+p0652,Total S.A.,Total,1,positive,llm,0.9215,1,,1,reused
+p0653,Walmart Inc.,"Wal-Mart Stores, Inc.",1,positive,auto_accept,0.9543,,,1,
+p0654,Exxon Mobil Corporation,XOM,1,positive,llm,0.5139,1,,1,reused
+p0655,Samsung Heavy Industries,Apple,0,easy_negative,auto_reject,0.0066,,,0,
+p0656,McDonald's Corporation,McDonald's,1,positive,auto_accept,0.9777,,,1,
+p0657,A.P. Moller-Maersk A/S,Proctor & Gamble,0,easy_negative,auto_reject,0.0070,,,0,
+p0658,Samsung Electronics,Delta Electronics,0,hard_negative,llm,0.4163,0,,0,reused
+p0659,HSBC Holdings plc,HSBC,1,positive,llm,0.8769,1,,1,reused
+p0660,AstraZeneca,Astra Zeneca,1,positive,llm,0.7574,1,,1,reused
+p0661,"Salesforce.com, Inc.",Crédit Agricole S.A.,0,easy_negative,llm,0.1585,0,0.99,0,new
+p0662,NVIDIA Corporation,Nvidia Corp,1,positive,auto_accept,0.9740,,,1,
+p0663,Tata Motors,Tata Steel,0,hard_negative,llm,0.7024,0,,0,reused
+p0664,General Electric Co.,General Mills,0,hard_negative,llm,0.5778,0,,0,reused
+p0665,General Electric Company,General Electric Co.,1,positive,auto_accept,0.9598,,,1,
+p0666,Credit Agricole,Crédit Agricole,1,positive,llm,0.9184,1,0.99,1,new
+p0667,Tata Consultancy Services Limited,Tata Motors Limited,0,hard_negative,llm,0.6696,0,,0,reused
+p0668,Procter and Gamble,Proctor & Gamble,1,positive,llm,0.8549,1,,1,reused
+p0669,AllianceBernstein Holding L.P.,AllianceBernstein,1,positive,llm,0.9063,1,,1,reused
+p0670,GSK,Lincoln Financial Group,0,easy_negative,auto_reject,0.0679,,,0,
+p0671,"United Airlines Holdings, Inc.",UAL,1,positive,llm,0.4884,1,,1,reused
+p0672,Taiwan Semiconductor Manufacturing Company Limited,Minnesota Mining and Manufacturing,0,hard_negative,llm,0.2969,0,,0,reused
+p0673,MasterCard,MA,1,positive,llm,0.3687,1,,1,reused
+p0674,"General Mills, Inc.",General Dynamics,0,hard_negative,llm,0.5643,0,,0,reused
+p0675,HSBC Holdings plc,Shell plc,0,easy_negative,llm,0.1832,0,0.99,0,new
+p0676,Citi,Credit Agricole,0,easy_negative,llm,0.4200,0,,0,reused
+p0677,Deutsche Post AG,DHL Group,1,positive,llm,0.5825,1,,1,reused
+p0678,General Motors Company,General Mills,0,hard_negative,llm,0.6801,0,,0,reused
+p0679,Volkswagen AG,Volkswagon,1,positive,llm,0.6146,1,,1,reused
+p0680,"The Home Depot, Inc.",Home Depot,1,positive,llm,0.9467,1,0.99,1,new
+p0681,American Electric Power,Amazon,0,easy_negative,llm,0.2305,0,,0,reused
+p0682,LOreal,L'Oréal,1,positive,llm,0.5970,1,,1,reused
+p0683,Deutsche Bank AG,First Republic Bank,0,hard_negative,llm,0.4364,0,,0,reused
+p0684,"Tesla, Inc.","Tesla Motors, Inc.",1,positive,llm,0.9356,1,,1,reused
+p0685,"Tesla Motors, Inc.",Tesla,1,positive,llm,0.9429,1,,1,reused
+p0686,"Salesforce.com, Inc.",CRM,1,positive,auto_reject,0.0000,,,0,
+p0687,First Solar,First Republic Bank,0,hard_negative,llm,0.3019,0,,0,reused
+p0688,Johnson & Johnson,"S. C. Johnson & Son, Inc.",0,hard_negative,llm,0.8843,0,,0,reused
+p0689,TSMC,TSM,1,positive,llm,0.8500,1,,1,reused
+p0690,General Motors,Tata Motors Limited,0,hard_negative,llm,0.5293,0,,0,reused
+p0691,General Mills,GIS,1,positive,llm,0.2479,1,,1,reused
+p0692,"Advanced Micro Devices, Inc.",Advanced Micro Devices,1,positive,auto_accept,0.9909,,,1,
+p0693,Toyota Motor Corp,Toyota,1,positive,llm,0.9282,1,,1,reused
+p0694,General Electric Company,"American Electric Power Company, Inc.",0,hard_negative,llm,0.5609,0,,0,reused
+p0695,Fiat Chrysler Automobiles,Volkswagen Aktiengesellschaft,0,easy_negative,llm,0.2311,0,,0,reused
+p0696,"Salesforce, Inc.",CRM,1,positive,auto_reject,0.0000,,,0,
+p0697,JPMorgan Chase & Co.,JP Morgan,1,positive,llm,0.7408,1,,1,reused
+p0698,PFE,Johnson Controls International plc,0,easy_negative,auto_reject,0.0000,,,0,
+p0699,Allianz SE,Allianz,1,positive,llm,0.9020,1,0.99,1,new
+p0700,Deutsche Bank,Bank of China Limited,0,hard_negative,llm,0.4281,0,,0,reused
+p0701,Merck and Co,Merck KGaA,0,hard_negative,llm,0.8191,0,,0,reused
+p0702,Nestlé S.A.,Nestle,1,positive,llm,0.8188,1,,1,reused
+p0703,Samsung Elec,Samsung Heavy Industries,0,hard_negative,llm,0.7032,0,,0,reused
+p0704,Tata Steel Limited,CVX,0,easy_negative,auto_reject,0.0329,,,0,
+p0705,GSK plc,GlaxoSmithKline,1,positive,llm,0.8500,1,,1,reused
+p0706,HSBC Holdings plc,Oracle Corp.,0,easy_negative,llm,0.1736,0,,0,reused
+p0707,American Airlines,American Electric Power,0,hard_negative,llm,0.4194,0,,0,reused
+p0708,TSM,Unilever PLC,0,easy_negative,auto_reject,0.0113,,,0,
+p0709,The Procter & Gamble Company,Proctor & Gamble,1,positive,llm,0.8728,1,,1,reused
+p0710,Airbus SE,Boeing,0,easy_negative,llm,0.2486,0,,0,reused
+p0711,Salesforce,CRM,1,positive,auto_reject,0.0000,,,0,
+p0712,Oracle Corp.,Oracle,1,positive,llm,0.9488,1,0.99,1,new
+p0713,Coca Cola,KO,1,positive,llm,0.2731,1,,1,reused
+p0714,General Mills,Royal Bank of Scotland Group,0,easy_negative,llm,0.1815,0,0.99,0,new
+p0715,GM,Pepsi,0,easy_negative,auto_reject,0.0000,,,0,
+p0716,Microsoft Corp.,Microsft,1,positive,llm,0.4697,1,,1,reused
+p0717,L'Oreal,LOreal,1,positive,llm,0.5650,1,,1,reused
+p0718,PJSC Gazprom,Газпром,1,positive,llm,0.8311,1,,1,reused
+p0719,"Hitachi, Ltd.",Hitachi,1,positive,auto_accept,0.9781,,,1,
+p0720,Mastercard,MA,1,positive,llm,0.2597,1,,1,reused
+p0721,Procter and Gamble,P&G,1,positive,llm,0.7114,1,,1,reused
+p0722,Morgan Stanley,MS,1,positive,llm,0.9200,1,,1,reused
+p0723,AstraZeneca,AZN,1,positive,llm,0.8500,1,,1,reused
+p0724,Unilever,Unilever N.V.,1,positive,auto_accept,0.9559,,,1,
+p0725,Crédit Suisse,Crédit Agricole,0,hard_negative,llm,0.6311,0,,0,reused
+p0726,Genral Electric,"American Electric Power Company, Inc.",0,hard_negative,llm,0.3811,0,,0,reused
+p0727,Royal Dutch Shell,Royal Bank,0,hard_negative,llm,0.3356,0,,0,reused
+p0728,"PepsiCo, Inc.",PEP,1,positive,llm,0.8500,1,,1,reused
+p0729,Airbus,BP p.l.c.,0,easy_negative,auto_reject,0.0942,,,0,
+p0730,UBS Group AG,UBS,1,positive,llm,0.7928,1,,1,reused
+p0731,Goldman Sachs,GS,1,positive,llm,0.9200,1,,1,reused
+p0732,JPMorgan Chase & Co.,J.P. Morgan,1,positive,llm,0.6536,1,,1,reused
+p0733,Lincoln National Corporation,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.7022,0,,0,reused
+p0734,American Express,"American Electric Power Company, Inc.",0,hard_negative,llm,0.4230,0,,0,reused
+p0735,Volkswagen Aktiengesellschaft,VW,1,positive,llm,0.8570,1,,1,reused
+p0736,3M,MMM,1,positive,llm,0.6785,1,,1,reused
+p0737,Morgan Stanley,Morgan Stanley & Co.,1,positive,llm,0.9478,1,0.95,1,new
+p0738,Stellantis,Ford,0,easy_negative,llm,0.3898,0,,0,reused
+p0739,American Express,Amex,1,positive,llm,0.6678,1,,1,reused
+p0740,Alibaba Group Holding Limited,Alibaba Group,1,positive,llm,0.9158,1,0.99,1,new
+p0741,L'Oréal,"The Goldman Sachs Group, Inc.",0,easy_negative,auto_reject,0.0384,,,0,
+p0742,The Coca-Cola Company,KO,1,positive,llm,0.2614,1,,1,reused
+p0743,Hewlett Packard,HPQ,1,positive,llm,0.6069,0,,0,reused
+p0744,Bank of America,Royal Bank of Scotland Group,0,hard_negative,llm,0.3074,0,,0,reused
+p0745,Samsung Electronics,삼성전자,1,positive,llm,0.7677,1,,1,reused
+p0746,Airbus,EADS,1,positive,llm,0.6588,1,,1,reused
+p0747,Credit Suisse Group AG,Credit Agricole,0,hard_negative,llm,0.6324,0,,0,reused
+p0748,Credit Suisse Group AG,Crédit Suisse,1,positive,llm,0.8713,1,0.99,1,new
+p0749,"Cisco Systems, Inc.",Cisco,1,positive,llm,0.8800,1,,1,reused
+p0750,Toyota Motor Corp,Ford Motor Company,0,hard_negative,llm,0.5960,0,,0,reused
+p0751,Deutsche Bank,Union Bank of Switzerland,0,hard_negative,llm,0.4910,0,,0,reused
+p0752,Procter & Gamble Co.,Netflix,0,easy_negative,auto_reject,0.0020,,,0,
+p0753,McDonalds,"Delta Electronics, Inc.",0,easy_negative,auto_reject,0.0000,,,0,
+p0754,General Electric Co.,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.5452,0,,0,reused
+p0755,General Motors,"General Mills, Inc.",0,hard_negative,llm,0.6470,0,,0,reused
+p0756,General Electric Company,GE,1,positive,llm,0.9200,1,,1,reused
+p0757,Credit Agricole,A.P. Møller – Mærsk,0,easy_negative,auto_reject,0.0000,,,0,
+p0758,Crédit Suisse,Crédit Agricole S.A.,0,hard_negative,llm,0.6159,0,,0,reused
+p0759,LVMH,AIG,0,easy_negative,auto_reject,0.0000,,,0,
+p0760,Visa,V,1,positive,llm,0.4258,1,,1,reused
+p0761,Procter & Gamble Co.,P&G,1,positive,llm,0.7011,1,,1,reused
+p0762,Roche Holding AG,F. Hoffmann-La Roche,1,positive,llm,0.7971,1,,1,reused
+p0763,Google LLC,Google,1,positive,auto_accept,0.9738,,,1,
+p0764,First Republic Bank,First Republic,1,positive,llm,0.7804,1,,1,reused
+p0765,Tata Consultancy Services,Tata Motors Limited,0,hard_negative,llm,0.6073,0,,0,reused
+p0766,Union Bank of Switzerland,First Republic Bank,0,hard_negative,llm,0.3904,0,,0,reused
+p0767,Bank of America,First Republic Bank,0,hard_negative,llm,0.4823,0,,0,reused
+p0768,"Delta Air Lines, Inc.","Delta Electronics, Inc.",0,hard_negative,llm,0.6511,0,,0,reused
+p0769,GOOGL,Merck and Co,0,easy_negative,auto_reject,0.0000,,,0,
+p0770,Walmart Inc.,Wal Mart,1,positive,auto_accept,0.9721,,,1,
+p0771,General Electric Co.,General Dynamics Corporation,0,hard_negative,llm,0.6353,0,,0,reused
+p0772,Tata Consultancy Services,Tata Steel,0,hard_negative,llm,0.6565,0,,0,reused
+p0773,S&P Global Inc.,S&P Global,1,positive,auto_accept,0.9717,,,1,
+p0774,SAP SE,McDonalds,0,easy_negative,auto_reject,0.0000,,,0,
+p0775,Walmart Inc.,WMT,1,positive,llm,0.8500,1,,1,reused
+p0776,Merck KGaA,E. Merck,1,positive,llm,0.8764,1,,1,reused
+p0777,"The Goldman Sachs Group, Inc.",GS,1,positive,llm,0.9200,1,,1,reused
+p0778,American Airlines Group Inc.,"American International Group, Inc.",0,hard_negative,llm,0.7193,0,,0,reused
+p0779,Microsoft Corporation,Microsoft Corp.,1,positive,auto_accept,0.9859,,,1,
+p0780,"Tesla Motors, Inc.",Tata Motors Limited,0,hard_negative,llm,0.6536,0,,0,reused
+p0781,"PepsiCo, Inc.",Pepsi,1,positive,auto_accept,0.9682,,,1,
+p0782,BMO Financial Group,Lincoln Financial Group,0,hard_negative,llm,0.4304,0,,0,reused
+p0783,Royal Bank,Royal Bank of Scotland Group,0,hard_negative,llm,0.8039,0,,0,reused
+p0784,Pepsi,PEP,1,positive,llm,0.8500,1,,1,reused
+p0785,Verizon Communications Inc.,Verizon,1,positive,llm,0.9373,1,,1,reused
+p0786,"NIKE, Inc.",Nike Inc,1,positive,llm,0.6506,1,0.99,1,new
+p0787,Sony Group Corporation,Sony Corporation,1,positive,auto_accept,0.9595,,,1,
+p0788,Deutsche Bank,DB,1,positive,llm,0.9200,1,,1,reused
+p0789,Deutsche Bank,Deutsche Post AG,0,hard_negative,llm,0.4998,0,,0,reused
+p0790,LVMH Moët Hennessy Louis Vuitton,Minnesota Mining and Manufacturing,0,easy_negative,llm,0.1780,0,0.99,0,new
+p0791,Boeing,BA,1,positive,llm,0.5548,1,,1,reused
+p0792,Johnson & Johnson,Johnson Controls,0,hard_negative,llm,0.7767,0,,0,reused
+p0793,"Amazon.com, Inc.",Amazon.com,1,positive,auto_accept,0.9854,,,1,
+p0794,GOOGL,Alibaba,0,easy_negative,auto_reject,0.0818,,,0,
+p0795,Novartis AG,3M Company,0,easy_negative,auto_reject,0.0649,,,0,
+p0796,Société des Produits Nestlé,Airbus SE,0,easy_negative,auto_reject,0.0914,,,0,
+p0797,Hewlett-Packard,Hewlett Packard Enterprise Company,0,hard_negative,llm,0.9495,0,,0,reused
+p0798,Deutsche Bank AG,Royal Bank of Scotland Group,0,hard_negative,llm,0.2887,0,,0,reused
+p0799,International Business Machines Corporation,Johnson Controls International plc,0,hard_negative,llm,0.2276,0,,0,reused
+p0800,Oracle Corp.,Verizon,0,easy_negative,llm,0.2188,0,,0,reused
+p0801,"Wal-Mart Stores, Inc.",WMT,1,positive,llm,0.4044,1,,1,reused
+p0802,HP Inc.,HPQ,1,positive,llm,0.7330,1,,1,reused
+p0803,PepsiCo,PEP,1,positive,llm,0.8500,1,,1,reused
+p0804,Merck Group,E. Merck,1,positive,llm,0.9032,1,,1,reused
+p0805,Costco Wholesale Corporation,Costco,1,positive,llm,0.8762,1,,1,reused
+p0806,Boeing Co,Boeing,1,positive,llm,0.9499,1,0.99,1,new
+p0807,McDonald's,MCD,1,positive,llm,0.8500,1,,1,reused
+p0808,TotalEnergies,VW,0,easy_negative,auto_reject,0.0026,,,0,
+p0809,Advanced Micro Devices,XOM,0,easy_negative,llm,0.1161,0,0.99,0,new
+p0810,"Delta Air Lines, Inc.",DAL,1,positive,llm,0.9200,1,,1,reused
+p0811,"The Home Depot, Inc.",SC Johnson,0,easy_negative,llm,0.1510,0,,0,reused
+p0812,Genral Motors,Genral Electric,0,hard_negative,llm,0.8156,0,,0,reused
+p0813,MA,"Salesforce.com, Inc.",0,easy_negative,auto_reject,0.0000,,,0,
+p0814,Novartis International AG,American International Group,0,hard_negative,auto_reject,0.0157,,,0,
+p0815,Deutsche Bank AG,Bank of China Limited,0,hard_negative,llm,0.3824,0,,0,reused
+p0816,The Coca-Cola Company,Coca Cola,1,positive,auto_accept,0.9770,,,1,
+p0817,General Motors,General Electric Co.,0,hard_negative,llm,0.5513,0,,0,reused
+p0818,"United Airlines Holdings, Inc.",American Airlines Group Inc.,0,hard_negative,llm,0.6122,0,,0,reused
+p0819,Honda Motor,McDonald's Corporation,0,easy_negative,llm,0.2369,0,,0,reused
+p0820,Saudi Arabian Oil Company,Aramco,1,positive,llm,0.5187,1,,1,reused
+p0821,"Delta Air Lines, Inc.",Delta Air Lines,1,positive,auto_accept,0.9932,,,1,
+p0822,"S. C. Johnson & Son, Inc.",Honda Motor,0,easy_negative,auto_reject,0.0000,,,0,
+p0823,Tata Consultancy Services,Tata Steel Limited,0,hard_negative,llm,0.6569,0,,0,reused
+p0824,Johnson Controls International plc,"S. C. Johnson & Son, Inc.",0,hard_negative,llm,0.6668,0,,0,reused
+p0825,General Motors Company,General Electric Company,0,hard_negative,llm,0.6123,0,,0,reused
+p0826,"Hitachi, Ltd.",日立製作所,1,positive,llm,0.6263,1,1.0,1,new
+p0827,Tata Steel Limited,Tata Steel,1,positive,auto_accept,0.9608,,,1,
+p0828,GlaxoSmithKline plc,GSK,1,positive,llm,0.8500,1,,1,reused
+p0829,"Samsung Electronics Co., Ltd.",Delta Electronics,0,hard_negative,llm,0.4025,0,,0,reused
+p0830,RBC,Royal Bank,1,positive,llm,0.5324,1,,1,reused
+p0831,Microsoft Corporation,Microsft,1,positive,llm,0.4755,1,,1,reused
+p0832,Verizon Communications Inc.,VZ,1,positive,llm,0.3538,1,1.0,1,new
+p0833,General Electric Co.,"American Electric Power Company, Inc.",0,hard_negative,llm,0.5964,0,,0,reused
+p0834,Toyota Motor Corporation,"Honda Motor Co., Ltd.",0,hard_negative,llm,0.4891,0,,0,reused
+p0835,International Business Machines Corporation,Chevron Corporation,0,easy_negative,llm,0.1323,0,1.0,0,new
+p0836,AP Moller Maersk,A.P. Møller – Mærsk,1,positive,llm,0.7143,1,,1,reused
+p0837,American Telephone & Telegraph,"American Electric Power Company, Inc.",0,hard_negative,llm,0.4320,0,,0,reused
+p0838,Exxon,Gazprom,0,easy_negative,llm,0.3167,0,,0,reused
+p0839,Ford Motor Company,Honda Motor,0,hard_negative,llm,0.5148,0,,0,reused
+p0840,Cisco Systems,CSCO,1,positive,llm,0.8500,1,,1,reused
+p0841,I.B.M.,Internationl Business Machines,1,positive,llm,0.6889,1,,1,reused
+p0842,Bank of America,Crédit Suisse,0,easy_negative,llm,0.2165,0,1.0,0,new
+p0843,American Express,American Airlines Group Inc.,0,hard_negative,llm,0.6070,0,,0,reused
+p0844,"Apple Computer, Inc.",UBS,0,easy_negative,llm,0.1213,0,,0,reused
+p0845,Volkswagen Aktiengesellschaft,Volkswagon,1,positive,llm,0.6223,1,,1,reused
+p0846,Wal Mart,UnitedHealth Group,0,easy_negative,llm,0.1286,0,1.0,0,new
+p0847,General Mills,General Dynamics,0,hard_negative,llm,0.5447,0,,0,reused
+p0848,"American International Group, Inc.",Johnson Controls International plc,0,hard_negative,llm,0.2402,0,,0,reused
+p0849,L'Oréal S.A.,L'Oréal,1,positive,auto_accept,0.9670,,,1,
+p0850,Honda Motor,Verizon Communications Inc.,0,easy_negative,auto_reject,0.0783,,,0,
+p0851,Toyota Motor Corporation,Honda Motor,0,hard_negative,llm,0.4884,0,,0,reused
+p0852,GSK plc,GlaxoSmithKline plc,1,positive,llm,0.8500,1,,1,reused
+p0853,"Wal-Mart Stores, Inc.",Wal Mart,1,positive,llm,0.9398,1,,1,reused
+p0854,International Business Machines Corporation,"American International Group, Inc.",0,hard_negative,llm,0.2909,0,,0,reused
+p0855,JPMorgan Chase & Co.,"Salesforce.com, Inc.",0,easy_negative,auto_reject,0.0581,,,0,
+p0856,Johnson Controls,SC Johnson,0,hard_negative,llm,0.7511,0,,0,reused
+p0857,SAP AG,KO,0,easy_negative,auto_reject,0.0000,,,0,
+p0858,ASML Holding N.V.,ASML,1,positive,llm,0.7905,1,,1,reused
+p0859,Bank of America,BofA,1,positive,llm,0.4867,1,,1,reused
+p0860,Genral Motors,Tata Motors Limited,0,hard_negative,llm,0.3625,0,,0,reused
+p0861,"American International Group, Inc.",AIG,1,positive,llm,0.6832,1,,1,reused
+p0862,Anheuser-Busch InBev SA/NV,AB InBev,1,positive,llm,0.8149,1,,1,reused
+p0863,J.P. Morgan,Morgan Stanley & Co.,0,hard_negative,llm,0.6506,0,,0,reused
+p0864,Bank of China,First Republic Bank,0,hard_negative,llm,0.4544,0,,0,reused
+p0865,3M Company,3M,1,positive,llm,0.8679,1,,1,reused
+p0866,"Facebook, Inc.",META,1,positive,auto_reject,0.0973,,,0,
+p0867,General Motors Company,"General Mills, Inc.",0,hard_negative,llm,0.6765,0,,0,reused
+p0868,Johnson & Johnson,Johnson and Johnson,1,positive,auto_accept,0.9936,,,1,
+p0869,3M Company,Minnesota Mining and Manufacturing,1,positive,llm,0.6695,1,,1,reused
+p0870,Chevron Corporation,Chevron,1,positive,auto_accept,0.9562,,,1,
+p0871,UBS,Coca-Cola Co,0,easy_negative,auto_reject,0.0000,,,0,
+p0872,The Procter & Gamble Company,Moet Hennessy Louis Vuitton,0,easy_negative,auto_reject,0.0035,,,0,
+p0873,Apple Inc.,BAC,0,easy_negative,llm,0.2020,0,1.0,0,new
+p0874,Johnson Controls,NatWest Group plc,0,easy_negative,llm,0.1642,0,1.0,0,new
+p0875,I.B.M.,UNH,0,easy_negative,auto_reject,0.0116,,,0,
+p0876,Merck Sharp & Dohme,Merck KGaA,0,hard_negative,llm,0.5817,0,,0,reused
+p0877,General Motors Company,Tata Motors,0,hard_negative,llm,0.5271,0,,0,reused
+p0878,BP p.l.c.,BP,1,positive,llm,0.8965,1,,1,reused
+p0879,A.P. Moller-Maersk A/S,A.P. Møller – Mærsk,1,positive,llm,0.7660,1,,1,reused
+p0880,DHL Group,Bank of America,0,easy_negative,auto_reject,0.0354,,,0,
+p0881,Alibaba,BABA,1,positive,llm,0.3566,1,,1,reused
+p0882,Samsung Electronics,"Delta Electronics, Inc.",0,hard_negative,llm,0.4019,0,,0,reused
+p0883,Royal Bank of Canada,First Republic Bank,0,hard_negative,llm,0.4416,0,,0,reused
+p0884,UBS,Union Bank of Switzerland,1,positive,llm,0.9200,1,,1,reused
+p0885,Lincoln Electric,Honda Motor,0,easy_negative,auto_reject,0.0000,,,0,
+p0886,Toyota Motor Corp,トヨタ自動車,1,positive,llm,0.8169,1,,1,reused
+p0887,JP Morgan,Morgan Stanley,0,hard_negative,llm,0.7069,0,,0,reused
+p0888,Standard Chartered,Standard & Poor's,0,hard_negative,llm,0.7104,0,,0,reused
+p0889,Mercedes-Benz Group AG,Mercedes Benz,1,positive,llm,0.8760,1,,1,reused
+p0890,Berkshire,BRK.A,1,positive,llm,0.3741,1,,1,reused
+p0891,"Tesla Motors, Inc.",TSLA,1,positive,llm,0.8500,1,,1,reused
+p0892,Lincoln National Corporation,Lincoln Electric,0,hard_negative,llm,0.7781,0,,0,reused
+p0893,Alphabet Inc.,GOOGL,1,positive,llm,0.3393,1,,1,reused
+p0894,AEP,Nestle,0,easy_negative,llm,0.1026,0,1.0,0,new
+p0895,Bank of America,BAC,1,positive,llm,0.5350,1,,1,reused
+p0896,Costco,COST,1,positive,llm,0.8500,1,,1,reused
+p0897,Amazon,Amazon.com,1,positive,auto_accept,0.9762,,,1,
+p0898,Exxon,McDonalds,0,easy_negative,auto_reject,0.0000,,,0,
+p0899,I.B.M.,IBM Corp.,1,positive,llm,0.9200,1,,1,reused
+p0900,"Merck & Co., Inc.",E. Merck,0,hard_negative,llm,0.8722,0,,0,reused
+p0901,Sony Group Corporation,Aple Inc,0,easy_negative,llm,0.1387,0,0.95,0,new
+p0902,Intel Corp,INTC,1,positive,llm,0.4749,1,,1,reused
+p0903,United Airlines,American Airlines Group Inc.,0,hard_negative,llm,0.5754,0,,0,reused
+p0904,Mastercard Incorporated,MA,1,positive,llm,0.2587,1,,1,reused
+p0905,"Samsung Electronics Co., Ltd.",삼성전자,1,positive,llm,0.7486,1,,1,reused
+p0906,"Salesforce.com, Inc.",Salesforce,1,positive,auto_accept,0.9763,,,1,
+p0907,"United Airlines Holdings, Inc.","United Parcel Service, Inc.",0,hard_negative,llm,0.5319,0,,0,reused
+p0908,Sony Corporation,GlaxoSmithKline,0,easy_negative,auto_reject,0.0156,,,0,
+p0909,Alphabet Inc.,Alphabet,1,positive,auto_accept,0.9714,,,1,
+p0910,"Samsung Electronics Co., Ltd.","Samsung Heavy Industries Co., Ltd.",0,hard_negative,llm,0.7392,0,,0,reused
+p0911,Merck and Co,Merck Sharp & Dohme,1,positive,llm,0.6987,1,,1,reused
+p0912,"Hitachi, Ltd.",UBS Group AG,0,easy_negative,llm,0.1287,0,1.0,0,new
+p0913,Alibaba Group Holding Limited,Alibaba,1,positive,llm,0.8456,1,1.0,1,new
+p0914,NatWest Group plc,Royal Bank of Scotland Group,1,positive,llm,0.3437,1,,1,reused
+p0915,JPMorgan Chase & Co.,American Express Company,0,easy_negative,llm,0.4350,0,,0,reused
+p0916,"Salesforce.com, Inc.",American Electric Power,0,easy_negative,auto_reject,0.0000,,,0,
+p0917,PepsiCo,Pepsi,1,positive,auto_accept,0.9579,,,1,
+p0918,L'Oreal,Total S.A.,0,easy_negative,llm,0.2208,0,,0,reused
+p0919,AstraZeneca,Alphabet Inc.,0,easy_negative,auto_reject,0.0181,,,0,
+p0920,Samsung Electronics,HSBC,0,easy_negative,llm,0.1248,0,1.0,0,new
+p0921,AT&T,A T & T,1,positive,llm,0.8490,1,,1,reused
+p0922,Airbus SE,Airbus,1,positive,auto_accept,0.9508,,,1,
+p0923,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise,1,positive,auto_accept,0.9892,,,1,
+p0924,Deutsche Bank AG,DB,1,positive,llm,0.9200,1,,1,reused
+p0925,Airbus SE,EADS,1,positive,llm,0.6102,1,,1,reused
+p0926,"United Airlines Holdings, Inc.",United Air Lines,1,positive,llm,0.8826,1,,1,reused
+p0927,Nike,Nike Inc,1,positive,auto_accept,0.9763,,,1,
+p0928,"Salesforce, Inc.",Salesforce,1,positive,auto_accept,0.9831,,,1,
+p0929,Gazprom,OAO Gazprom,1,positive,llm,0.8673,1,1.0,1,new
+p0930,J.P. Morgan,Morgan Stanley,0,hard_negative,llm,0.6582,0,,0,reused
+p0931,Nestlé S.A.,UPS,0,easy_negative,auto_reject,0.0000,,,0,
+p0932,General Motors Company,GM,1,positive,llm,0.9200,1,,1,reused
+p0933,Crédit Agricole S.A.,Crédit Agricole,1,positive,llm,0.9482,1,0.95,1,new
+p0934,Toyota Motor Corporation,Ford Motor Company,0,hard_negative,llm,0.5790,0,,0,reused
+p0935,Merck Sharp & Dohme,MSD,1,positive,llm,0.9200,1,,1,reused
+p0936,"United Parcel Service, Inc.","The Home Depot, Inc.",0,easy_negative,llm,0.3678,0,,0,reused
+p0937,General Electric Company,"Lincoln Electric Holdings, Inc.",0,hard_negative,llm,0.4931,0,,0,reused
+p0938,"United Airlines Holdings, Inc.",United Parcel Service,0,hard_negative,llm,0.5205,0,,0,reused
+p0939,Tata Consultancy Services Limited,Tata Steel Limited,0,hard_negative,llm,0.7163,0,,0,reused
+p0940,"American Electric Power Company, Inc.",AEP,1,positive,llm,0.9200,1,,1,reused
+p0941,Airbus SE,Bank of China Limited,0,easy_negative,auto_reject,0.0000,,,0,
+p0942,Meta,META,1,positive,llm,0.7250,1,1.0,1,new
+p0943,First Solar,First Republic,0,hard_negative,llm,0.4613,0,,0,reused
+p0944,General Electric Company,"General Mills, Inc.",0,hard_negative,llm,0.5517,0,,0,reused
+p0945,Mercedes-Benz Group AG,Mercedes-Benz,1,positive,llm,0.9274,1,,1,reused
+p0946,KO,SAP SE,0,easy_negative,auto_reject,0.0000,,,0,
+p0947,Bank of America,Bank of China,0,hard_negative,llm,0.4799,0,,0,reused
+p0948,MasterCard,Hewlett-Packard,0,easy_negative,auto_reject,0.0136,,,0,
+p0949,Chevron,CVX,1,positive,llm,0.1793,1,,1,reused
+p0950,Roche Holding AG,PEP,0,easy_negative,auto_reject,0.0000,,,0,
+p0951,Standard Chartered PLC,Standard Chartered,1,positive,auto_accept,0.9744,,,1,
+p0952,Total,Johnson & Johnson,0,easy_negative,auto_reject,0.0000,,,0,
+p0953,Deutsche Bank,Royal Bank,0,hard_negative,llm,0.5191,0,,0,reused
+p0954,Union Bank of Switzerland,Royal Bank,0,hard_negative,llm,0.3813,0,,0,reused
+p0955,AT&T Inc.,American Telephone & Telegraph,1,positive,llm,0.8089,1,,1,reused
