@@ -16,3 +16,6 @@ torch>=2.0
 # API embedding matchers (optional; also need OPENAI_API_KEY / COHERE_API_KEY)
 openai>=1.30
 cohere>=5.5
+
+# LLM adjudication stage (llm_matcher.py pairs/holdings; needs ANTHROPIC_API_KEY)
+anthropic>=0.40
