@@ -4,3 +4,5 @@ __pycache__/
 *.pyo
 out/
 pairs.json
+out_os/
+out_os_dev/

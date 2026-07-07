@@ -73,7 +73,9 @@ easy_negative}`.
 | `tfidf_char` | char n-gram TF-IDF cosine | ✅ | strong offline embedding baseline |
 | `st_bge_m3` | `BAAI/bge-m3` | downloads | general dense embedding |
 | `st_lt_comp_en` | `dell-research-harvard/lt-wikidata-comp-en` | downloads | **name-specialized** |
-| `st_eridu` | `Graphlet-AI/eridu` | downloads | **name-specialized**, multilingual |
+| `st_lt_comp_multi` | `dell-research-harvard/lt-wikidata-comp-multi` | downloads | **name-specialized**, multilingual (replaces `Graphlet-AI/eridu`, removed from HF Hub) |
+| `router_lt_comp_en` | lt-comp-en + alias rules | downloads | Round-4 router: clipped cosine, alias-rule floor |
+| `router_lt_comp_multi` | lt-comp-multi + alias rules | downloads | Round-4 router: best hybrid F1 0.990 with the LLM band |
 | `openai_small` | `text-embedding-3-small` | API | needs `OPENAI_API_KEY` |
 | `cohere_v4` | `embed-v4.0` | API | needs `COHERE_API_KEY` |
 
