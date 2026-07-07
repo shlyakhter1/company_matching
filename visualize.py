@@ -267,8 +267,19 @@ def main():
     print("  -> score_distributions.png");  plot_distributions(df, cols, met, args.outdir)
     cpath, mpng, nfp, nfn, thr = miss_report(df, met, focus, args.outdir)
     print(f"  -> miss_table_{focus}.png  ({nfp} false merges, {nfn} missed @ thr={thr:.2f})")
-    if args.no_map:
-        print("  -> embedding map skipped (--no-map)")
+    skip_map = "--no-map" if args.no_map else None
+    if not skip_map and not os.path.exists(args.records):
+        skip_map = f"records file {args.records} not found"
+    if not skip_map:
+        # A records file that doesn't cover these pairs (e.g. default records with an
+        # OpenSanctions outdir) would render a map of the wrong dataset — detect and skip.
+        recs = {r["name_variant"] for r in csv.DictReader(open(args.records, encoding="utf-8"))}
+        pair_names = set(df["name_a"].astype(str)) | set(df["name_b"].astype(str))
+        overlap = len(pair_names & recs) / max(len(pair_names), 1)
+        if overlap < 0.05:
+            skip_map = f"records file {args.records} doesn't match these pairs ({overlap:.0%} name overlap)"
+    if skip_map:
+        print(f"  -> embedding map skipped ({skip_map})")
     else:
         png, html, algo, used = embedding_map(args.records, args.embed_matcher, args.outdir, args.reducer)
         print(f"  -> embedding_map.png/.html  ({algo} of {used})")

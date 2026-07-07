@@ -93,15 +93,7 @@ def llm(backend, model, system, user, retries=2):
 def build_blocker(kind):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import matchers as M
-    if kind == "tfidf":
-        return M.TfidfMatcher()
-    if kind == "alias":
-        return M.AliasRouter()   # tfidf + initialism/contraction rules (Round 3)
-    if kind == "lt_comp_en":     # Round 4 embedding routers (clipped cosine + alias rules)
-        return M.EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en")
-    if kind == "lt_comp_multi":
-        return M.EmbeddingRouter("dell-research-harvard/lt-wikidata-comp-multi", short="lt_comp_multi")
-    return M.SentenceTransformerMatcher(kind)  # e.g. dell-research-harvard/lt-wikidata-comp-en
+    return M.build_blocker(kind)   # one registry for all tools; typos fail loudly
 
 def topk_candidates(blocker, queries, variants, canonicals, k):
     """Return, per query, the top-k (variant, canonical, score) by cosine."""
@@ -174,6 +166,17 @@ def run_holdings(a):
 # --------------------------------------------------------------------------
 # mode: pairs
 # --------------------------------------------------------------------------
+def append_partial(path, items):
+    """Append (pair_id, llm_same) decisions after each batch so an interrupted
+    run loses at most one batch; run_pairs auto-reuses the file on restart."""
+    fresh = not os.path.exists(path)
+    with open(path, "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if fresh:
+            w.writerow(["pair_id", "llm_same"])
+        w.writerows(items)
+
+
 def load_reuse(paths):
     """Prior decisions keyed by pair_id, from any CSV with pair_id + llm_same columns
     (both the frozen llm_band*_decisions.csv records and this script's own output)."""
@@ -187,7 +190,8 @@ def load_reuse(paths):
 
 
 def run_pairs(a):
-    rows = list(csv.DictReader(open(a.pairs, encoding="utf-8")))
+    from benchmark import load_pairs, prf
+    rows, pairs, y, _ptype = load_pairs(a.pairs)
     print(f"pairs: {len(rows)}")
 
     if a.all:
@@ -195,13 +199,20 @@ def run_pairs(a):
         base_scores = None
     else:
         blocker = build_blocker(a.blocker)
-        s = np.asarray(blocker.score_pairs([(r["name_a"], r["name_b"]) for r in rows]), float)
+        s = np.asarray(blocker.score_pairs(pairs), float)
         base_scores = s
         band = [i for i in range(len(rows)) if a.band_lo <= s[i] <= a.band_hi]
         print(f"baseline {a.blocker}: auto-reject {int(np.sum(s < a.band_lo))} · "
               f"auto-accept {int(np.sum(s > a.band_hi))} · LLM band {len(band)}")
 
-    reuse = load_reuse(a.reuse) if a.reuse else {}
+    os.makedirs(a.outdir, exist_ok=True)
+    outp = os.path.join(a.outdir, a.out_name)
+    partial = outp + ".partial"   # per-batch persistence; survives a crashed run
+    reuse_files = list(a.reuse or [])
+    if os.path.exists(partial):
+        print(f"resuming: reusing decisions from interrupted run ({partial})")
+        reuse_files.append(partial)
+    reuse = load_reuse(reuse_files) if reuse_files else {}
     decisions = {}   # row idx -> (same, confidence, source)
     if reuse:
         for i in band:
@@ -213,19 +224,37 @@ def run_pairs(a):
     band = [i for i in band if i not in decisions]
 
     n_calls = 0
-    for start in range(0, len(band), a.batch):
-        chunk = band[start: start + a.batch]
+
+    def ask(idxs):
+        """One adjudication call; returns {row idx: (same, conf)} for the items it covered."""
+        nonlocal n_calls
         items = "".join(f'Pair {j + 1}: "{rows[i]["name_a"]}"  vs  "{rows[i]["name_b"]}"\n'
-                        for j, i in enumerate(chunk))
+                        for j, i in enumerate(idxs))
         resp = llm(a.backend, a.model, SYS, PAIRS_TASK.format(items=items))
         n_calls += 1
+        out = {}
         for d in resp:
-            decisions[chunk[d["i"] - 1]] = (bool(d["same"]), float(d.get("confidence", 0.5)), "new")
+            j = int(d.get("i", 0))
+            if 1 <= j <= len(idxs):
+                out[idxs[j - 1]] = (bool(d["same"]), float(d.get("confidence", 0.5)))
+        return out
+
+    for start in range(0, len(band), a.batch):
+        chunk = band[start: start + a.batch]
+        got = ask(chunk)
+        missing = [i for i in chunk if i not in got]
+        if missing:   # the model dropped items from its JSON; re-ask just those once
+            got.update(ask(missing))
+            missing = [i for i in chunk if i not in got]
+        if missing:
+            raise RuntimeError(
+                f"LLM response still missing {len(missing)} pairs after retry "
+                f"(e.g. {rows[missing[0]]['pair_id']}); progress saved to {partial} — rerun to resume")
+        for i, (same, conf) in got.items():
+            decisions[i] = (same, conf, "new")
+        append_partial(partial, [(rows[i]["pair_id"], int(got[i][0])) for i in chunk])
         print(f"  adjudicated {min(start + a.batch, len(band))}/{len(band)}")
     print(f"LLM calls: {n_calls}")
-
-    os.makedirs(a.outdir, exist_ok=True)
-    outp = os.path.join(a.outdir, a.out_name)
     with open(outp, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["pair_id", "name_a", "name_b", "label", "pair_type",
@@ -244,13 +273,11 @@ def run_pairs(a):
             w.writerow([r["pair_id"], r["name_a"], r["name_b"], r["label"], r["pair_type"],
                         route, "" if base_scores is None else f"{base_scores[i]:.4f}",
                         same, conf, pred, src])
+    if os.path.exists(partial):
+        os.remove(partial)   # complete run recorded in outp; the crash file is obsolete
     # quick metrics
-    y = np.array([int(r["label"]) for r in rows])
     pred = np.array([int(r["final_pred"]) for r in csv.DictReader(open(outp))])
-    tp = int(np.sum((pred == 1) & (y == 1))); fp = int(np.sum((pred == 1) & (y == 0)))
-    fn = int(np.sum((pred == 0) & (y == 1)))
-    P = tp / (tp + fp) if tp + fp else 0; R = tp / (tp + fn) if tp + fn else 0
-    F = 2 * P * R / (P + R) if P + R else 0
+    P, R, F, *_ = prf(y, pred == 1)
     print(f"pipeline metrics: P={P:.3f} R={R:.3f} F1={F:.3f}")
     print(f"wrote {outp}")
 

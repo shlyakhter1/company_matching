@@ -253,6 +253,28 @@ class EmbeddingRouter:
         return self._st.embed(names)
 
 # ----------------------------------------------------------------------------
+def build_blocker(kind):
+    """Routing scorers by short name — single source of truth for the
+    --blocker/--router CLI values in llm_matcher.py and hybrid_eval.py.
+    A kind containing '/' is treated as an explicit sentence-transformers
+    model id; any other unknown string is an error, so a typo fails loudly
+    instead of silently constructing a differently-calibrated scorer."""
+    known = {
+        "tfidf": TfidfMatcher,
+        "alias": AliasRouter,
+        "lt_comp_en": lambda: EmbeddingRouter(
+            "dell-research-harvard/lt-wikidata-comp-en", short="lt_comp_en"),
+        "lt_comp_multi": lambda: EmbeddingRouter(
+            "dell-research-harvard/lt-wikidata-comp-multi", short="lt_comp_multi"),
+    }
+    if kind in known:
+        return known[kind]()
+    if "/" in kind:
+        return SentenceTransformerMatcher(kind)
+    raise ValueError(f"unknown blocker/router {kind!r}; known: {sorted(known)} "
+                     "(or pass a sentence-transformers model id containing '/')")
+
+# ----------------------------------------------------------------------------
 def default_registry():
     """The matchers run by benchmark.py unless --matchers is given.
     Embedding/API backends are included but skipped gracefully if unavailable."""

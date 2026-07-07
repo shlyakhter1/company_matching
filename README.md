@@ -27,7 +27,7 @@ open out/embedding_map.html              # explore (or any file in ./out)
 They're already wired in — they just need their libraries (and, for APIs, keys):
 
 ```bash
-pip install sentence-transformers torch        # local: bge-m3, lt-wikidata-comp, eridu
+pip install sentence-transformers torch        # local: bge-m3, lt-wikidata-comp-en/-multi
 export OPENAI_API_KEY=sk-...                    # optional API matcher
 export COHERE_API_KEY=...                       # optional API matcher
 python run_all.py                              # they now light up automatically
@@ -106,7 +106,7 @@ Add your own by subclassing the simple interface in `matchers.py`
 Pick the focus matcher and map source:
 
 ```bash
-python visualize.py --focus st_eridu --embed-matcher st_bge_m3 --reducer umap
+python visualize.py --focus st_lt_comp_multi --embed-matcher st_bge_m3 --reducer umap
 ```
 
 ---
@@ -116,7 +116,7 @@ python visualize.py --focus st_eridu --embed-matcher st_bge_m3 --reducer umap
 1. Run offline (`fuzzy_*`, `tfidf_char`) and read `metrics.csv` — note the AUC ceiling
    and that all hard negatives are merged at the F1-optimal point.
 2. Install `sentence-transformers` and re-run. Compare `st_bge_m3` (generic) vs
-   `st_lt_comp_en` / `st_eridu` (name-specialized) — the specialized models should lift
+   `st_lt_comp_en` / `st_lt_comp_multi` (name-specialized) — the specialized models should lift
    AUC and shrink the hard-negative false-merge count. That reproduces the
    "specialized beats generic on short strings" result on data you control.
 3. Use `score_distributions.png` to pick **two** thresholds (auto-accept / auto-reject)

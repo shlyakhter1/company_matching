@@ -26,6 +26,21 @@ def load_pairs(path):
     return rows, pairs, y, ptype
 
 
+def prf(y, pred):
+    """P/R/F1 (+ tp/fp/fn) at a fixed operating point — the one shared
+    implementation for benchmark.py, llm_matcher.py, and hybrid_eval.py.
+    Convention: no predicted positives -> P=1.0."""
+    pred = np.asarray(pred, dtype=bool)
+    y = np.asarray(y)
+    tp = int(np.sum(pred & (y == 1)))
+    fp = int(np.sum(pred & (y == 0)))
+    fn = int(np.sum(~pred & (y == 1)))
+    P = tp / (tp + fp) if tp + fp else 1.0
+    R = tp / (tp + fn) if tp + fn else 0.0
+    F = 2 * P * R / (P + R) if P + R else 0.0
+    return P, R, F, tp, fp, fn
+
+
 def best_threshold(y, scores):
     """Sweep candidate thresholds, return the one maximizing F1 plus the curve."""
     order = np.argsort(-scores)
@@ -33,13 +48,7 @@ def best_threshold(y, scores):
     best = (0.5, 0.0, 0.0, 0.0)  # thr, P, R, F1
     curve = []
     for t in ths:
-        pred = scores >= t
-        tp = int(np.sum(pred & (y == 1)))
-        fp = int(np.sum(pred & (y == 0)))
-        fn = int(np.sum(~pred & (y == 1)))
-        P = tp / (tp + fp) if tp + fp else 1.0
-        R = tp / (tp + fn) if tp + fn else 0.0
-        F = 2 * P * R / (P + R) if P + R else 0.0
+        P, R, F, *_ = prf(y, scores >= t)
         curve.append((float(t), P, R, F))
         if F > best[3]:
             best = (float(t), P, R, F)

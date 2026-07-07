@@ -27,7 +27,7 @@ Usage:
 import argparse, csv, json, os
 import numpy as np
 
-from benchmark import best_threshold, roc_auc
+from benchmark import best_threshold, load_pairs, prf, roc_auc
 from llm_matcher import build_blocker, load_reuse
 
 
@@ -77,8 +77,10 @@ def render_comparison(stats_path, md_path):
             f"| {s['llm_band_accuracy']:.3f} | {s['precision']:.3f} | {s['recall']:.3f} "
             f"| {s['f1']:.3f} | {s['missed_pos']} | {s['false_merges']} "
             f"| {s['sweep_f1']:.3f} @ {s['sweep_thr']:.2f} | {s['roc_auc']:.3f} |")
-    lines += ["", "Band = [{lo}, {hi}]; composite: in-band -> 0.98/0.02 by LLM verdict, outside -> router score."
-              .format(lo=stats[name]["band_lo"], hi=stats[name]["band_hi"]), ""]
+    bands = sorted({(s["band_lo"], s["band_hi"]) for s in stats.values()})
+    band_txt = ", ".join(f"[{lo}, {hi}]" for lo, hi in bands)
+    lines += ["", f"Band(s) = {band_txt}; composite: in-band -> 0.98/0.02 by LLM verdict, "
+              "outside -> router score.", ""]
     open(md_path, "w").write("\n".join(lines))
 
 
@@ -96,10 +98,8 @@ def main():
     ap.add_argument("--band-hi", type=float, default=0.95)
     a = ap.parse_args()
 
-    rows = list(csv.DictReader(open(a.pairs, encoding="utf-8")))
-    y = np.array([int(r["label"]) for r in rows])
-    ptype = np.array([r["pair_type"] for r in rows])
-    pairs = [(r["name_a"], r["name_b"]) for r in rows]
+    rows, pairs, y, ptype = load_pairs(a.pairs)
+    ptype = np.array(ptype)
 
     router = build_blocker(a.router)
     rs = np.asarray(router.score_pairs(pairs), dtype=float)
@@ -108,11 +108,7 @@ def main():
 
     colname = f"hybrid_{a.name}_llm"
     pred = comp >= 0.5
-    tp = int(np.sum(pred & (y == 1))); fp = int(np.sum(pred & (y == 0)))
-    fn = int(np.sum(~pred & (y == 1)))
-    P = tp / (tp + fp) if tp + fp else 0.0
-    R = tp / (tp + fn) if tp + fn else 0.0
-    F = 2 * P * R / (P + R) if P + R else 0.0
+    P, R, F, tp, fp, fn = prf(y, pred)
     fp_hard = int(np.sum(pred & (y == 0) & (ptype == "hard_negative")))
     fp_easy = int(np.sum(pred & (y == 0) & (ptype == "easy_negative")))
 
