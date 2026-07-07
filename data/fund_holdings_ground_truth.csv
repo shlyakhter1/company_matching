@@ -1,0 +1,53 @@
+company_name,expected_canonical
+Apple Inc.,Apple Inc.
+MSFT,Microsoft Corporation
+Alphabet,Alphabet Inc.
+Meta,"Meta Platforms, Inc."
+AMZN,"Amazon.com, Inc."
+Nvidia Corp,NVIDIA Corporation
+NVDA,NVIDIA Corporation
+Advanced Micro Devices,"Advanced Micro Devices, Inc."
+Microsft,Microsoft Corporation
+Taiwan Semiconductor,Taiwan Semiconductor Manufacturing Company Limited
+TSMC,Taiwan Semiconductor Manufacturing Company Limited
+Broadcom Inc.,
+Tesla Inc,"Tesla, Inc."
+Tesla Motors,"Tesla, Inc."
+TSLA,"Tesla, Inc."
+Toyota Motor Corp,Toyota Motor Corporation
+Volkswagon AG,Volkswagen AG
+BMW AG,Bayerische Motoren Werke AG
+Johnson and Johnson,Johnson & Johnson
+J&J,Johnson & Johnson
+Pfizer,Pfizer Inc.
+Eli Lilly & Co,
+AstraZeneca,AstraZeneca PLC
+Astra Zeneca,AstraZeneca PLC
+GlaxoSmithKline,GSK plc
+Merck and Co,"Merck & Co., Inc."
+Merck Group,Merck KGaA
+Abbvie,
+Bristol Myers Squibb,
+JPMorgan Chase & Co,JPMorgan Chase & Co.
+JP Morgan Chase,JPMorgan Chase & Co.
+Goldman Sachs Group,"The Goldman Sachs Group, Inc."
+Bank of America,Bank of America Corporation
+HSBC Holdings,HSBC Holdings plc
+Visa Inc.,Visa Inc.
+MasterCard,Mastercard Incorporated
+Pay Pal,
+Salesforce.com Inc.,"Salesforce, Inc."
+ServiceNow,
+Adobe Systems,
+SAP AG,SAP SE
+Oracle Corp,Oracle Corporation
+International Business Machines,International Business Machines Corporation
+I.B.M.,International Business Machines Corporation
+Shell plc,Shell plc
+Royal Dutch Shell,Shell plc
+BP p.l.c.,BP p.l.c.
+Total Energies,TotalEnergies SE
+Chevron Corp,Chevron Corporation
+ExxonMobil Corporation,Exxon Mobil Corporation
+</content>
+</invoke>
